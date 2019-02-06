@@ -1,0 +1,186 @@
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 04:10 PM Saturday, 12. January 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Jan 12: 16:10:42: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge port is connected to metal material:
+	1
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 4
+      Number of calculation domains used: 4
+
+   PBA fill limit: 95.45% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The current settings will probably lead to a very long simulation time.
+
+You may improve the simulation speed by:
+
+1. checking the frequency range and units settings
+2. reducing the simulation duration
+3. checking the mesh to avoid very small mesh steps
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: expanded open, 4 Layer, depth 13.2392 mm
+  Xmax: expanded open, 4 Layer, depth 13.2392 mm
+
+  Ymin: expanded open, 4 Layer, depth 13.2392 mm
+  Ymax: expanded open, 4 Layer, depth 13.2392 mm
+
+  Zmin: expanded open, 4 Layer, depth 13.117 mm
+  Zmax: expanded open, 4 Layer, depth 13.117 mm
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	2238171
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20512                         1819512      1819512      
+  Matrices calc.      230000                        1671200      1609488      
+  Solver run total    103344                        1843628      1597348      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	365180
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	782 	s
+  Number of calculated pulse widths:	1.00109 
+  Steady state accuracy limit:      	-60	dB 
+  Simulated number of time steps:   	78464 
+  Maximum number of time steps:     	1567576 
+  Time step width:
+     without subcycles:             	9.07017592e-005 ns
+     used:                          	9.07017592e-005 ns
+
+  CAD preparation time:          	0      	s
+  Matrix calculation time:          	21 	s
+  Solver setup time:                	4 	s
+  Solver loop time:                 	783 	s
+  Solver post processing time:      	4 	s
+                                    	------------
+  Total solver time:                	812 	s  ( = 0 h, 13 m, 32 s )
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	812    	s  ( = 0 h, 13 m, 32 s )
+                                    	------------
+  Total simulation time:            	812    	s  ( = 0 h, 13 m, 32 s )
+
+--------------------------------------------------------------------------------
+Solver finished at: 04:24 PM Saturday, 12. January 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+*** Error ***
+
+Wrong storage basepath
+C:\Users\ThomasNotebook\Documents\School\Semester5\hf1\Homework\Bericht\Simulationen\Linearstrahler_11cst: no associated project C:\Users\ThomasNotebook\Documents\School\Semester5\hf1\Homework\Bericht\Simulationen\Linearstrahler_11cst.cst found!
+C:\Users\ThomasNotebook\Documents\School\Semester5\hf1\Homework\Bericht\Simulationen\Linearstrahler_11cst: no associated project C:\Users\ThomasNotebook\Documents\School\Semester5\hf1\Homework\Bericht\Simulationen\Linearstrahler_11cst.cst found!
+
+--------------------------------------------------------------------------------
+*** Error ***
+
+Time Domain Solver (HEX) terminated abnormally.
+
+--------------------------------------------------------------------------------

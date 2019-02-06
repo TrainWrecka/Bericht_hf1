@@ -1,0 +1,45 @@
+\section{Dipole}
+
+Als erstes Thema werden Dipolantennen beschrieben. Dabei wird vor allem auf den Hertzschen Dipol eingegangen, welcher das Modell der Antenne vereinfacht.
+
+\subsection{Hertzscher Dipol}
+
+Eine Dipol Antenna kann als kurzer Linearstrahler beschrieben werden, wobei dessen länge $l \ll \lambda_0 /4$ beträgt. $\lambda_0$ beschreibt dabei die Wellenlänge, welche durch das Verhältnis der Lichtgeschwindigkeit zur Signalfrequenz $c_0/f$ beschreibt. 
+
+xxx
+
+Ein solcher Strahler ist in Abbildung xxx zu sehen, wobei $\underline{I}$ der komplexe Strom einer Sinusschwingung darstellt, welche konstant über die gesamte Länge schwingt. $\phi$ stellt den Winkel dar, welcher um die z-Achse rotiert und über die x- und y-Achse aufgespannt ist.$\theta$ hingegen rotiert um die x-Achse und wird über die y- und z-Achse aufgespannt. Für die Kugelkoordinaten bedeutet dies, dass mit den Restriktionen 
+
+\begin{align}
+&0 \leq \varphi \leq 2\pi\\
+&0 \leq \vartheta \leq \pi
+\end{align}
+
+der gesamte Bereich des Koordinatensystems abgedeckt ist. Das durch den Strom induzierte Magnetfeld kann mit 
+
+\begin{equation}
+\underline{H}_0 = j\pi \frac{\underline{I}l}{{\lambda_0}^2}
+\end{equation}
+
+beschrieben werden, was für zwei Formeln für das magnetische und elektrische Feld liefert:
+
+\begin{align}
+\underline{H}_\varphi   &= \underline{H}_0 \sin \vartheta \frac{e^{-jk_0r}}{k_0r}\\
+\underline{E}_\vartheta &= Z_0 \underline{H}_\varphi = Z_0 \underline{H}_0 \sin \vartheta \frac{e^{-jk_0r}}{k_0r}.
+\end{align}
+
+Hierbei beschreibt $r$ die Distanz des Punktes zu Ursprung und $k_0 = \omega \sqrt{\mu_0 \eta_0} = c_0/\omega$ die Wellenzahl im Vakuum beschreibt. Somit beschreibt die komplexe Exponentialfunktion die Ausbreitung der Welle, was mit der Theorie der Wellenleitern übereinstimmt. Im Nenner ist das Abklingen des Sinus zu erkennen, welches abhängig von der Distanz zum Ursprung und der Wellenzahl ist. xxx
+
+
+\subsection{Richtdiagramm}
+
+Ein wichtiges Diagramm für die Analyse von Antennen ist das Richtdiagramm. Mit diesem kann die Direktivität einer Antenne dargestellt werden, welche mitteilt, in welche Richtung wie viel der Leistung der Antenne abgestrahlt wird. Diese Analyse geschieht im Fernfeld, was bedeutet dass die Annahme $r \rightarrow \inf$ getroffen wird.
+
+Im Fernfeld nimmt die Krümmung der sphärischen Phasenfront einer Kugelwelle immer weiter
+ab. Für r   kann die Kugelwelle lokal durch eine homogene ebene Welle angenähert werden. Die transversalen Feldkomponenten werden phasengleich und es wird nur in radialer Richtung Wirkleistung transportiert, deren Winkelverteilung durch die Sendeantenne festgelegt ist.
+Der Winkelabhängigkeit der Strahlung, d.h. der Strahlungsverteilung im Raum, kommt eine
+große praktische Bedeutung zu. Von ihr hängt es ab, welcher Anteil der ausgestrahlten Leistung
+für den eigentlichen Verwendungszweck ausgenutzt werden kann. Strahlung in oder Aufnahme
+aus unerwünschten Richtungen erhöht die gegenseitigen Störungsmöglichkeiten. Bestimmte
+Aufgaben verlangen vielfach auch eine ganz bestimmte Verteilung des Strahlungsfeldes. Einen
+Überblick über die Verteilung der Strahlung in verschiedene Raumrichtungen liefert die Verteilung der Fernfeldstärke einer Antenne in Abhängigkeit von der Raumrichtung   , . 

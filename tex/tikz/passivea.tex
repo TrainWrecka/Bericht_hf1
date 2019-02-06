@@ -1,0 +1,103 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+\begin{document}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+  \def\yIns{3}
+  \def\ySen{9}
+
+  
+  %(2,\ySen)
+  \draw [o-] (2.5,\ySen) node[left] {$u_\mathrm{in}$} -- (3,\ySen);
+  %(4,\ySen)
+  \draw (4,\ySen) to [C=$C_1$, -*] (6,\ySen);
+  \draw (4,\ySen-1.5) -- (6,\ySen-1.5);
+  \draw (4,\ySen) -- (4,\ySen-1.5);
+  %(6,\ySen)
+  \draw (6,\ySen) -- (6,\ySen-1.5);
+  \draw  (6,\ySen) -- (8,\ySen);
+  %(8,\ySen)
+  \draw (7.5,\ySen) to [C=$C_2$, *-] (7.5,\ySen-2) node [ground] {};
+  \draw [-o] (7.5,\ySen) -- (8.5,\ySen) node[right] {$u_\mathrm{out}$};
+
+   %(2,\ySen)
+   \draw [o-] (11.5,\ySen) node[left] {$u_\mathrm{in}$} -- (12,\ySen);
+   %(12,\ySen)
+   \draw (12,\ySen) to [C=$C_1$] (15,\ySen);
+   %(15,\ySen)
+   \draw (15,\ySen) to [C=$C_2$, *-] (15,\ySen-2) node [ground] {};
+   \draw [-o] (15,\ySen) -- (16,\ySen) node[right] {$u_\mathrm{out}$};
+
+   \draw [<->] (2,5) -- (2,0) -- (13,0) node[below right] {$t$};
+
+   \draw (2,1) -- (4,1);
+   \draw (4,0) node[below] {$nT$} -- (4,0.1);
+   \draw [dotted] (4,0) -- (4,5);
+
+
+   \draw (4,1) -- (6,0);
+   \draw (4,0) -- (6,1);
+   \draw (6,0) node[below] {$nT+0.5T$} -- (6,0.1);
+   \draw [dotted] (6,0) -- (6,5);
+
+
+   \draw (6,1) -- (8,1);
+   \draw (6,0) -- (8,0);
+   \draw (8,0) node[below] {$nT+T$} -- (8,0.1);
+   \draw [dotted] (8,0) -- (8,5);
+   \draw [dotted] (10,0) -- (10,5);
+   \draw [dotted] (12,0) -- (12,5);
+
+
+   \draw (8,1) -- (10,0);
+   \draw (8,0) -- (10,1);
+   \draw (10,0) -- (10,0.1);
+
+   \draw (10,1) -- (12,1);
+   \draw (12,0) -- (12,0.1);
+
+   \node[left] at (2,0.5) {$u_\mathrm{out}$};
+
+   \draw (2,2) -- (2.1,2);
+   \draw (2.1,2) -- (2.1,3);
+   \draw (2.1,3) -- (3.9,3);
+   \draw (3.9,3) -- (3.9,2);
+   \draw (3.9,2) -- (6.1,2);
+   \draw (6.1,2) -- (6.1,3);
+   \draw (6.1,3) -- (7.9,3);
+   \draw (7.9,3) -- (7.9,2);
+   \draw (7.9,2) -- (10.1,2);
+   \draw (10.1,2) -- (10.1,3);
+   \draw (10.1,3) -- (11.9,3);
+   \draw (11.9,3) -- (11.9,2);
+   \draw (11.9,2) -- (12,2);
+
+   \node[left] at (2,2.5) {$S_1$};
+
+   \node[above] at (11,3) {o};
+   \node[above] at (7,3) {o};
+   \node[above] at (3,3) {o};
+   
+   \draw (2,4) -- (4.1,4) -- (4.1,5) -- (5.9,5) -- (5.9,4) -- (8.1,4) -- (8.1,5) -- (9.9,5) -- (9.9,4) -- (12.1,4);
+   
+   \node[left] at (2,4.5) {$S_2$};
+   
+   \node[above] at (9,5) {e};
+   \node[above] at (5,5) {e};
+
+
+
+
+   \node[above] at (5.5,\ySen+1) {Odd};
+   \node[above] at (13.5,\ySen+1) {Even};
+
+\end{circuitikz}
+
+\end{document}

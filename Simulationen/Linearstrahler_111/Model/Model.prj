@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+ThomasNotebook
+[Mesh Cells]
+69,628
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:linearstrahler_111.cst?c89b8ed56ccf7e1ca861264bb826a8f6?6612:numberofparameters=0:port=1>mode=1>zre=0>zim=0
+[Comment]

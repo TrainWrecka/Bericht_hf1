@@ -1,0 +1,30 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+\begin{document}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+  \def\ySen{3}
+ 
+  %(0,\ySen)
+  \draw [o-] (2,\ySen) node[left] {1} -- (2.2,\ySen);
+  \draw (2.2,\ySen) to [nos=$S_2$, -*] (4,\ySen);
+  %(4,\ySen)
+  \draw[dashed] (4,\ySen) to [C=$C_{P1}$] (2,\ySen-1) node [ground] {};
+  \draw (4,\ySen) to [C=$C$, -*] (6,\ySen);
+  \draw (4,\ySen-1.5) to [nos=$S_1$] (6,\ySen-1.5);
+  \draw (4,\ySen) -- (4,\ySen-1.5);
+  %(6,\ySen)
+  \draw (6,\ySen) -- (6,\ySen-1.5);
+  \draw [-o] (6,\ySen) -- (8,\ySen) node[right] {2};
+  \draw[dashed] (8,\ySen-1) node [ground] {} to [C=$C_{P2}$] (6,\ySen);
+  
+\end{circuitikz}
+
+\end{document}

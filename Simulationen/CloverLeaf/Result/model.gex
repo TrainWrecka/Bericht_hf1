@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile version="20151207" creator="modelerstructure">
+  <Components>
+    <Component name="component1:wire1">
+      <Shape name="Components\component1:wire1" material="PEC" id="0">
+        <MeshGroup2D>
+          <Pos list="1 2 3 4 5 6"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_1">
+      <Shape name="Components\component1:wire1_1" material="PEC" id="1">
+        <MeshGroup2D>
+          <Pos list="7 8 9 10 11 12"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_2">
+      <Shape name="Components\component1:wire1_2" material="PEC" id="2">
+        <MeshGroup2D>
+          <Pos list="13 14 15 16 17 18"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_1_1">
+      <Shape name="Components\component1:wire1_1_1" material="PEC" id="3">
+        <MeshGroup2D>
+          <Pos list="19 20 21 22 23 24"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_3">
+      <Shape name="Components\component1:wire1_3" material="PEC" id="4">
+        <MeshGroup2D>
+          <Pos list="25 26 27 28 29 30"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_1_2">
+      <Shape name="Components\component1:wire1_1_2" material="PEC" id="5">
+        <MeshGroup2D>
+          <Pos list="31 32 33 34 35 36"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_2_1">
+      <Shape name="Components\component1:wire1_2_1" material="PEC" id="6">
+        <MeshGroup2D>
+          <Pos list="37 38 39 40 41 42"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:wire1_1_1_1">
+      <Shape name="Components\component1:wire1_1_1_1" material="PEC" id="7">
+        <MeshGroup2D>
+          <Pos list="43 44 45 46 47 48"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+    <Component name="component1:solid1">
+      <Shape name="Components\component1:solid1" material="Vacuum" id="8">
+        <MeshGroup2D>
+          <Pos list="49 50"/>
+          <DS list=""/>
+        </MeshGroup2D>
+      </Shape>
+    </Component>
+  </Components>
+  <GeometryFile filename="3d.slm" type="slim"/>
+  <Materials>
+    <Material name="$CurrentPathMaterial$" priority="1">
+      <Drawstyle color="1 0.501961 0.501961" transparency="0" linestrength="3"/>
+    </Material>
+    <Material name="$FieldSourceMaterial$" priority="2">
+      <Drawstyle color="0.1 0.1 0.8" transparency="0.8" linestrength="3"/>
+    </Material>
+    <Material name="$PortFaceMaterial$" priority="2">
+      <Drawstyle color="0.5 0.5 0.5" transparency="0.8" linestrength="1"/>
+    </Material>
+    <Material name="$VoltagePathMaterial$" priority="1">
+      <Drawstyle color="0 0.501961 0.501961" transparency="0" linestrength="3"/>
+    </Material>
+    <Material name="$WireMaterial$" priority="2">
+      <Drawstyle color="0 0.501961 1" transparency="0" linestrength="3"/>
+    </Material>
+    <Material name="PEC" priority="2">
+      <Drawstyle color="0.8 0.8 0.8" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="Vacuum" priority="1">
+      <Drawstyle color="0.5 0.8 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="air_0" priority="1">
+      <Drawstyle color="0.6 0.6 0.6" transparency="0" linestrength="1"/>
+    </Material>
+  </Materials>
+  <MeshType type="SURFACE"/>
+  <SimulationDomain min="-0.18752764493190105 -0.18752764493190105 -0.10430563880820172" max="0.18752764493190105 0.18752764493190105 0.15683952745050306"/>
+  <Symmetries/>
+</MetaGeometryFile>

@@ -1,0 +1,230 @@
+%%---Main Packages-----------------------------------------------------------------------
+\usepackage[english, ngerman]{babel}	%Mul­tilin­gual sup­port for LaTeX
+\usepackage[T1]{fontenc}				%Stan­dard pack­age for se­lect­ing font en­cod­ings
+\usepackage[utf8]{inputenc}				%Ac­cept dif­fer­ent in­put en­cod­ings
+\usepackage{lmodern}                    %The newer Font-Set
+\usepackage{textcomp}					%LaTeX sup­port for the Text Com­pan­ion fonts
+\usepackage{graphicx} 					%En­hanced sup­port for graph­ics
+\usepackage{float}						%Im­proved in­ter­face for float­ing ob­jects
+\usepackage{ifdraft}                    %Let you check if the doc is in draft mode
+
+%%---Useful Packages---------------------------------------------------------------------
+\usepackage[pdftex,dvipsnames]{xcolor}  %Driver-in­de­pen­dent color ex­ten­sions for LaTeX
+\usepackage{csquotes}                   %Simpler quoting with \enquote{}
+\usepackage{siunitx} 					%A com­pre­hen­sive (SI) units pack­age
+\usepackage{listings}					%Type­set source code list­ings us­ing LaTeX
+\usepackage[bottom]{footmisc}			%A range of foot­note op­tions
+\usepackage{footnote}					%Im­prove on LaTeX's foot­note han­dling
+\usepackage{verbatim}					%Reim­ple­men­ta­tion of and ex­ten­sions to LaTeX ver­ba­tim
+\usepackage[textsize=footnotesize]{todonotes} %Mark­ing things to do in a LaTeX doc­u­ment
+
+%%---Tikz Packages-----------------------------------------------------------------------
+\usepackage{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{intersections}
+
+%%---Math Packages-----------------------------------------------------------------------
+\usepackage{amsmath}					%AMS math­e­mat­i­cal fa­cil­i­ties for LaTeX
+%\usepackage{amssymb}					%Type­set­ting symbols (AMS style)
+%\usepackage{array}						%Ex­tend­ing the ar­ray and tab­u­lar en­vi­ron­ments
+%\usepackage{amsthm}					%Type­set­ting the­o­rems (AMS style)
+
+%%---Table Packages----------------------------------------------------------------------
+\usepackage{tabularx}					%Tab­u­lars with ad­justable-width columns
+%\usepackage{longtable}
+\usepackage{multirow}					%Create tab­u­lar cells span­ning mul­ti­ple rows
+\usepackage{multicol}					%In­ter­mix sin­gle and mul­ti­ple columns
+
+%%---PDF / Figure Packages---------------------------------------------------------------
+\usepackage{pdfpages}					%In­clude PDF doc­u­ments in LaTeX
+\usepackage{pdflscape}					%Make land­scape pages dis­play as land­scape
+\usepackage{subfig}					    %Fig­ures di­vided into sub­fig­ures
+\usepackage{placeins}                   % use \FloatBarrier to restrict float behind this place
+
+%%---Other Packages----------------------------------------------------------------------
+%\usepackage{xargs}                     %De­fine com­mands with many op­tional ar­gu­ments
+
+%%---Bibliography------------------------------------------------------------------------
+\usepackage[style=ieee,urldate=comp,backend=biber]{biblatex}
+\addbibresource{literature/bibliography.bib}
+
+%%---Main Settings-----------------------------------------------------------------------
+\graphicspath{{./graphics/}}			%Defines the graphicspath
+%\geometry{twoside=false}				    %twoside=false disables the "bookstyle"
+\setlength{\marginparwidth}{2cm}
+\overfullrule=5em						%Creates a black rule if text goes over the margins => debugging
+
+
+%%---User Definitions--------------------------------------------------------------------
+%%Tabel-Definitions: (requires \usepackage{tabularx})
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}    %column-width and alignment
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+%%---Optional Package Settings-----------------------------------------------------------
+%Listings-Settings: (requires \usepackage{listings}) => Example with Matlab Code
+\lstset{language=Matlab,%
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=false,%
+    morekeywords={switch, case, otherwise},
+    keywordstyle=\color{Blue},%
+    tabsize=2,
+    %morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{Black},%
+    stringstyle=\color{Purple},
+    commentstyle=\color{Green},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    %emph=[1]{word1, word2,...},emphstyle=[1]\color{red}
+}				
+
+%%---Projectspecific------------------------------------------------------------------------
+\usepackage{pgfplots}	
+%\usepackage{IEEEtrantools}	
+%\usepackage{array}
+%\usepackage{lipsum}
+%\usepackage{etoolbox}
+%\usepackage{setspace}
+\usetikzlibrary{shapes,decorations.markings,backgrounds,patterns}
+
+%%%
+%%% For the SFGs
+%%%
+\tikzset{%
+% Style of the node
+    Node/.style={circle,thick,draw=black,inner sep=0, minimum size=0.15cm},
+    Start/.style={draw=red},
+    End/.style={draw=blue},
+    Interm/.style={},
+% Style of the node label
+    NodeName/.style={font=\footnotesize,black, outer sep=1},
+    NodeName n/.style={NodeName, above},
+    NodeName s/.style={NodeName, below},
+    NodeName e/.style={NodeName, right},
+    NodeName w/.style={NodeName, left},
+% Style of the branche label
+    ArrowName/.style={font=\footnotesize,auto,outer sep=1},
+    ArrowName n/.style={ArrowName, above},
+    ArrowName s/.style={ArrowName, below},
+    ArrowName e/.style={ArrowName, right},
+    ArrowName w/.style={ArrowName, left},
+% Style of the branch
+    Connection/.style={thick},
+    NodeBezier/.style={},
+    ->-/.style={decoration={
+        markings,
+        %mark=at position #1 with {\arrow[scale=1.3,shorten >=1cm]{>}}},
+        mark=at position #1 with {\draw[->,>=latex',ultra thick](0pt,0)--(4pt,0);}},
+        postaction={decorate}},
+    ->-/.default=0.50,
+}
+
+% Engineering
+
+\makeatletter
+
+\newif\ifpgfplots@scaled@x@ticks@engineering
+\pgfplots@scaled@x@ticks@engineeringfalse
+\newif\ifpgfplots@scaled@y@ticks@engineering
+\pgfplots@scaled@y@ticks@engineeringfalse
+\newif\ifpgfplots@scaled@z@ticks@engineering
+\pgfplots@scaled@z@ticks@engineeringfalse
+
+\pgfplotsset{
+    scaled x ticks/engineering/.code=
+        \pgfplots@scaled@x@ticks@engineeringtrue,
+    scaled y ticks/engineering/.code=
+        \pgfplots@scaled@y@ticks@engineeringtrue,
+    scaled z ticks/engineering/.code=
+        \pgfplots@scaled@y@ticks@engineeringtrue,
+%    scaled ticks=engineering  % Uncomment this line if you want "engineering" to be on by default
+}
+
+\def\pgfplots@init@scaled@tick@for#1{%
+    \global\def\pgfplots@glob@TMPa{0}%
+    \expandafter\pgfplotslistcheckempty\csname pgfplots@prepared@tick@positions@major@#1\endcsname
+    \ifpgfplotslistempty
+        % we have no tick labels. Omit the tick scale label as well!
+    \else
+    \begingroup
+    \ifcase\csname pgfplots@scaled@ticks@#1@choice\endcsname\relax
+    % CASE 0 : scaled #1 ticks=false: do nothing here.
+    \or
+        % CASE 1 : scaled #1 ticks=true:
+        %--------------------------------
+        % the \pgfplots@xmin@unscaled@as@float  is set just before the data
+        % scale transformation is initialised.
+        %
+        % The variables are empty if there is no datascale transformation.
+        \expandafter\let\expandafter\pgfplots@cur@min@unscaled\csname pgfplots@#1min@unscaled@as@float\endcsname
+        \expandafter\let\expandafter\pgfplots@cur@max@unscaled\csname pgfplots@#1max@unscaled@as@float\endcsname
+        %
+        \ifx\pgfplots@cur@min@unscaled\pgfutil@empty
+            \edef\pgfplots@loc@TMPa{\csname pgfplots@#1min\endcsname}%
+            \expandafter\pgfmathfloatparsenumber\expandafter{\pgfplots@loc@TMPa}%
+            \let\pgfplots@cur@min@unscaled=\pgfmathresult
+            \edef\pgfplots@loc@TMPa{\csname pgfplots@#1max\endcsname}%
+            \expandafter\pgfmathfloatparsenumber\expandafter{\pgfplots@loc@TMPa}%
+            \let\pgfplots@cur@max@unscaled=\pgfmathresult
+        \fi
+        %
+        \expandafter\pgfmathfloat@decompose@E\pgfplots@cur@min@unscaled\relax\pgfmathfloat@a@E
+        \expandafter\pgfmathfloat@decompose@E\pgfplots@cur@max@unscaled\relax\pgfmathfloat@b@E
+        \pgfplots@init@scaled@tick@normalize@exponents
+        \ifnum\pgfmathfloat@b@E<\pgfmathfloat@a@E
+            \pgfmathfloat@b@E=\pgfmathfloat@a@E
+        \fi
+        \xdef\pgfplots@glob@TMPa{\pgfplots@scale@ticks@above@exponent}%
+        \ifnum\pgfplots@glob@TMPa<\pgfmathfloat@b@E
+            % ok, scale it:
+            \expandafter\ifx % Check whether we're using engineering notation (restricting exponents to multiples of three)
+                \csname ifpgfplots@scaled@#1@ticks@engineering\expandafter\endcsname
+                \csname iftrue\endcsname
+                    \divide\pgfmathfloat@b@E by 3
+                    \multiply\pgfmathfloat@b@E by 3
+            \fi
+            \multiply\pgfmathfloat@b@E by-1
+            \xdef\pgfplots@glob@TMPa{\the\pgfmathfloat@b@E}%
+        \else
+            \xdef\pgfplots@glob@TMPa{\pgfplots@scale@ticks@below@exponent}%
+            \ifnum\pgfplots@glob@TMPa>\pgfmathfloat@b@E
+                % ok, scale it:
+                \expandafter\ifx % Check whether we're using engineering notation (restricting exponents to multiples of three)
+                    \csname ifpgfplots@scaled@#1@ticks@engineering\expandafter\endcsname
+                    \csname iftrue\endcsname
+                        \advance\pgfmathfloat@b@E by -2
+                        \divide\pgfmathfloat@b@E by 3
+                        \multiply\pgfmathfloat@b@E by 3
+                \fi
+                \multiply\pgfmathfloat@b@E by-1
+                \xdef\pgfplots@glob@TMPa{\the\pgfmathfloat@b@E}%
+            \else
+                % no scaling necessary:
+                \xdef\pgfplots@glob@TMPa{0}%
+            \fi
+        \fi
+    \or
+        % CASE 2 : scaled #1 ticks=base 10:
+        %--------------------------------
+        \c@pgf@counta=\csname pgfplots@scaled@ticks@#1@arg\endcsname\relax
+        %\multiply\c@pgf@counta by-1
+        \xdef\pgfplots@glob@TMPa{\the\c@pgf@counta}%
+    \or
+        % CASE 3 : scaled #1 ticks=real:
+        %--------------------------------
+        \pgfmathfloatparsenumber{\csname pgfplots@scaled@ticks@#1@arg\endcsname}%
+        \global\let\pgfplots@glob@TMPa=\pgfmathresult
+    \or
+        % CASE 4 : scaled #1 ticks=manual:
+        \expandafter\global\expandafter\let\expandafter\pgfplots@glob@TMPa\csname pgfplots@scaled@ticks@#1@arg\endcsname
+    \fi
+    \endgroup
+    \fi
+    \expandafter\let\csname pgfplots@tick@scale@#1\endcsname=\pgfplots@glob@TMPa%
+}
+\makeatother

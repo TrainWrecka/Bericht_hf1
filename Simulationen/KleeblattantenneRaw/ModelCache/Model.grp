@@ -1,0 +1,21 @@
+20110628
+<GROUP>Excluded from Bounding Box
+<GROUPTYPE>1
+<GROUP>Excluded from Simulation
+<GROUPTYPE>0
+<GROUP>meshgroup1
+<GROUPTYPE>3
+<ENTITY>component1:wire1
+<TYPE>SOLID
+<ENTITY>component1:wire1_1
+<TYPE>SOLID
+<GROUP>meshgroup2
+<GROUPTYPE>3
+<GROUP>meshgroup3
+<GROUPTYPE>3
+<ENTITY>component1:wire1_2
+<TYPE>SOLID
+<GROUP>meshgroup4
+<GROUPTYPE>3
+<ENTITY>component1:wire1_1_1
+<TYPE>SOLID

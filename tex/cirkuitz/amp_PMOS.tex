@@ -1,0 +1,82 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+% !!!!!!!!!IN USE!!!!!!!!!!
+
+\begin{document}
+  \def\grid#1#2#3#4{%
+    \begin{scope}
+      %Grid for intial drawing.
+      \def\figXs{#1}; \def\figXe{#3}; % From Xs to Xe
+      \def\figYs{#2}; \def\figYe{#4}; % From Ys to Ye
+      \draw [step=0.1,gray!10,very thin] (\figXs,\figYs) grid (\figXe,\figYe);
+      \draw [step=0.5,gray!30,very thin, dashed] (\figXs,\figYs) grid
+      (\figXe,\figYe); 
+      \draw [step=1,gray!50,very thin] (\figXs,\figYs) grid (\figXe,\figYe);
+      %\draw[blue,dotted, very thick] (\figXs,0) -- (\figXe,0);\draw[blue,dotted, very thick] (0,\figYs) -- (0,\figYe);
+      \foreach \x in {\figXs,...,\figXe} {
+        \node [anchor=north] at (\x,\figYs) {\x};}
+      \foreach \x in {\figXs,...,\figXe} {
+        \node [anchor=south] at (\x,\figYe) {\x};}
+      \foreach \y in {\figYs,...,\figYe} {
+        \node [anchor=east] at (\figXs,\y) {\y};}
+	  \foreach \y in {\figYs,...,\figYe} {
+        \node [anchor=west] at   (\figXe,\y) {\y};}
+   \end{scope}
+}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+    \onlyifstandalone{
+      \grid{0}{-5}{12}{4}
+    }
+    
+ 
+    %alpha block positions
+    \def\alX{4};
+    \def\alY{0};
+    \def\comD{1.5};
+    
+    %draw alpha block
+    \draw (\alX + \comD ,\alY) node[pfet=$Q_1$, rotate=-90, yscale=-1](QA){};	%draw FET A
+    \draw (\alX,\alY - \comD) node[pfet=$Q_2$](QB){};							%draw FET B
+    \draw (QA.S) node[above]{$Q_{\mathrm{A}}$};											%name FETs
+    \draw (QB.S) node[left]{$Q_{\mathrm{B}}$};					
+    \draw (QB.S) to (\alX ,\alY) node[circ](al){} to (QA.S);					%connect both sources
+    \draw (QA.G) node[ocirc]{} node[left]{$V_{{\mathrm{bA}}}$};  							%draw gate voltage input
+	\draw (QB.G) node[ocirc]{} node[left]{$V_{{\mathrm{bB}}}$}; 
+    \draw (QB.D) to (\alX ,\alY - 2*\comD) node[sground]{};						%connect FET B to reference ground
+	\draw (QA.B) to (\alX  + \comD ,\alY - \comD) node[circ]{} to (\alX + 0.5 + \comD ,\alY - \comD) node[ground, rotate=-180](alC){};		%draw substrate ground from FET A
+	\draw (QB.B) -| (alC);											%connect bulk from FET B to substrate	
+	
+	%opamp positions
+	\def\opX{8.5};
+	\def\opY{-0.5};
+	
+	%draw opamp circuit with feedback
+	\draw (\opX ,\opY ) node[op amp](op1) {};					%opamp model
+	\draw (\opX + \comD, \opY + \comD) node[circ](opn){};		%node top right
+	\draw (op1.+) -| (\opX - \comD , \opY - 1) node[sground]{};	%draw reference ground
+    \draw (op1.out) -| (opn) 									%feedback C
+    to [C, l_=$C_{\mathrm{f}}$] (\opX - \comD ,\opY + \comD) 
+    to (\opX - \comD , \alY) node[circ]{} 
+    to (op1.-);	 
+	\draw (al) to (\alX ,\alY + \comD + 1) 						%connect R feedback to alpha model
+	to [R=$R_{\mathrm{f}}$] (\opX + \comD , \opY + 2*\comD ) 
+	to (opn);
+	\draw (QA.D) to (\opX - \comD , \alY);						%connect alpha to op
+    
+    %input with resistor
+    \draw (1,0) node[ocirc]{} node[left]{$V_{{\mathrm{in}}}$} 
+    to [R=$R_{\mathrm{i}}$] (al);											%connect vin and R to alpha
+    
+    %output node
+    \draw (\opX + \comD , \opY) node[circ]{} 				%draw circle
+    to (\opX + 2.5 ,\opY) node[ocirc]{} node[right]{$V_{{\mathrm{out}}}$};	
+  \end{circuitikz}
+\end{document}

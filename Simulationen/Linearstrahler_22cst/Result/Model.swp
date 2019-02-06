@@ -1,0 +1,97 @@
+==========================================================================
+Sequence: Sequence 1
+==========================================================================
+
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 725
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 54 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 730
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 55 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 735
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 55 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 740
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 55 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 745
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 6 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 750
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 8 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 755
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 6 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 760
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 3 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 765
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 1 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 770
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 58 sec.
+--------------------------------------------------------------------------
+Parameter Values: 
+
+   l = 775
+
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 57 sec.
+--------------------------------------------------------------------------
+
+==========================================================================
+Total solver time: 0 hours, 10 min., 58 sec.
+==========================================================================

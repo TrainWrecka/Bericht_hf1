@@ -1,0 +1,86 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+\begin{document}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+  \def\yIns{3}
+  \def\ySen{8}
+
+ 
+  %(2,\yIns)
+  \draw [o-] (2,\yIns) node[left] {$u_\mathrm{in}$} -- (2.2,\yIns);
+  \draw (2.2,\yIns) to [nos=$S_1$, -*] (4,\yIns);
+  %(4,\yIns)
+  \draw (4,\yIns) to [C=$C_1$, -*] (6,\yIns);
+  \draw (4,\yIns) to [nos=$S_2$] (4,\yIns-2) node [ground] {};
+  %(6,\yIns)
+  \draw (6,\yIns) to [nos=$S_2$] (6,\yIns-2) node [ground] {};
+  \draw (6,\yIns) to [nos=$S_1$, -*] (8,\yIns);
+  %(8,\yIns)
+  \draw (8,\yIns) to [C=$C_2$, -] (8,\yIns-2) node [ground] {};
+  \draw [-o] (8,\yIns) -- (9,\yIns) node[right] {$u_\mathrm{out}$};
+
+
+
+  %(8,\yIns)
+  \draw [o-] (11,\yIns) node[left] {$u_\mathrm{in}$} -- (11.2,\yIns);
+  \draw (11.2,\yIns) to [nos=$S_1$, -*] (13,\yIns);
+  %(12,\yIns)
+  \draw (13,\yIns) to [C=$C_1$, -*] (15,\yIns);
+  \draw (13,\yIns) to [nos=$S_2$] (13,\yIns-2) node [ground] {};
+  %(14,\yIns)
+  \draw (15,\yIns) to [nos=$S_1$] (15,\yIns-2) node [ground] {};
+  \draw (15,\yIns) to [nos=$S_2$] (17,\yIns);
+  %(17,\yIns)
+  \draw (17,\yIns) to [C=$C_2$, *-] (17,\yIns-2) node [ground] {};
+  \draw [-o] (17,\yIns) -- (18,\yIns) node[right] {$u_\mathrm{out}$};
+  
+  %(2,\ySen)
+  \draw [o-] (2,\ySen) node[left] {$u_\mathrm{in}$} -- (2.2,\ySen);
+  \draw (2.2,\ySen) to [nos=$S_2$, -*] (4,\ySen);
+  %(4,\ySen)
+  \draw (4,\ySen) to [C=$C_1$, -*] (6,\ySen);
+  \draw (4,\ySen-1.5) to [nos=$S_1$] (6,\ySen-1.5);
+  \draw (4,\ySen) -- (4,\ySen-1.5);
+  %(6,\ySen)
+  \draw (6,\ySen) -- (6,\ySen-1.5);
+  \draw  (6,\ySen) -- (8,\ySen);
+  %(8,\ySen)
+  \draw (8,\ySen) to [C=$C_2$, *-] (8,\ySen-2) node [ground] {};
+  \draw [-o] (8,\ySen) -- (9,\ySen) node[right] {$u_\mathrm{out}$};
+  
+  %(10,\ySen)
+  \draw [o-] (11,\ySen) node[left] {$u_\mathrm{in}$} -- (11.2,\ySen);
+  \draw (11.2,\ySen) to [nos=$S_1$, -*] (14,\ySen);
+  %(13,\ySen)
+  \draw (14,\ySen) to [C=$C_1$] (14,\ySen-2) node [ground] {};
+  %(13,\ySen)
+  \draw (14,\ySen) to [nos=$S_2$] (17,\ySen);
+  %(17,\ySen)
+  \draw (17,\ySen) to [C=$C_2$, *-] (17,\ySen-2) node [ground] {};
+  \draw [-o] (17,\ySen) -- (18,\ySen) node[right] {$u_\mathrm{out}$};
+  
+
+
+
+
+  
+
+\node[align=left, left] at (1,\yIns) {Parasitic\\insensitive};
+\node[align=left, left] at (1,\ySen) {Parasitic\\sensitive};
+\node[above] at (5.5,\ySen+1) {Delay-free};
+\node[above] at (14.5,\ySen+1) {Delaying};
+\node at (5.5,\ySen-3) {a)};
+\node at (14.5,\ySen-3) {b)};
+\node at (5.5,\yIns-3) {c)};
+\node at (14.5,\yIns-3) {d)};
+\end{circuitikz}
+
+\end{document}

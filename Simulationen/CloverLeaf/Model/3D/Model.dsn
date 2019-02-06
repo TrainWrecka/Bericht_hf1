@@ -1,0 +1,105 @@
+*** File Version: 17.00
+
+Number of ports: 4
+Portnames: 1 2 3 4
+Modenumbers: 1 1 1 1
+Portlabels: "" "" "" ""
+StaticSources:
+ThermalSources:
+FloquetPortNames:
+FloquetPortModes:
+Terminals:
+TerminalToReferenceTable:
+StaticSourceGroups:
+ThermalSourceGroups:
+TerminalSourceGroups:
+PortSourceGroups:
+FloquetPortSourceGroups:
+Number of frequency-points: 4
+Fmin: 9.100000e+11
+Fmax: 9.200000e+11
+Fscale: 1.000000e+09
+
+
+
+*** newset
+
+*** newmode
+SetType: 100
+Portname: 4
+Modenumber: 1
+Modetype: 6
+Zline: 5.000000e+01 0.000000e+00
+Fdev: 9.150000e+11
+Fmin: 9.100000e+11
+Fmax: 9.200000e+11
+PortModeConsState: 0
+*** endmode
+
+*** endset
+
+
+*** newset
+
+*** newmode
+SetType: 100
+Portname: 3
+Modenumber: 1
+Modetype: 6
+Zline: 5.000000e+01 0.000000e+00
+Fdev: 9.150000e+11
+Fmin: 9.100000e+11
+Fmax: 9.200000e+11
+PortModeConsState: 0
+*** endmode
+
+*** endset
+
+
+*** newset
+
+*** newmode
+SetType: 100
+Portname: 2
+Modenumber: 1
+Modetype: 6
+Zline: 5.000000e+01 0.000000e+00
+Fdev: 9.150000e+11
+Fmin: 9.100000e+11
+Fmax: 9.200000e+11
+PortModeConsState: 0
+*** endmode
+
+*** endset
+
+
+*** newset
+
+*** newmode
+SetType: 100
+Portname: 1
+Modenumber: 1
+Modetype: 6
+Zline: 5.000000e+01 0.000000e+00
+Fdev: 9.150000e+11
+Fmin: 9.100000e+11
+Fmax: 9.200000e+11
+PortModeConsState: 0
+*** endmode
+
+*** endset
+
+
+
+
+*** newmonitor
+monname: "farfield (f=915)"
+nmonfrequencies: 1
+monfrequencies: "915" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+

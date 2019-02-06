@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+Peter Niklaus
+[Mesh Cells]
+311,144
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f-hex
+[Results]
+Frequency Domain: S-Parameter
+[Modeler Unique ID]
+5:skew_planar_wheel.cst?d0af440b9c291af4793ffbd4e55c9cfc?47227:numberofparameters=7:port=1>mode=1>zre=0>zim=0:::r1?ra?raa?rr?ss?ws?zz
+[Comment]

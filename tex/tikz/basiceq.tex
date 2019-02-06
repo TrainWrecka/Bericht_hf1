@@ -1,0 +1,76 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+\begin{document}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+  \def\yIns{3}
+  \def\ySen{8}
+ 
+  %(2,\yIns)
+  \draw [o-] (2,\yIns) node[left] {1} -- (2.2,\yIns);
+  \draw (2.2,\yIns) to [nos=$S_1$, -*] (4,\yIns);
+  %(4,\yIns)
+  \draw (4,\yIns) to [C=$C$, -*] (6,\yIns);
+  \draw (4,\yIns) to [nos=$S_2$] (4,\yIns-2) node [ground] {};
+  %(6,\yIns)
+  \draw (6,\yIns) to [nos=$S_2$] (6,\yIns-2) node [ground] {};
+  \draw (6,\yIns) to [nos=$S_1$] (7.8,\yIns);
+  %(8,\yIns)
+  \draw [-o] (7.8,\yIns) -- (8,\yIns) node[right] {2};
+
+  %(8,\yIns)
+  \draw [o-] (10,\yIns) node[left] {1} -- (10.2,\yIns);
+  \draw (10.2,\yIns) to [nos=$S_1$, -*] (12,\yIns);
+  %(12,\yIns)
+  \draw (12,\yIns) to [C=$C$, -*] (14,\yIns);
+  \draw (12,\yIns) to [nos=$S_2$] (12,\yIns-2) node [ground] {};
+  %(14,\yIns)
+  \draw (14,\yIns) to [nos=$S_1$] (14,\yIns-2) node [ground] {};
+  \draw (14,\yIns) to [nos=$S_2$] (15.8,\yIns);
+  %(16,\yIns)
+  \draw [-o] (15.8,\yIns) -- (16,\yIns) node[right] {2};
+  
+  %(2,\ySen)
+  \draw [o-] (2,\ySen) node[left] {1} -- (2.2,\ySen);
+  \draw (2.2,\ySen) to [nos=$S_2$, -*] (4,\ySen);
+  %(4,\ySen)
+  \draw (4,\ySen) to [C=$C$, -*] (6,\ySen);
+  \draw (4,\ySen-1.5) to [nos=$S_1$] (6,\ySen-1.5);
+  \draw (4,\ySen) -- (4,\ySen-1.5);
+  %(6,\ySen)
+  \draw (6,\ySen) -- (6,\ySen-1.5);
+  \draw [-o] (6,\ySen) -- (8,\ySen) node[right] {2};
+  
+  %(10,\ySen)
+  \draw [o-] (10,\ySen) node[left] {1} -- (10.2,\ySen);
+  \draw (10.2,\ySen) to [nos=$S_1$, -*] (13,\ySen);
+  %(13,\ySen)
+  \draw (13,\ySen) to [C=$C$] (13,\ySen-2) node [ground] {};
+  %(13,\ySen)
+  \draw (13,\ySen) to [nos=$S_2$] (15.8,\ySen);
+  \draw [-o] (15.8,\ySen) -- (16,\ySen) node[right] {2};
+  
+
+
+
+
+  
+
+\node[align=left, left] at (1,\yIns) {Parasitic\\insensitive};
+\node[align=left, left] at (1,\ySen) {Parasitic\\sensitive};
+\node[above] at (5,\ySen+1) {Delay-free};
+\node[above] at (13,\ySen+1) {Delaying};
+\node at (5,\ySen-3) {a)};
+\node at (13,\ySen-3) {b)};
+\node at (5,\yIns-3) {c)};
+\node at (13,\yIns-3) {d)};
+\end{circuitikz}
+
+\end{document}

@@ -1,0 +1,212 @@
+=== BEGIN SESSION ==========================================================
+[17:31:09] Build: 64bit; Number: 20180615; ID: 2018.6 Release from 2018-06-15 (change 610495); Date: 2018-06-15
+[17:31:09] ACIS version: 27.0.2
+[17:31:09] SPAresabs = 9.9999999999999995e-07
+[17:31:09] SPAresnor = 1.0000000000000000e-10
+[17:31:09] Reading entity list
+[17:31:09] Choosing Advanced Boolean Loop...
+[17:31:09] Volume Attributes enabled
+[17:31:09] Attaching Volume Attributes
+[17:31:09] Sorted out 87 special bodies.
+[17:31:09] Processing 9 entities.
+[17:31:09] Queue Size: 1
+[17:31:09] Adding "component1:solid1" to "component1:wire1" (Pair #1 out of 4)
+[17:31:09] Adding "component1:wire1_1" to "component1:wire1_1_1" (Pair #2 out of 4)
+[17:31:09] Adding "component1:wire1_1_1_1" to "component1:wire1_1_2" (Pair #3 out of 4)
+[17:31:09] Adding "component1:wire1_2" to "component1:wire1_2_1" (Pair #4 out of 4)
+[17:31:09] Processing 5 entities.
+[17:31:09] Queue Size: 1
+[17:31:09] Adding Compound Body to Compound Body (Pair #1 out of 2)
+[17:31:09] Adding Compound Body to Compound Body (Pair #2 out of 2)
+[17:31:10] Processing 3 entities.
+[17:31:10] Queue Size: 1
+[17:31:10] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[17:31:10] Processing 2 entities.
+[17:31:10] Queue Size: 1
+[17:31:10] Adding Compound Body to "component1:wire1_3" (Pair #1 out of 1)
+[17:31:11] Exiting Boolean Unite Module.
+[17:31:11] Added Compound Body (ID: 46, 40, 28, 34, 10, 8, 16, 22, 52) to model
+[17:31:11] Added "background material" (ID: 1) to model
+[17:31:11] Added "background material (extended)" (ID: 58) to model
+[17:31:11] Added "background material (extended)" (ID: 65) to model
+[17:31:11] Added "background material (extended)" (ID: 72) to model
+[17:31:11] Added "background material (extended)" (ID: 79) to model
+[17:31:11] Added "background material (extended)" (ID: 86) to model
+[17:31:11] Added "background material (extended)" (ID: 93) to model
+[17:31:11] Added "background material (extended)" (ID: 100) to model
+[17:31:11] Added "background material (extended)" (ID: 107) to model
+[17:31:11] Added "background material (extended)" (ID: 114) to model
+[17:31:11] Added "background material (extended)" (ID: 121) to model
+[17:31:11] Added "background material (extended)" (ID: 128) to model
+[17:31:11] Added "background material (extended)" (ID: 135) to model
+[17:31:11] Added "background material (extended)" (ID: 142) to model
+[17:31:11] Added "background material (extended)" (ID: 149) to model
+[17:31:11] Added "background material (extended)" (ID: 156) to model
+[17:31:11] Added "background material (extended)" (ID: 163) to model
+[17:31:11] Added "background material (extended)" (ID: 170) to model
+[17:31:11] Added "background material (extended)" (ID: 177) to model
+[17:31:11] Added "background material (extended)" (ID: 184) to model
+[17:31:11] Added "background material (extended)" (ID: 191) to model
+[17:31:11] Added "background material (extended)" (ID: 198) to model
+[17:31:11] Added "background material (extended)" (ID: 205) to model
+[17:31:11] Added "background material (extended)" (ID: 212) to model
+[17:31:11] Added "background material (extended)" (ID: 219) to model
+[17:31:11] Added "background material (extended)" (ID: 226) to model
+[17:31:11] Added "background material (extended)" (ID: 233) to model
+[17:31:11] Added "background material (extended)" (ID: 240) to model
+[17:31:11] Added "background material (extended)" (ID: 247) to model
+[17:31:11] Added "background material (extended)" (ID: 254) to model
+[17:31:11] Added "background material (extended)" (ID: 261) to model
+[17:31:11] Added "background material (extended)" (ID: 268) to model
+[17:31:11] Added "background material (extended)" (ID: 275) to model
+[17:31:11] Added "background material (extended)" (ID: 282) to model
+[17:31:11] Added "background material (extended)" (ID: 289) to model
+[17:31:11] Added "background material (extended)" (ID: 296) to model
+[17:31:11] Added "background material (extended)" (ID: 303) to model
+[17:31:11] Added "background material (extended)" (ID: 310) to model
+[17:31:11] Added "background material (extended)" (ID: 317) to model
+[17:31:11] Added "background material (extended)" (ID: 324) to model
+[17:31:11] Added "background material (extended)" (ID: 331) to model
+[17:31:11] Added "background material (extended)" (ID: 338) to model
+[17:31:11] Added "background material (extended)" (ID: 345) to model
+[17:31:11] Added "background material (extended)" (ID: 352) to model
+[17:31:11] Added "background material (extended)" (ID: 359) to model
+[17:31:11] Added "background material (extended)" (ID: 366) to model
+[17:31:11] Added "background material (extended)" (ID: 373) to model
+[17:31:11] Added "background material (extended)" (ID: 380) to model
+[17:31:11] Added "background material (extended)" (ID: 387) to model
+[17:31:11] Added "background material (extended)" (ID: 394) to model
+[17:31:11] Added "background material (extended)" (ID: 401) to model
+[17:31:11] Added "background material (extended)" (ID: 408) to model
+[17:31:11] Added "background material (extended)" (ID: 415) to model
+[17:31:11] Added "background material (extended)" (ID: 422) to model
+[17:31:11] Added "background material (extended)" (ID: 429) to model
+[17:31:11] Added "background material (extended)" (ID: 436) to model
+[17:31:12] Added "background material (extended)" (ID: 443) to model
+[17:31:12] Added "background material (extended)" (ID: 450) to model
+[17:31:12] Added "background material (extended)" (ID: 457) to model
+[17:31:12] Added "background material (extended)" (ID: 464) to model
+[17:31:12] Added "background material (extended)" (ID: 471) to model
+[17:31:12] Added "background material (extended)" (ID: 478) to model
+[17:31:12] Added "background material (extended)" (ID: 485) to model
+[17:31:12] Added "background material (extended)" (ID: 492) to model
+[17:31:12] Added "background material (extended)" (ID: 499) to model
+[17:31:12] Added "background material (extended)" (ID: 506) to model
+[17:31:12] Added "background material (extended)" (ID: 513) to model
+[17:31:12] Added "background material (extended)" (ID: 520) to model
+[17:31:12] Added "background material (extended)" (ID: 527) to model
+[17:31:12] Added "background material (extended)" (ID: 534) to model
+[17:31:12] Added "background material (extended)" (ID: 541) to model
+[17:31:12] Added "background material (extended)" (ID: 548) to model
+[17:31:12] Added "background material (extended)" (ID: 555) to model
+[17:31:12] Added "background material (extended)" (ID: 562) to model
+[17:31:12] Added "background material (extended)" (ID: 569) to model
+[17:31:12] Added "background material (extended)" (ID: 576) to model
+[17:31:12] Added "background material (extended)" (ID: 583) to model
+[17:31:12] Added "background material (extended)" (ID: 590) to model
+[17:31:12] Added "background material (extended)" (ID: 597) to model
+[17:31:12] Added face port 1 (ID: 2352) to model
+[17:31:12] Added face port 2 (ID: 2361) to model
+[17:31:12] Added face port 3 (ID: 2370) to model
+[17:31:12] Added face port 4 (ID: 2379) to model
+[17:31:12] Added "Fill (extended)" (ID: 620) to model
+[17:31:12] Boolean Failed for "Fill (extended)", see journal #91
+[17:31:12] Feedback Incident added
+[17:31:12] Gathering information...
+[17:31:12] Boolean Failed: span info missing for ef_int construction
+[17:31:12] 0 Feedback Entities inserted: #0
+[17:31:12] 0 Feedback Entities inserted: #0
+[17:31:12] One Feedback Entity inserted: #1
+[17:31:12] Added "Fill (extended)" (ID: 624) to model
+[17:31:12] Boolean Failed for "Fill (extended)", see journal #92
+[17:31:12] Feedback Incident added
+[17:31:12] Gathering information...
+[17:31:12] Boolean Failed: span info missing for ef_int construction
+[17:31:12] 0 Feedback Entities inserted: #1
+[17:31:12] 0 Feedback Entities inserted: #1
+[17:31:12] One Feedback Entity inserted: #2
+[17:31:13] Added "Fill (extended)" (ID: 628) to model
+[17:31:13] Boolean Failed for "Fill (extended)", see journal #93
+[17:31:13] Feedback Incident added
+[17:31:13] Gathering information...
+[17:31:13] Boolean Failed: span info missing for ef_int construction
+[17:31:13] 0 Feedback Entities inserted: #2
+[17:31:13] 0 Feedback Entities inserted: #2
+[17:31:13] One Feedback Entity inserted: #3
+[17:31:13] Added "Fill (extended)" (ID: 632) to model
+[17:31:13] Boolean Failed for "Fill (extended)", see journal #94
+[17:31:13] Feedback Incident added
+[17:31:13] Gathering information...
+[17:31:13] Boolean Failed: span info missing for ef_int construction
+[17:31:13] 0 Feedback Entities inserted: #3
+[17:31:13] 0 Feedback Entities inserted: #3
+[17:31:13] One Feedback Entity inserted: #4
+[17:31:13] Feedback Incident removed.
+[17:31:13] Feedback Incident removed.
+[17:31:13] Feedback Incident removed.
+[17:31:13] Feedback Incident removed.
+[17:31:13] CST PublicException: Model could not be prepared for meshing. Boolean unite operation could not be performed for some shapes:
+"Fill (extended)"
+Meshing could not be started.
+[17:31:13] 
+#### Feedback Report Begins ####
+----------
+Display Group: Model
+Problem: Issue
+Item: Item 1
+Item Label: Mesh:Build:Model3d:BooleanUniteFail
+Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
+Description: The model components could not be added together.
+Cure: Check the model for near-coincidence faces near the highlighted face.
+Integer Data: 
+the id of the cell: 0
+Real Data: 
+Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 1"
+----------
+
+----------
+Display Group: Model
+Problem: Issue
+Item: Item 2
+Item Label: Mesh:Build:Model3d:BooleanUniteFail
+Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
+Description: The model components could not be added together.
+Cure: Check the model for near-coincidence faces near the highlighted face.
+Integer Data: 
+the id of the cell: 1
+Real Data: 
+Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 2"
+----------
+
+----------
+Display Group: Model
+Problem: Issue
+Item: Item 3
+Item Label: Mesh:Build:Model3d:BooleanUniteFail
+Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
+Description: The model components could not be added together.
+Cure: Check the model for near-coincidence faces near the highlighted face.
+Integer Data: 
+the id of the cell: 2
+Real Data: 
+Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 3"
+----------
+
+----------
+Display Group: Model
+Problem: Issue
+Item: Item 4
+Item Label: Mesh:Build:Model3d:BooleanUniteFail
+Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
+Description: The model components could not be added together.
+Cure: Check the model for near-coincidence faces near the highlighted face.
+Integer Data: 
+the id of the cell: 3
+Real Data: 
+Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 4"
+----------
+
+#### Feedback Report Ends ####
+
+[17:31:13] Done
+=== END SESSION ============================================================

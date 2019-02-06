@@ -1,0 +1,65 @@
+\documentclass[border=0pt]{standalone}
+\input{../header.tex}
+\begin{document}
+
+\begin{tikzpicture}[scale = 0.3,x=1cm,y=-1.2cm] % STYLES
+\newcommand{\var}[2]{$#1_{\mathrm{#2}}$}
+
+\draw[draw=none, use as bounding box](18,3) rectangle (47,15);
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Set Nodes
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\node[Node, Interm] (id446276) at (20, 10) {};
+    \node[NodeName n] at (id446276) {$V_{\mathrm{in}}$};
+\node[Node, Interm] (id446278) at (25, 10) {};
+    \node[NodeName, above, xshift=-5] at (id446278) {$I_{\mathrm{v}}$};
+\node[Node, Interm] (id446280) at (30, 10) {};
+    \node[NodeName n] at (id446280) {$V_{\mathrm{v}}$};
+\node[Node, Interm] (id446282) at (35, 10) {};
+    \node[NodeName, above left, xshift=3] at (id446282) {$I_{\mathrm{x}}$};
+\node[Node, Interm] (id446284) at (40, 10) {};
+    \node[NodeName n] at (id446284) {$V_{\mathrm{x}}$};
+\node[Node, Interm] (id446286) at (45, 10) {};
+    \node[NodeName, above, xshift=5] at (id446286) {$V_{\mathrm{out}}$};
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Set Branches
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Branch from Node Vin to Node Iv
+\draw[->-,Connection] (id446276) -- node[ArrowName, below]{$G_1$}(id446278);
+
+% Branch from Node Iv to Node Vv
+\draw[->-,Connection] (id446278) -- node[ArrowName, below]{$Z_{\mathrm{v}}$}(id446280);
+
+% Branch from Node Vv to Node Ix
+\draw[->-,Connection] (id446280) -- node[ArrowName, below]{$G_{\mathrm{A}}$}(id446282);
+
+% Branch from Node Ix to Node Vx
+\draw[->-,Connection] (id446282) -- node[ArrowName, below]{$Z_{\mathrm{x}}$}(id446284);
+
+% Branch from Node Vx to Node Vout
+\draw[->-,Connection] (id446284) -- node[ArrowName, below]{$-A$}(id446286);
+
+% Branch from Node Vx to Node Iv
+\node[NodeBezier] (idBezier0) at (37,13) {};
+\node[NodeBezier] (idBezier1) at (28,13) {};
+\draw[->-,Connection] (id446284) ..controls(idBezier0) and (idBezier1).. node[ArrowName, below]{$G_{\mathrm{A}}$}(id446278);
+
+% Branch from Node Vout to Node Ix
+\node[NodeBezier] (idBezier0) at (42,6.5) {};
+\node[NodeBezier] (idBezier1) at (38,6.5) {};
+\draw[->-,Connection] (id446286) ..controls(idBezier0) and (idBezier1).. node[ArrowName, below]{$sC_1$}(id446282);
+
+% Branch from Node Vout to Node Iv
+\node[NodeBezier] (idBezier0) at (42,4) {};
+\node[NodeBezier] (idBezier1) at (28,4) {};
+\draw[->-,Connection] (id446286) ..controls(idBezier0) and (idBezier1).. node[ArrowName, below]{$sC_1$}(id446278);
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% End Tikz Figure
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\end{tikzpicture}
+\end{document}

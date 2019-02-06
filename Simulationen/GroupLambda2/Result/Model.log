@@ -1,0 +1,312 @@
+Please note that the transient solver excitation is defined for a single
+reference frequency. The results for other frequencies might be misleading.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 05:44 PM Saturday, 12. January 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Simultaneous excitation
+======================================================================
+
+Phase Reference Frequency: 1 GHz
+
+Stimulation at discrete port 1 [Amplitude 1, Phase 0 degrees]
+Stimulation at discrete port 2 [Amplitude 1, Phase 90 degrees]
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge ports are connected to metal material:
+	1, 2
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 2
+      Number of calculation domains used: 2
+
+   PBA fill limit: 99.00% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: expanded open, 4 Layer, depth 36.4526 mm
+  Xmax: expanded open, 4 Layer, depth 36.4526 mm
+
+  Ymin: expanded open, 4 Layer, depth 36.4526 mm
+  Ymax: expanded open, 4 Layer, depth 36.4526 mm
+
+  Zmin: expanded open, 4 Layer, depth 37.3834 mm
+  Zmax: expanded open, 4 Layer, depth 37.3834 mm
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	561562
+  Number of TST elements:		20
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20584                         4298452      4298452      
+  Matrices calc.      72516                         4225324      4195492      
+  Solver run total    49492                         4352340      4196260      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	90112
+  Excitation duration:              	7.35909750e+000 ns 
+  Calculation time for excitation:  	14 	s
+  Number of calculated pulse widths:	1.00677 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	4059 
+  Maximum number of time steps:     	80634 
+  Time step width:
+     without subcycles:             	1.82529814e-003 ns
+     used:                          	1.82529814e-003 ns
+
+  CAD preparation time:          	0      	s
+  Matrix calculation time:          	9 	s
+  Solver setup time:                	3 	s
+  Solver loop time:                 	14 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	27 	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	27     	s
+                                    	------------
+  Total simulation time:            	27     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 05:45 PM Saturday, 12. January 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------
+Please note that the transient solver excitation is defined for a single
+reference frequency. The results for other frequencies might be misleading.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 05:47 PM Saturday, 12. January 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Simultaneous excitation
+======================================================================
+
+Phase Reference Frequency: 1 GHz
+
+Stimulation at discrete port 1 [Amplitude 1, Phase 0 degrees]
+Stimulation at discrete port 2 [Amplitude 1, Phase 90 degrees]
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: expanded open, 4 Layer, depth 36.4526 mm
+  Xmax: expanded open, 4 Layer, depth 36.4526 mm
+
+  Ymin: expanded open, 4 Layer, depth 36.4526 mm
+  Ymax: expanded open, 4 Layer, depth 36.4526 mm
+
+  Zmin: expanded open, 4 Layer, depth 37.3834 mm
+  Zmax: expanded open, 4 Layer, depth 37.3834 mm
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	561562
+  Number of TST elements:		20
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20584                         4298452      4298452      
+  Matrices calc.      72516                         4225324      4195492      
+  Solver run total    49712                         2726628      2699056      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	90112
+  Excitation duration:              	7.35909750e+000 ns 
+  Calculation time for excitation:  	14 	s
+  Number of calculated pulse widths:	1.00677 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	4059 
+  Maximum number of time steps:     	80634 
+  Time step width:
+     without subcycles:             	1.82529814e-003 ns
+     used:                          	1.82529814e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	3 	s
+  Solver loop time:                 	14 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	18 	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	18     	s
+                                    	------------
+  Total simulation time:            	18     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 05:47 PM Saturday, 12. January 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------

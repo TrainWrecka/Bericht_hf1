@@ -1,0 +1,74 @@
+\documentclass[final]{fhnwreport}       %[mode] = draft or final
+                                        %{class} = fhnwreport, article, 
+                                        %          report, book, beamer, standalone
+
+\input{header}			                %loads all packages, definitions and settings												
+\title{Antennensimulationen in CST - Bericht hf1}          %Project Title
+\author{Simon Zoller, Thomas Frei}          %Document Type => Technical Report, ...
+\date{Windisch, \today}             %Place and Date
+
+
+\begin{document}
+
+%%---TITLEPAGE---------------------------------------------------------------------------
+\selectlanguage{english}                %ngerman or english
+\maketitle
+
+\vspace*{-1cm}						    %compensates the space after the date line.
+\vfill
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=\linewidth]{titelbild.pdf}
+%\end{figure}
+\vfill
+
+{
+\renewcommand\arraystretch{2}
+\begin{center}
+\begin{tabular}{>{\bf}p{4cm} l}
+Universität                &    Fachhochschule Nordwestschweiz\\
+Studiengang                &    Elektro- und Informationstechnik\\
+Autor   		           & 	Simon Zoller, Thomas Frei\\
+Betreuer                   &    Christoph Wildfeuer und Peter Niklaus\\
+Version                    &    1.0 %Normally not used!
+\end{tabular}
+\end{center}
+}
+
+\clearpage
+			
+%%---ABSTRACT----------------------------------------------------------------------------
+\selectlanguage{english}				%ngerman or english
+\thispagestyle{empty}
+\include{sections/abstract}
+
+%%---TABLE OF CONTENTS-------------------------------------------------------------------
+\pagenumbering{Roman}		
+\selectlanguage{english}				%ngerman or english
+\tableofcontents
+\clearpage
+
+%%---TEXT--------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\include{sections/Einleitung}
+\include{sections/Dipole}
+
+%%---BIBLIOGRAPHY------------------------------------------------------------------------
+{\sloppypar
+\printbibliography[heading=bibintoc]
+\label{sec:lit}
+}
+
+%%---APPENDIX----------------------------------------------------------------------------
+%\include{sections/appendix}
+
+%%---NOTES for DEBUG---------------------------------------------------------------------
+\ifdraft{%Do this only if mode=draft
+%%requires \usepackage{todonotes})
+\newpage
+\listoftodos[\section{Todo-Notes}]
+\clearpage
+}
+{%Do this only if mode=final 
+}
+\end{document}

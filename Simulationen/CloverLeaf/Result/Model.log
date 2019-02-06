@@ -1,0 +1,17 @@
+In order to get an optimal performance, hyperthreading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+*** Error ***
+
+Model could not be prepared for meshing. Boolean unite operation could not be
+performed for some shapes:
+"Fill (extended)"
+Meshing could not be started.
+
+--------------------------------------------------------------------------------
+*** Error ***
+
+Could not read mesh.
+
+--------------------------------------------------------------------------------

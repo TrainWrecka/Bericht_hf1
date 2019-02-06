@@ -1,0 +1,21 @@
+@CACHEFILEVERSION 2
+@DOUBLE
+-r1
+-100
+-ss
+-4
+-zz
+-3
+r1
+100
+ra
+1
+raa
+2.5
+raa+ws
+3
+rr
+1
+ss
+4
+@LONG

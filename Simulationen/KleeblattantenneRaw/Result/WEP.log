@@ -1,0 +1,131 @@
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:
+                                             Discrete port: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:
+                                             Discrete port: 2
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:
+                                             Discrete port: 3
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # edges: 3
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, point: 5715
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, wire ends: (-4.00 | -0.70 | 0.70)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, pos (-3.50 | -1.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1, point: 7608
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1, wire ends: (-1.01 | -2.84 | 2.81)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1, pos (-1.00 | -2.50 | 3.53)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1 is inside PEC
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # endings: 2, # corrected: 1, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  connection state of ending 1: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:
+                                             Discrete port: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # edges: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, point: 5630
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, wire ends: (0.71 | -4.00 | 0.71)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0, pos (1.00 | -4.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 0 is at boundary: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1, point: 5674
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  ending 1, wire ends: (2.83 | -1.00 | 2.83)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  # endings: 1, # corrected: 0, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN000:  connection state of ending 1: -1
+
+
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:
+                                             Discrete port: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:
+                                             Discrete port: 2
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:
+                                             Discrete port: 3
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:
+                                             Discrete port: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  # edges: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 0, point: 5590
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 0, wire ends: (0.71 | -4.00 | 0.71)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 0, pos (1.00 | -4.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 0 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 1, point: 7615
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 1, wire ends: (2.83 | -1.00 | 2.83)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 1, pos (2.50 | -1.00 | 3.53)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 1 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  ending 1 is inside PEC
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  # endings: 2, # corrected: 1, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN001:  connection state of ending 1: 1
+
+
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:
+                                             Discrete port: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # edges: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, point: 6114
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, wire ends: (4.00 | 0.71 | 0.71)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, point: 6158
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, wire ends: (1.00 | 2.83 | 2.83)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, pos (1.00 | 2.50 | 3.53)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1 is at boundary: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # endings: 1, # corrected: 0, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 0: -1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 1: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:
+                                             Discrete port: 2
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # edges: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, point: 4220
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, wire ends: (-0.71 | 4.00 | 0.71)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, pos (-1.00 | 4.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, point: 6111
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, wire ends: (-2.83 | 1.00 | 2.83)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, pos (-3.50 | 1.00 | 3.53)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1 is inside PEC
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # endings: 2, # corrected: 1, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 1: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:
+                                             Discrete port: 3
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # edges: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, point: 4043
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, wire ends: (-4.00 | -0.70 | 0.70)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0, pos (-3.50 | -1.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 0 is at boundary: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, point: 4044
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  ending 1, wire ends: (-1.01 | -2.84 | 2.81)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # endings: 1, # corrected: 0, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  connection state of ending 1: -1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:
+                                             Discrete port: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN002:  # edges: 0
+
+
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:
+                                             Discrete port: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  # edges: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 0, point: 4096
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 0, wire ends: (4.00 | 0.71 | 0.71)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 0, pos (4.00 | 1.00 | 1.00)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 0 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 1, point: 6118
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 1, wire ends: (1.00 | 2.83 | 2.83)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 1, pos (1.00 | 2.50 | 3.53)
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 1 is at boundary: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  ending 1 is inside PEC
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  # endings: 2, # corrected: 1, not corrected: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  connection state of ending 0: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  connection state of ending 1: 1
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:
+                                             Discrete port: 2
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:
+                                             Discrete port: 3
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  # edges: 0
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:
+                                             Discrete port: 4
+matrixcalc_AMD64 @ DESKTOP-N89I2CN: 1xN003:  # edges: 0
+
+

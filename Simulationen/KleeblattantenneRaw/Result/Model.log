@@ -1,0 +1,136 @@
+In order to get an optimal performance, hyperthreading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Discrete face ports are treated as discrete edge ports in the frequency domain
+solver with hexahedral mesh.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The frequency domain solver with hexahedral mesh does not support lossy metal
+and other surface impedance materials. They will be treated as PEC. Please
+consider using the tetrahedral mesh.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The monitor e-field (f=0.75) is outside simulation frequency range and will be
+ignored.
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  MHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge ports are connected to metal material:
+	1, 2, 3, 4
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+93 mesh cells are represented in staircase mode and have been filled with PEC.
+378 mesh faces are represented in staircase mode and have been filled with PEC.
+4 mesh edges are represented in staircase mode and have been filled with PEC.
+ More...
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 4
+      Number of calculation domains used: 4
+
+   PBA fill limit: 98.07% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+Frequency domain solver does not support TST cells.
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+--------------------------------------------------------------------------------
+Port: 1
+
+
+--------------------------------------------------------------------------------
+Port: 2
+
+
+--------------------------------------------------------------------------------
+Port: 3
+
+
+--------------------------------------------------------------------------------
+Port: 4
+
+
+--------------------------------------------------------------------------------
+  Mesh time                :	18 s
+
+
+--------------------------------------------------------------------------------
+There are no remaining frequency samples. The results either have been 
+calculated already, or are sufficiently dense.
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Frequency Domain Solver calculation cycle started
+
+--------------------------------------------------------------------------------
+Solver started at: 05:28 PM Friday, 01. February 2019
+
+  Module:  Frequency Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+--------------------------------------------------------------------------------
+  Total Solver Time        :	18 s
+================================================================================
+
+
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      40360                         6855860      6855860      
+  Solver start        16268                         6896028      6896028      
+  Solver run total    67536                         6896032      6625900      
+
+  Computer name       DESKTOP-N89I2CN
+  ----------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------

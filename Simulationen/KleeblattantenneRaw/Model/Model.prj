@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+Peter Niklaus
+[Mesh Cells]
+209,160
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f-hex
+[Results]
+Frequency Domain: S-Parameter
+[Modeler Unique ID]
+5:kleeblattantenneraw.cst?765c4664568e15550771d5f55701ce76?54883:numberofparameters=7:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0?port=3>mode=1>zre=0>zim=0?port=4>mode=1>zre=0>zim=0:::r1?ra?raa?rr?ss?ws?zz
+[Comment]

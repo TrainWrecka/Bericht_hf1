@@ -1,0 +1,46 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+\begin{document}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+  \def\yIns{3}
+  \def\ySen{9}
+
+
+  
+  %(0,\ySen)
+  \draw [o-] (0,\ySen) node[left] {$u_\mathrm{in}$} -- (1.5,\ySen);
+  %(1,\ySen)
+  \draw (1.5,\ySen) to [C=$C_1$] (1.5,\ySen-2) node [ground] {};
+  %(4,\ySen)
+  \draw (4,\ySen) to [C=$C_2$] (4,\ySen-2) node [ground] {};
+  \draw [-o] (4,\ySen) -- (5.5,\ySen) node[right] {$u_\mathrm{out}$};
+  
+  
+  %(9,\ySen)
+  \draw [o-] (9,\ySen) node[left] {$u_\mathrm{in}$} -- (9.5,\ySen);
+  %(11,\ySen)
+  \draw (10.5,\ySen) to [C=$C_1$] (10.5,\ySen-2) node [ground] {};
+  \draw (10.5, \ySen) -- (13.5,\ySen);
+  %(13,\ySen)
+  \draw (13,\ySen) to [C=$C_2$, *-] (13,\ySen-2) node [ground] {};
+  \draw [-o] (13,\ySen) -- (14.5,\ySen) node[right] {$u_\mathrm{out}$};
+
+
+
+
+  \node[above] at (2.75,\ySen+0.25) {Odd};
+  \node[above] at (11.75,\ySen+0.25) {Even};
+
+
+
+\end{circuitikz}
+
+\end{document}

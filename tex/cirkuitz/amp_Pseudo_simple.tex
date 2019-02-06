@@ -1,0 +1,82 @@
+\documentclass{standalone}
+%
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%
+
+% !!!!!!!!!IN USE!!!!!!!!!!
+
+\begin{document}
+  \def\grid#1#2#3#4{%
+    \begin{scope}
+      %Grid for intial drawing.
+      \def\figXs{#1}; \def\figXe{#3}; % From Xs to Xe
+      \def\figYs{#2}; \def\figYe{#4}; % From Ys to Ye
+      \draw [step=0.1,gray!10,very thin] (\figXs,\figYs) grid (\figXe,\figYe);
+      \draw [step=0.5,gray!30,very thin, dashed] (\figXs,\figYs) grid
+      (\figXe,\figYe); 
+      \draw [step=1,gray!50,very thin] (\figXs,\figYs) grid (\figXe,\figYe);
+      %\draw[blue,dotted, very thick] (\figXs,0) -- (\figXe,0);\draw[blue,dotted, very thick] (0,\figYs) -- (0,\figYe);
+      \foreach \x in {\figXs,...,\figXe} {
+        \node [anchor=north] at (\x,\figYs) {\x};}
+      \foreach \x in {\figXs,...,\figXe} {
+        \node [anchor=south] at (\x,\figYe) {\x};}
+      \foreach \y in {\figYs,...,\figYe} {
+        \node [anchor=east] at (\figXs,\y) {\y};}
+	  \foreach \y in {\figYs,...,\figYe} {
+        \node [anchor=west] at   (\figXe,\y) {\y};}
+   \end{scope}
+}
+
+\begin{circuitikz}[american currents,american voltages,line width=0.25mm]
+    \onlyifstandalone{
+      \grid{0}{-5}{12}{4}
+    }
+    
+ 
+    %alpha block positions
+    \def\alX{1};
+    \def\alY{0};
+    \def\comD{1.5};
+    
+    %draw alpha block 
+    \draw (\alX + 2.5 ,\alY) node[circ](mid){} 					%connect R B to reference ground	
+	to [R, l_=$R_{\mathrm{B}}$] (\alX + 2.5 ,\alY - 2*\comD) node[sground]{};	
+      
+    
+    \draw (\alX + \comD ,\alY) node[pfet=$Q_1$, rotate=-90, yscale=-1](QA){};	%draw FET A
+    \draw (QA.S) node[above]{$Q_{\mathrm{A}}$};											%name FETs
+%    \draw (al) to (\alX ,\alY) node[circ](al){} to (QA.S);					%connect both sources
+    \draw (QA.G) node[ocirc]{} node[left]{$V_{{\mathrm{bA}}}$};  							%draw gate voltage input
+	\draw (QA.B) to (QA.S);														%connect bulk to source
+	
+	%input to transistor
+    \draw (1,0) node[ocirc]{} node[left]{$V_{{\mathrm{in}}}$} 
+    to (QA.S);	
+    
+
+	
+	
+	
+	%opamp positions
+	\def\opX{6.5};
+	\def\opY{-0.5};
+	
+	%draw opamp circuit with feedback
+	\draw (\opX ,\opY ) node[op amp, yscale=-1](op1) {};					%opamp model
+	%\draw (\opX + \comD, \opY + \comD) node[circ](opn){};		%node top right
+	\draw (op1.-) -| (\opX - \comD , \opY - 1.5) -| (op1.out) node[circ]{};	%draw reference ground
+	\draw (op1.+) to (mid);	%draw reference ground
+
+	\draw (QA.D) to (mid);						%connect alpha to op
+    
+    
+    
+    %output node
+    \draw (op1.out)				%draw circle
+    to (\opX  + 2.5,\opY) node[ocirc]{} node[right]{$V_{{\mathrm{out}}}$};	
+  \end{circuitikz}
+\end{document}

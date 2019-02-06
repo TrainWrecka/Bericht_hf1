@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+ThomasNotebook
+[Mesh Cells]
+69,696
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:doublegroup.cst?c549ed22910b96dcfb1e3e49b1e5e46b?27220:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::l
+[Comment]
