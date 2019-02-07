@@ -1,0 +1,153 @@
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 05:57 PM Wednesday, 06. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge port is connected to metal material:
+	1
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 2
+      Number of calculation domains used: 2
+
+   PBA fill limit: 98.81% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: expanded open, 4 Layer, depth 0.0364526 m
+  Xmax: expanded open, 4 Layer, depth 0.0364526 m
+
+  Ymin: expanded open, 4 Layer, depth 0.0364526 m
+  Ymax: expanded open, 4 Layer, depth 0.0364526 m
+
+  Zmin: expanded open, 4 Layer, depth 0.0364526 m
+  Zmax: expanded open, 4 Layer, depth 0.0364526 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	604539
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20544                         3818636      3818636      
+  Matrices calc.      87540                         3771348      3737320      
+  Solver run total    52952                         3838756      3717212      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	96668
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	24 	s
+  Number of calculated pulse widths:	3.27614 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	18928 
+  Maximum number of time steps:     	115550 
+  Time step width:
+     without subcycles:             	1.23047479e-003 ns
+     used:                          	1.23047479e-003 ns
+
+  CAD preparation time:          	0      	s
+  Matrix calculation time:          	9 	s
+  Solver setup time:                	3 	s
+  Solver loop time:                 	85 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	98 	s  ( = 0 h, 1 m, 38 s )
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	98     	s  ( = 0 h, 1 m, 38 s )
+                                    	------------
+  Total simulation time:            	98     	s  ( = 0 h, 1 m, 38 s )
+
+--------------------------------------------------------------------------------
+Solver finished at: 05:59 PM Wednesday, 06. February 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 4
+
+--------------------------------------------------------------------------------
