@@ -16,9 +16,9 @@ TerminalSourceGroups:
 PortSourceGroups:
 FloquetPortSourceGroups:
 Number of frequency-points: 1
-Fmin: 5.000000e+08
-Fmax: 1.500000e+09
-Fscale: 1.000000e+09
+Fmin: 9.000000e+05
+Fmax: 1.100000e+06
+Fscale: 1.000000e+06
 
 
 
@@ -30,9 +30,9 @@ Portname: 1
 Modenumber: 1
 Modetype: 6
 Zline: 5.000000e+01 0.000000e+00
-Fdev: 1.000000e+09
-Fmin: 5.000000e+08
-Fmax: 1.500000e+09
+Fdev: 1.000000e+06
+Fmin: 9.000000e+05
+Fmax: 1.100000e+06
 PortModeConsState: 0
 *** endmode
 

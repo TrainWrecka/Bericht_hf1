@@ -2,6 +2,8 @@
 
 %Thomas Frei & Simon Zoller
 
+%% Hertzscher Dipol
+
 %Kugelkoordinaten
 theta=0:0.01:2*pi;
 phi = 0:0.01:2*pi;
@@ -40,3 +42,34 @@ for ind=1:6
     rlim([0 1]);
     title(plotTitle{ind});
 end
+
+%% Linearantennen
+
+C = cell(4);
+theta=0:0.01:pi;
+
+%Hertzscher Dipol
+C{1} = sin(theta);
+
+%Halbwellendipol
+C{2} = cos(pi/2*cos(theta))./sin(theta);
+
+%Ganzwellendipol
+C{3} = cos(pi/2*cos(theta)).^2./sin(theta);
+
+%Doppelwellendipol
+C{4} = sin(pi*cos(theta)).^2./sin(theta);
+
+%Plot Resultate
+figure();
+hold on
+for ind=1:4
+    plot(theta, C{ind});
+end
+
+ylim([0 1.6]);
+xlim([0 pi]);
+title('Abhängigkeit der Richtcharakteristik von theta');
+legend('Hertzscher Dipol', 'Halbwellendipol', 'Ganzwellendipol', 'Doppelwellendipol');
+xlabel('theta [rad]');
+ylabel('Richtcharakteristik');

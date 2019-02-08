@@ -1,0 +1,10 @@
+% Encoding: UTF-8
+
+@Book{b,
+  title     = {Antennen und Strahlungsfelder},
+  publisher = {Vieweg+Teubner},
+  year      = {2011},
+  author    = {Klaus W. Kark},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -7,30 +7,27 @@ Parameter Values:
 
    n = 1
 
-Simulation for this parameter combination has already been performed (run ID found).
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 0 min., 51 sec.
 --------------------------------------------------------------------------
 Parameter Values: 
 
    n = 2
 
-Simulation for this parameter combination has already been performed (run ID found).
+Structure update: Successful
+          Solver: Successful
+     Solver time: 0 hours, 1 min., 45 sec.
 --------------------------------------------------------------------------
 Parameter Values: 
 
    n = 3
 
-Simulation for this parameter combination has already been performed (run ID found).
---------------------------------------------------------------------------
-Parameter Values: 
-
-   n = 4
-
 Structure update: Successful
           Solver: Successful
-     Solver time: 0 hours, 1 min., 43 sec.
+     Solver time: 0 hours, 2 min., 37 sec.
 --------------------------------------------------------------------------
-3 parameter combinations were skipped in the parameter sweep because they were already performed previously.
 
 ==========================================================================
-Total solver time: 0 hours, 1 min., 43 sec.
+Total solver time: 0 hours, 5 min., 13 sec.
 ==========================================================================
