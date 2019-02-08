@@ -2,6 +2,7 @@
 \BOOKMARK [1][-]{section.2}{2 Hertzscher Dipol}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{2.1 Theorie}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{2.2 Richtdiagramm}{section.2}% 4
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.2.3}{2.3 Simulation}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{3 Linearantennen}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{3.1 Theorie}{section.3}% 7
@@ -10,3 +11,18 @@
 \BOOKMARK [2][-]{subsection.4.1}{4.1 Theorie}{section.4}% 10
 \BOOKMARK [2][-]{subsection.4.2}{4.2 Simulation}{section.4}% 11
 \BOOKMARK [1][-]{section*.13}{References}{}% 12
+=======
+<<<<<<< HEAD
+\BOOKMARK [2][-]{subsection.2.3}{2.3 Linearantenne}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{2.4 Simulation}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{2.5 Simulationen}{section.2}% 7
+=======
+\BOOKMARK [2][-]{subsection.2.3}{2.3 Simulationen}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{3 Gruppenantennen}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Querstrahler}{section.3}% 7
+<<<<<<< HEAD
+\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 Simulation}{subsection.3.1}% 8
+=======
+>>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
+>>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
+>>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
