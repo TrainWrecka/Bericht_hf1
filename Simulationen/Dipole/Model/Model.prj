@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+ThomasNotebook
+[Mesh Cells]
+96,668
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:dipole.cst?3bc5c19d54f86817ffe79c5daa1ec283?25844:numberofparameters=6:port=1>mode=1>zre=0>zim=0:::d?l?n?lambda?c?f
+[Comment]
