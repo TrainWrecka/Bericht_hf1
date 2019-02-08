@@ -16,5 +16,34 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{book}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ad04d9ec79375087d511e86080bd2a95}{%
+           family={Kark},
+           familyi={K\bibinitperiod},
+           given={Klaus\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Vieweg+Teubner}%
+      }
+      \strng{namehash}{ad04d9ec79375087d511e86080bd2a95}
+      \strng{fullhash}{ad04d9ec79375087d511e86080bd2a95}
+      \strng{bibnamehash}{ad04d9ec79375087d511e86080bd2a95}
+      \strng{authorbibnamehash}{ad04d9ec79375087d511e86080bd2a95}
+      \strng{authornamehash}{ad04d9ec79375087d511e86080bd2a95}
+      \strng{authorfullhash}{ad04d9ec79375087d511e86080bd2a95}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Antennen und Strahlungsfelder}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
