@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  7 FEB 2019 14:35
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  6 FEB 2019 16:58
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  8 FEB 2019 15:35
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -1811,7 +1807,6 @@ File: pgflibraryshapes.multipart.code.tex 2019/01/05 v3.1 (3.1)
 \pgfnodepartsixbox=\box119
 \pgfnodepartfivebox=\box120
 )))
-<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
 librarydecorations.markings.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibraryd
@@ -1829,25 +1824,7 @@ File: tikzlibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibrarypatterns.code
 .tex"
 File: pgflibrarypatterns.code.tex 2019/01/05 v3.1 (3.1)
-=======
-(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarydecorations.markings.code.tex
-(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
-orations.markings.code.tex))
-(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarybackgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box120
-\pgf@layerboxsaved@background=\box121
-)
-(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
-
-(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.t
-ex
-File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
-)) (./mcode.sty
+)) (mcode.sty
 -- Package: `mcode' 2.7 <2015/11/11> --
 Package: mcode 2015/11/11 2.7
  - settings optimized for display (colour formating)
@@ -1855,11 +1832,10 @@ Package: mcode 2015/11/11 2.7
  - literate programming (character replacements) enabled
  - automatic line breaking enabled (careful, buggy!)
  - framed listings
-\lbreakdots=\box122
+\lbreakdots=\box123
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 230.
-(c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
 )))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1872,7 +1848,6 @@ Package biblatex Warning: File 'ngerman-ieee.lbx' not found!
 
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
-<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\ngerman.lbx"
 File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 
@@ -1880,11 +1855,6 @@ File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Warning: File 'german-ieee.lbx' not found!
 (biblatex)                Ignoring mapping 'german' -> 'german-ieee'.
 
-=======
-
-(c:/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
-File: ngerman.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\german.lbx"
@@ -1905,7 +1875,8 @@ Package biblatex Info: ... file 'english.lbx' found.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 ) (Report.aux
-(sections/abstract.aux) (sections/Einleitung.aux) (sections/Dipole.aux))
+(sections/abstract.aux) (sections/Einleitung.aux) (sections/Dipole.aux)
+(sections/Gruppenantennen.aux))
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1970,19 +1941,11 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-<<<<<<< HEAD
 \scratchcounter=\count487
 \scratchdimen=\dimen347
-\scratchbox=\box123
+\scratchbox=\box124
 \nofMPsegments=\count488
 \nofMParguments=\count489
-=======
-\scratchcounter=\count483
-\scratchdimen=\dimen346
-\scratchbox=\box123
-\nofMPsegments=\count484
-\nofMParguments=\count485
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
 \everyMPshowfont=\toks52
 \MPscratchCnt=\count490
 \MPscratchDim=\dimen348
@@ -2001,16 +1964,8 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-<<<<<<< HEAD
 )
-=======
-
-(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
-\AtBeginShipoutBox=\box124
+\AtBeginShipoutBox=\box125
 Package hyperref Info: Link coloring OFF on input line 11.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
@@ -2106,11 +2061,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 11.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<<<<<<< HEAD
-<fhnwlogo.pdf, id=46, 183.81773pt x 28.4543pt>
-=======
-<fhnwlogo.pdf, id=23, 183.81773pt x 28.4543pt>
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+<fhnwlogo.pdf, id=58, 183.81773pt x 28.4543pt>
 File: fhnwlogo.pdf Graphic file (type pdf)
 <use fhnwlogo.pdf>
 Package pdftex.def Info: fhnwlogo.pdf  used on input line 16.
@@ -2151,202 +2102,132 @@ l.53 \include{sections/Einleitung}
 ]
 \openout2 = `sections/Dipole.aux'.
 
-<<<<<<< HEAD
  (sections/Dipole.tex
-=======
- (./sections/Dipole.tex
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
+Overfull \hbox (4.53291pt too wide) in paragraph at lines 7--8
+\T1/lmr/m/n/10.95 schema-tisch als De-for-ma-tion eines geschlosse-nen Schwingk
+reises, wie in Ab-bil-dung []2.1[] beschrieben|
  []
 
+
+Overfull \hbox (11.74252pt too wide) in paragraph at lines 25--26
+[]\T1/lmr/m/n/10.95 In der Ab-bil-dung []2.1[] ist die Min-imierung der In-duk-
+tiv-it�t und der Ka-paz-it�t sym-bol-isch dargestellt.|
+ []
+
+<./graphics/entstehung.png, id=100, 474.27188pt x 166.12062pt>
+File: ./graphics/entstehung.png Graphic file (type png)
+<use ./graphics/entstehung.png>
+Package pdftex.def Info: ./graphics/entstehung.png  used on input line 29.
+(pdftex.def)             Requested size: 341.43306pt x 119.5966pt.
+<./graphics/hertzscher_dipol.png, id=102, 303.1325pt x 284.06125pt>
+File: ./graphics/hertzscher_dipol.png Graphic file (type png)
+<use ./graphics/hertzscher_dipol.png>
+Package pdftex.def Info: ./graphics/hertzscher_dipol.png  used on input line 37
+.
+(pdftex.def)             Requested size: 182.09485pt x 170.64177pt.
 [2
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
-
-! Package inputenc Error: Unicode character  (U+F0AE)
-(inputenc)                not set up for use with LaTeX.
-
-<<<<<<< HEAD
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ab. Für r 
-                     kann die Kugelwelle lokal durch eine homogene ebene ...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
 
 
-! Package inputenc Error: Unicode character  (U+F0A5)
-(inputenc)                not set up for use with LaTeX.
+ <./graphics/entstehung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ab. Für r  
-                        kann die Kugelwelle lokal durch eine homogene ebene ...
+ []
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character  (U+F028)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ... in Abhängigkeit von der Raumrichtung 
-                                                    , .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character  (U+F029)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ...Abhängigkeit von der Raumrichtung  
-                                                   , .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character  (U+F06A)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ...ngigkeit von der Raumrichtung   ,
-                                                   .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! Package inputenc Error: Unicode character  (U+F04A)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ...gkeit von der Raumrichtung   ,
-                                                   .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-) [2
-
-
-] [3]
-=======
-]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[3 <./graphics/hertzscher_dipol.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Overfull \hbox (4.29018pt too wide) in paragraph at lines 52--53
+Overfull \hbox (4.29018pt too wide) in paragraph at lines 81--82
 []\T1/lmr/m/n/10.95 Zur Ver-i-fika-tion wurde zuerst ein MATLAB-Code er-stellt,
  welcher die Po-larko-or-di-naten darstellen|
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 60.
-(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 89.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+) [4]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 103.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 132.
 
-(c:/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4]
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+)
+Overfull \hbox (3.25584pt too wide) in paragraph at lines 132--133
+\T1/lmr/m/n/10.95 beschreiben die Bre-ite der Haup-tkeule, wobei der Winkel unt
+er welchem die H�lfte der Strahlungs-|
+ []
 
-LaTeX Warning: Empty bibliography on input line 58.
+) [5]
+\openout2 = `sections/Gruppenantennen.aux'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ (sections/Gruppenantennen.tex
+Overfull \hbox (9.87761pt too wide) in paragraph at lines 2--3
+\T1/lmr/m/n/10.95 vorhan-den ist. Mit der Richtwirkung l�sst sich der St�rab-st
+and verbessern, da m�gliche St�rquellen|
+ []
+
+<./graphics/gruppenantennen.png, id=194, 608.77437pt x 284.56313pt>
+File: ./graphics/gruppenantennen.png Graphic file (type png)
+<use ./graphics/gruppenantennen.png>
+Package pdftex.def Info: ./graphics/gruppenantennen.png  used on input line 17.
+
+(pdftex.def)             Requested size: 341.43306pt x 159.60176pt.
+<./graphics/dipolzeile.png, id=195, 502.87875pt x 141.02687pt>
+File: ./graphics/dipolzeile.png Graphic file (type png)
+<use ./graphics/dipolzeile.png>
+Package pdftex.def Info: ./graphics/dipolzeile.png  used on input line 28.
+(pdftex.def)             Requested size: 341.43306pt x 95.75067pt.
+) [6
+
+
+ <./graphics/gruppenantennen.png>] [7 <./graphics/dipolzeile.png>]
+
+LaTeX Warning: Empty bibliography on input line 59.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 (Report.aux (sections/abstract.aux) (sections/Einleitung.aux)
-(sections/Dipole.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+(sections/Dipole.aux) (sections/Gruppenantennen.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: 6431DE57C45EDD34193DF53051B06D70;229.
-=======
-(rerunfilecheck)             Checksum: D01BE3C3D38279061A8B681CFEFC725E;225.
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+(rerunfilecheck)             Checksum: 135EAFB53B2F6B6AB838F39B3310E9CC;441.
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 60833 strings out of 492946
- 1410226 string characters out of 3135527
- 2081897 words of memory out of 3000000
- 63806 multiletter control sequences out of 15000+200000
- 586274 words of font info for 56 fonts, out of 3000000 for 9000
+ 61399 strings out of 492946
+ 1417165 string characters out of 3135527
+ 2108451 words of memory out of 3000000
+ 64279 multiletter control sequences out of 15000+200000
+ 603578 words of font info for 68 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 66i,9n,98p,1133b,2296s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmsy8.pfb>
-Output written on Report.pdf (5 pages, 355471 bytes).
+ 66i,9n,98p,1133b,3281s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/
+MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:
+/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmm
+i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Report.pdf (9 pages, 572865 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 59938 strings out of 492648
- 1393112 string characters out of 6133338
- 2086922 words of memory out of 5000000
- 62845 multiletter control sequences out of 15000+600000
- 595527 words of font info for 64 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 66i,9n,98p,10521b,3251s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2018/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvip
-s/lm/lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tex
-live/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-di
-st/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2018/te
-xmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/public/lm/lmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.p
-fb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2018/texmf-dist/fonts/typ
-e1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssb
-x10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2018/texmf-dist/f
-onts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (6 pages, 368960 bytes).
-PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+ 277 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

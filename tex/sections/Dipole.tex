@@ -1,14 +1,44 @@
-\section{Dipole}
+\section{Hertzscher Dipol}\label{sec:HerDip}
+
 
 Als erstes Thema werden Dipolantennen beschrieben. Dabei wird vor allem auf den Hertzschen Dipol eingegangen, welcher das Modell der Antenne durch seine kurze Länge vereinfacht.
 
-\subsection{Hertzscher Dipol}\label{sec:HerDip}
+\subsection{Entstehung eines Hertzschen Dipol}\label{sec:entstehung}
+Der Hertzsche Dipol lässt sich als offener Schwingkreis interpretieren. Seine Entstehung kann schematisch als Deformation eines geschlossenen Schwingkreises, wie in Abbildung \ref{fig:entstehung} beschrieben werden. Die Frequenz dieses Schwingkreises lautet:
+
+\begin{equation}
+f = \dfrac{1}{2 \pi \sqrt{LC}}
+\end{equation} 
+
+Da der Hertscher Dipol eine hochfrequente elektromagnetische Schwingung erzeugen soll, muss die Induktivität $ L $ und die Kapazität $ C $ klein sein. Sie lassen sich wie folgt berechnen:
+
+\begin{align}
+L &= \mu_0  \mu_r  n^{2} \dfrac{A}{l} \\
+C &= \varepsilon_0  \varepsilon_r   \dfrac{A}{d}
+\label{eq:LC}
+\end{align}
+
+Um die Induktivität der Spule zu minimieren, muss die Permeabilitätszahl, die Windungszahl $ n $ und die Spulenfläche $ A $ möglichst klein und die Spulenlänge $ l $ möglichst gross sein. Die Permeabilitätszahl kann verkleinert werden, indem eine Luftspule verwendet wird.
+
+Die Kapazität des Kondensators wird verkleinert mittels einer minimalen Dielektrizitätszahl und einer kleinen Plattenfläche $ A $ sowie durch einen grossen Plattenabstand $ d $. Um die Dielektrizitätszahl zu senken wird das Dielektrikum Luft verwendet.
+
+In der Abbildung \ref{fig:entstehung} ist die Minimierung der Induktivität und der Kapazität symbolisch dargestellt. So entsteht aus einem geschlossenen Schwingkreis ein offener Schwingkreis. Das Resultat ist ein langer dünner Stab. Die Frequenz des Schwingkreises kann nun nicht mehr über die Induktivität und der Kapazität verändert werden. Der Hertzscher Dipol lässt sich nun nur noch über eine Längenänderung anpassen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{entstehung}
+	\caption{Entstehung eines Hertzschen Dipols}\label{fig:entstehung}
+\end{figure}
 
 Eine Dipol Antenne kann als kurzer Linearstrahler beschrieben werden, wobei dessen länge $l \ll \lambda_0 /4$ beträgt. $\lambda_0$ beschreibt dabei die Wellenlänge, welche durch das Verhältnis der Lichtgeschwindigkeit zur Signalfrequenz $c_0/f$ beschreibt. 
 
-xxx
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{hertzscher_dipol}
+	\caption{Hertzscher Dipol}\label{fig:hertzsche Dipol}
+\end{figure}
 
-Ein solcher Strahler ist in Abbildung xxx zu sehen, wobei $\underline{I}$ der komplexe Strom einer Sinusschwingung darstellt, welche konstant über die gesamte Länge schwingt. $\phi$ stellt den Winkel dar, welcher um die z-Achse rotiert und über die x- und y-Achse aufgespannt ist.$\theta$ hingegen rotiert um die x-Achse und wird über die y- und z-Achse aufgespannt. Für die Kugelkoordinaten bedeutet dies, dass mit den Restriktionen 
+Ein solcher Strahler ist in Abbildung \ref{fig:hertzsche Dipol} zu sehen, wobei $\underline{I}$ der komplexe Strom einer Sinusschwingung darstellt, welche konstant über die gesamte Länge schwingt. $\phi$ stellt den Winkel dar, welcher um die z-Achse rotiert und über die x- und y-Achse aufgespannt ist.$\theta$ hingegen rotiert um die x-Achse und wird über die y- und z-Achse aufgespannt. Für die Kugelkoordinaten bedeutet dies, dass mit den Restriktionen 
 
 \begin{align}
 &0 \leq \varphi \leq 2\pi\\

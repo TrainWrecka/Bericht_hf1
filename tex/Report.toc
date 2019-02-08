@@ -3,14 +3,10 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}% 
-\contentsline {section}{\numberline {2}Dipole}{2}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Hertzscher Dipol}{2}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{2}{subsection.2.2}% 
-=======
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
-\contentsline {section}{\numberline {2}Dipole}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Hertzscher Dipol}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{2}{subsection.2.2}
->>>>>>> 245493218739147c60fd5c7a88727c3d9f3b2f32
+\contentsline {section}{\numberline {2}Hertzscher Dipol}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Entstehung eines Hertzschen Dipol}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{3}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Simulationen}{5}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Gruppenantennen}{6}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Querstrahler}{6}{subsection.3.1}% 
