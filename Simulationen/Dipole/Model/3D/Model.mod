@@ -741,8 +741,7 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ new component: Dipole2
 
@@ -783,8 +782,7 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ boolean insert shapes: Dipole1:Dipole1, Dipole1:Vacuum1
 
@@ -837,7 +835,6 @@ With DiscretePort
      .Position "end1" 
      .Create 
 End With
-
 
 '@ define discrete port: 2
 
@@ -1068,13 +1065,12 @@ Component.Delete "Dipole2"
 '@ delete port: port2
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Port.Delete "2" 
+Port.Delete "2"
 
 '@ change solver type
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-ChangeSolverType "HF Time Domain" 
-
+ChangeSolverType "HF Time Domain"
 
 '@ define units
 
@@ -1090,8 +1086,7 @@ With Units
      .Conductance "Siemens" 
      .Capacitance "F" 
      .Inductance "H" 
-End With 
-
+End With
 
 '@ farfield plot options
 
@@ -1159,10 +1154,8 @@ With FarfieldPlot
      .AddCut "lateral", "0", "1"  
      .AddCut "lateral", "90", "1"  
      .AddCut "polar", "90", "1"  
-
      .StoreSettings
-End With 
-
+End With
 
 '@ add parsweep sequence: Sequence 2
 
@@ -1171,7 +1164,6 @@ With ParameterSweep
      .AddSequence "Sequence 2" 
 End With
 
-
 '@ delete parsweep sequence: Sequence 1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
@@ -1179,13 +1171,90 @@ With ParameterSweep
      .DeleteSequence "Sequence 1" 
 End With
 
-
 '@ add parsweep parameter: Sequence 2:n
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 With ParameterSweep
      .AddParameter_Linear "Sequence 2", "n", "1", "4", "1" 
 End With
+
+'@ edit parsweep parameter: Sequence 2:n
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 2", "n" 
+     .AddParameter_Linear "Sequence 2", "n", "1", "4", "4" 
+End With
+
+'@ farfield plot options
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With FarfieldPlot 
+     .Plottype "Polar" 
+     .Vary "angle1" 
+     .Theta "0" 
+     .Phi "0" 
+     .Step "1" 
+     .Step2 "1" 
+     .SetLockSteps "True" 
+     .SetPlotRangeOnly "False" 
+     .SetThetaStart "0" 
+     .SetThetaEnd "180" 
+     .SetPhiStart "0" 
+     .SetPhiEnd "360" 
+     .SetTheta360 "False" 
+     .SymmetricRange "False" 
+     .SetTimeDomainFF "False" 
+     .SetFrequency "-1" 
+     .SetTime "0" 
+     .SetColorByValue "True" 
+     .DrawStepLines "False" 
+     .DrawIsoLongitudeLatitudeLines "False" 
+     .ShowStructure "False" 
+     .ShowStructureProfile "False" 
+     .SetStructureTransparent "False" 
+     .SetFarfieldTransparent "False" 
+     .SetSpecials "enablepolarextralines" 
+     .SetPlotMode "Directivity" 
+     .Distance "1" 
+     .UseFarfieldApproximation "True" 
+     .SetScaleLinear "True" 
+     .SetLogRange "40" 
+     .SetLogNorm "0" 
+     .DBUnit "0" 
+     .EnableFixPlotMaximum "False" 
+     .SetFixPlotMaximumValue "1" 
+     .SetInverseAxialRatio "False" 
+     .SetAxesType "user" 
+     .SetAntennaType "unknown" 
+     .Phistart "1.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .Thetastart "0.000000e+00", "0.000000e+00", "1.000000e+00" 
+     .PolarizationVector "0.000000e+00", "1.000000e+00", "0.000000e+00" 
+     .SetCoordinateSystemType "spherical" 
+     .SetAutomaticCoordinateSystem "True" 
+     .SetPolarizationType "Linear" 
+     .SlantAngle 0.000000e+00 
+     .Origin "bbox" 
+     .Userorigin "0.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .SetUserDecouplingPlane "False" 
+     .UseDecouplingPlane "False" 
+     .DecouplingPlaneAxis "X" 
+     .DecouplingPlanePosition "0.000000e+00" 
+     .LossyGround "False" 
+     .GroundEpsilon "1" 
+     .GroundKappa "0" 
+     .EnablePhaseCenterCalculation "False" 
+     .SetPhaseCenterAngularLimit "3.000000e+01" 
+     .SetPhaseCenterComponent "boresight" 
+     .SetPhaseCenterPlane "both" 
+     .ShowPhaseCenter "True" 
+     .ClearCuts 
+     .AddCut "lateral", "0", "1"  
+     .AddCut "lateral", "90", "1"  
+     .AddCut "polar", "90", "1"  
+
+     .StoreSettings
+End With 
 
 
 '@ edit parsweep parameter: Sequence 2:n
@@ -1195,5 +1264,156 @@ With ParameterSweep
      .DeleteParameter "Sequence 2", "n" 
      .AddParameter_Linear "Sequence 2", "n", "1", "4", "4" 
 End With
+
+
+'@ farfield plot options
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With FarfieldPlot 
+     .Plottype "Polar" 
+     .Vary "angle1" 
+     .Theta "0" 
+     .Phi "0" 
+     .Step "1" 
+     .Step2 "1" 
+     .SetLockSteps "True" 
+     .SetPlotRangeOnly "False" 
+     .SetThetaStart "0" 
+     .SetThetaEnd "180" 
+     .SetPhiStart "0" 
+     .SetPhiEnd "360" 
+     .SetTheta360 "False" 
+     .SymmetricRange "False" 
+     .SetTimeDomainFF "False" 
+     .SetFrequency "-1" 
+     .SetTime "0" 
+     .SetColorByValue "True" 
+     .DrawStepLines "False" 
+     .DrawIsoLongitudeLatitudeLines "False" 
+     .ShowStructure "False" 
+     .ShowStructureProfile "False" 
+     .SetStructureTransparent "False" 
+     .SetFarfieldTransparent "False" 
+     .SetSpecials "enablepolarextralines" 
+     .SetPlotMode "Directivity" 
+     .Distance "1" 
+     .UseFarfieldApproximation "True" 
+     .SetScaleLinear "True" 
+     .SetLogRange "40" 
+     .SetLogNorm "0" 
+     .DBUnit "0" 
+     .EnableFixPlotMaximum "False" 
+     .SetFixPlotMaximumValue "1" 
+     .SetInverseAxialRatio "False" 
+     .SetAxesType "user" 
+     .SetAntennaType "unknown" 
+     .Phistart "1.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .Thetastart "0.000000e+00", "0.000000e+00", "1.000000e+00" 
+     .PolarizationVector "0.000000e+00", "1.000000e+00", "0.000000e+00" 
+     .SetCoordinateSystemType "spherical" 
+     .SetAutomaticCoordinateSystem "True" 
+     .SetPolarizationType "Linear" 
+     .SlantAngle 0.000000e+00 
+     .Origin "bbox" 
+     .Userorigin "0.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .SetUserDecouplingPlane "False" 
+     .UseDecouplingPlane "False" 
+     .DecouplingPlaneAxis "X" 
+     .DecouplingPlanePosition "0.000000e+00" 
+     .LossyGround "False" 
+     .GroundEpsilon "1" 
+     .GroundKappa "0" 
+     .EnablePhaseCenterCalculation "False" 
+     .SetPhaseCenterAngularLimit "3.000000e+01" 
+     .SetPhaseCenterComponent "boresight" 
+     .SetPhaseCenterPlane "both" 
+     .ShowPhaseCenter "True" 
+     .ClearCuts 
+     .AddCut "lateral", "0", "1"  
+     .AddCut "lateral", "90", "1"  
+     .AddCut "polar", "90", "1"  
+
+     .StoreSettings
+End With 
+
+
+'@ edit parsweep parameter: Sequence 2:n
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 2", "n" 
+     .AddParameter_Linear "Sequence 2", "n", "1", "3", "3" 
+End With
+
+
+'@ farfield plot options
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With FarfieldPlot 
+     .Plottype "Polar" 
+     .Vary "angle1" 
+     .Theta "0" 
+     .Phi "0" 
+     .Step "1" 
+     .Step2 "1" 
+     .SetLockSteps "True" 
+     .SetPlotRangeOnly "False" 
+     .SetThetaStart "0" 
+     .SetThetaEnd "180" 
+     .SetPhiStart "0" 
+     .SetPhiEnd "360" 
+     .SetTheta360 "False" 
+     .SymmetricRange "False" 
+     .SetTimeDomainFF "False" 
+     .SetFrequency "-1" 
+     .SetTime "0" 
+     .SetColorByValue "True" 
+     .DrawStepLines "False" 
+     .DrawIsoLongitudeLatitudeLines "False" 
+     .ShowStructure "False" 
+     .ShowStructureProfile "False" 
+     .SetStructureTransparent "False" 
+     .SetFarfieldTransparent "False" 
+     .SetSpecials "enablepolarextralines" 
+     .SetPlotMode "Directivity" 
+     .Distance "1" 
+     .UseFarfieldApproximation "True" 
+     .SetScaleLinear "True" 
+     .SetLogRange "40" 
+     .SetLogNorm "0" 
+     .DBUnit "0" 
+     .EnableFixPlotMaximum "False" 
+     .SetFixPlotMaximumValue "1" 
+     .SetInverseAxialRatio "False" 
+     .SetAxesType "user" 
+     .SetAntennaType "unknown" 
+     .Phistart "1.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .Thetastart "0.000000e+00", "0.000000e+00", "1.000000e+00" 
+     .PolarizationVector "0.000000e+00", "1.000000e+00", "0.000000e+00" 
+     .SetCoordinateSystemType "spherical" 
+     .SetAutomaticCoordinateSystem "True" 
+     .SetPolarizationType "Linear" 
+     .SlantAngle 0.000000e+00 
+     .Origin "bbox" 
+     .Userorigin "0.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .SetUserDecouplingPlane "False" 
+     .UseDecouplingPlane "False" 
+     .DecouplingPlaneAxis "X" 
+     .DecouplingPlanePosition "0.000000e+00" 
+     .LossyGround "False" 
+     .GroundEpsilon "1" 
+     .GroundKappa "0" 
+     .EnablePhaseCenterCalculation "False" 
+     .SetPhaseCenterAngularLimit "3.000000e+01" 
+     .SetPhaseCenterComponent "boresight" 
+     .SetPhaseCenterPlane "both" 
+     .ShowPhaseCenter "True" 
+     .ClearCuts 
+     .AddCut "lateral", "0", "1"  
+     .AddCut "lateral", "90", "1"  
+     .AddCut "polar", "90", "1"  
+
+     .StoreSettings
+End With 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  6 FEB 2019 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  8 FEB 2019 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2140,7 +2140,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 11.
 (c:/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<fhnwlogo.pdf, id=23, 183.81773pt x 28.4543pt>
+<fhnwlogo.pdf, id=35, 183.81773pt x 28.4543pt>
 File: fhnwlogo.pdf Graphic file (type pdf)
 <use fhnwlogo.pdf>
 Package pdftex.def Info: fhnwlogo.pdf  used on input line 16.
@@ -2182,7 +2182,7 @@ l.53 \include{sections/Einleitung}
 \openout2 = `sections/Dipole.aux'.
 
  (./sections/Dipole.tex
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -2190,29 +2190,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Overfull \hbox (4.29018pt too wide) in paragraph at lines 52--53
+Overfull \hbox (4.29018pt too wide) in paragraph at lines 51--52
 []\T1/lmr/m/n/10.95 Zur Ver-i-fika-tion wurde zuerst ein MATLAB-Code er-stellt,
  welcher die Po-larko-or-di-naten darstellen|
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 60.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 59.
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+<./graphics/HertzscherDipol.png, id=133, 511.9125pt x 582.67688pt>
+File: ./graphics/HertzscherDipol.png Graphic file (type png)
+<use ./graphics/HertzscherDipol.png>
+Package pdftex.def Info: ./graphics/HertzscherDipol.png  used on input line 100
+.
+(pdftex.def)             Requested size: 455.24408pt x 518.17181pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 103.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 107.
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4]
+)
+Overfull \hbox (3.25584pt too wide) in paragraph at lines 107--108
+\T1/lmr/m/n/10.95 beschreiben die Bre-ite der Haup-tkeule, wobei der Winkel unt
+er welchem die Hälfte der Strahlungs-|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+[5 <./graphics/HertzscherDipol.png (PNG copy)>]
+<./graphics/Wellendipol.png, id=163, 421.575pt x 316.18124pt>
+File: ./graphics/Wellendipol.png Graphic file (type png)
+<use ./graphics/Wellendipol.png>
+Package pdftex.def Info: ./graphics/Wellendipol.png  used on input line 148.
+(pdftex.def)             Requested size: 341.43306pt x 256.08127pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[6 <./graphics/Wellendipol.png (PNG copy)>]
+<./graphics/Halbwellendipol1.png, id=176, 540.51938pt x 346.29375pt>
+File: ./graphics/Halbwellendipol1.png Graphic file (type png)
+<use ./graphics/Halbwellendipol1.png>
+Package pdftex.def Info: ./graphics/Halbwellendipol1.png  used on input line 18
+4.
+(pdftex.def)             Requested size: 455.24408pt x 291.6668pt.
+<./graphics/Ganzwellendipol1.png, id=179, 540.51938pt x 346.29375pt>
+File: ./graphics/Ganzwellendipol1.png Graphic file (type png)
+<use ./graphics/Ganzwellendipol1.png>
+Package pdftex.def Info: ./graphics/Ganzwellendipol1.png  used on input line 19
+3.
+(pdftex.def)             Requested size: 455.24408pt x 291.6668pt.
+<./graphics/Doppelwellendipol1.png, id=181, 540.51938pt x 346.29375pt>
+File: ./graphics/Doppelwellendipol1.png Graphic file (type png)
+<use ./graphics/Doppelwellendipol1.png>
+Package pdftex.def Info: ./graphics/Doppelwellendipol1.png  used on input line 
+202.
+(pdftex.def)             Requested size: 455.24408pt x 291.6668pt.
+<./graphics/Halbwellendipol13.jpg, id=183, 720.6925pt x 461.725pt>
+File: ./graphics/Halbwellendipol13.jpg Graphic file (type jpg)
+<use ./graphics/Halbwellendipol13.jpg>
+Package pdftex.def Info: ./graphics/Halbwellendipol13.jpg  used on input line 2
+11.
+(pdftex.def)             Requested size: 455.24408pt x 291.65623pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 212.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 212.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 212.
+<./graphics/Ganzwellendipol13.jpg, id=184, 720.6925pt x 461.725pt>
+File: ./graphics/Ganzwellendipol13.jpg Graphic file (type jpg)
+<use ./graphics/Ganzwellendipol13.jpg>
+Package pdftex.def Info: ./graphics/Ganzwellendipol13.jpg  used on input line 2
+18.
+(pdftex.def)             Requested size: 455.24408pt x 291.65623pt.
+<./graphics/Doppelwellendipol13.jpg, id=185, 720.6925pt x 461.725pt>
+File: ./graphics/Doppelwellendipol13.jpg Graphic file (type jpg)
+<use ./graphics/Doppelwellendipol13.jpg>
+Package pdftex.def Info: ./graphics/Doppelwellendipol13.jpg  used on input line
+ 225.
+(pdftex.def)             Requested size: 455.24408pt x 291.65623pt.
+<./graphics/Halbwellendipol13Cart.jpg, id=188, 720.6925pt x 461.725pt>
+File: ./graphics/Halbwellendipol13Cart.jpg Graphic file (type jpg)
+<use ./graphics/Halbwellendipol13Cart.jpg>
+Package pdftex.def Info: ./graphics/Halbwellendipol13Cart.jpg  used on input li
+ne 234.
+(pdftex.def)             Requested size: 455.24408pt x 291.65623pt.
+<./graphics/3D.png, id=192, 543.53062pt x 349.305pt>
+File: ./graphics/3D.png Graphic file (type png)
+<use ./graphics/3D.png>
+Package pdftex.def Info: ./graphics/3D.png  used on input line 243.
+(pdftex.def)             Requested size: 455.24408pt x 292.5774pt.
+ [7]
+
+LaTeX Warning: Text page 8 contains only floats.
+
+[8 <./graphics/Halbwellendipol1.png> <./graphics/Ganzwellendipol1.png>]
+
+LaTeX Warning: Text page 9 contains only floats.
+
+[9 <./graphics/Doppelwellendipol1.png> <./graphics/Halbwellendipol13.jpg>]
+
+LaTeX Warning: Text page 10 contains only floats.
+
+[10 <./graphics/Ganzwellendipol13.jpg> <./graphics/Doppelwellendipol13.jpg>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+[11 <./graphics/Halbwellendipol13Cart.jpg> <./graphics/3D.png>]) [12]
 
 LaTeX Warning: Empty bibliography on input line 58.
 
@@ -2223,39 +2327,40 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: D01BE3C3D38279061A8B681CFEFC725E;225.
+(rerunfilecheck)             Checksum: 006D1BAD522BB1F884EDEBEC8E9A8BBF;419.
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 59938 strings out of 492648
- 1393112 string characters out of 6133338
- 2086922 words of memory out of 5000000
- 62845 multiletter control sequences out of 15000+600000
- 595527 words of font info for 64 fonts, out of 8000000 for 9000
+ 60069 strings out of 492648
+ 1395793 string characters out of 6133338
+ 2087991 words of memory out of 5000000
+ 62925 multiletter control sequences out of 15000+600000
+ 621395 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 66i,9n,98p,10521b,3251s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2018/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvip
-s/lm/lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tex
-live/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-di
-st/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2018/te
-xmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/public/lm/lmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.p
-fb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2018/texmf-dist/fonts/typ
-e1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssb
-x10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2018/texmf-dist/f
-onts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (6 pages, 368960 bytes).
+ 66i,10n,98p,10521b,3251s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2018
+/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2018/texmf-dist/fonts/enc
+/dvips/base/8r.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:
+/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2018/texmf-di
+st/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips
+/lm/lm-mathit.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
+<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/ty
+pe1/public/lm/lmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10
+.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/lm/lmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr
+8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
+/lm/lmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Report.pdf (14 pages, 4484952 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,7 +4,7 @@ This software is licensed for educational purposes only.
 
 --------------------------------------------------------------------------------
 
-Solver started at: 05:57 PM Wednesday, 06. February 2019
+Solver started at: 02:04 PM Friday, 08. February 2019
 
   Module:  Time Domain: S-Parameter (Win 64)
   Version: 2018.6 Release from 2018-06-15 (change 610495)
@@ -43,7 +43,7 @@ Mesh statistics:
       Number of parallel working threads: 2
       Number of calculation domains used: 2
 
-   PBA fill limit: 98.81% (inverse)
+   PBA fill limit: 98.63% (inverse)
 
 
 
@@ -80,7 +80,7 @@ Port: 1
 --------------------------------------------------------------------------------
 Field update statistics:
 
-  Number of components in total: 	604539
+  Number of components in total: 	933153
 
 Subcycling state:      Automatically deactivated
 
@@ -102,9 +102,9 @@ Frequency domain results normalized to default signal.
                       Peak memory used (kB)         Free physical memory (kB) 
                                                     At begin     Minimum      
   ----------------------------------------------------------------------------
-  CAD preparation     20544                         3818636      3818636      
-  Matrices calc.      87540                         3771348      3737320      
-  Solver run total    52952                         3838756      3717212      
+  CAD preparation     20540                         4483280      4483280      
+  Matrices calc.      119044                        4456744      4377812      
+  Solver run total    62312                         4506840      4381244      
   ----------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -116,38 +116,38 @@ Solver Statistics:
      Number of CPU threads:             4
      Hardware info:                  	Hardware Accelerator Device not activated
 
-  Number of mesh cells:             	96668
+  Number of mesh cells:             	149396
   Excitation duration:              	7.10909750e+000 ns 
-  Calculation time for excitation:  	24 	s
-  Number of calculated pulse widths:	3.27614 
+  Calculation time for excitation:  	33 	s
+  Number of calculated pulse widths:	4.08999 
   Steady state accuracy limit:      	-40	dB 
-  Simulated number of time steps:   	18928 
-  Maximum number of time steps:     	115550 
+  Simulated number of time steps:   	23270 
+  Maximum number of time steps:     	113789 
   Time step width:
-     without subcycles:             	1.23047479e-003 ns
-     used:                          	1.23047479e-003 ns
+     without subcycles:             	1.24951305e-003 ns
+     used:                          	1.24951305e-003 ns
 
   CAD preparation time:          	0      	s
-  Matrix calculation time:          	9 	s
+  Matrix calculation time:          	11 	s
   Solver setup time:                	3 	s
-  Solver loop time:                 	85 	s
+  Solver loop time:                 	137 	s
   Solver post processing time:      	1 	s
                                     	------------
-  Total solver time:                	98 	s  ( = 0 h, 1 m, 38 s )
+  Total solver time:                	152 	s  ( = 0 h, 2 m, 32 s )
 
 --------------------------------------------------------------------------------
 
   Adaptive port meshing time:       	0      	s
-  Total solver time (all cycles):   	98     	s  ( = 0 h, 1 m, 38 s )
+  Total solver time (all cycles):   	152    	s  ( = 0 h, 2 m, 32 s )
                                     	------------
-  Total simulation time:            	98     	s  ( = 0 h, 1 m, 38 s )
+  Total simulation time:            	152    	s  ( = 0 h, 2 m, 32 s )
 
 --------------------------------------------------------------------------------
-Solver finished at: 05:59 PM Wednesday, 06. February 2019
+Solver finished at: 02:07 PM Friday, 08. February 2019
 
 
 
 --------------------------------------------------------------------------------
-Creating parametric 1D results for Run ID 4
+Creating parametric 1D results for Run ID 3
 
 --------------------------------------------------------------------------------
