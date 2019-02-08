@@ -9,4 +9,5 @@
 \contentsline {subsection}{\numberline {2.2}Richtdiagramm}{3}{subsection.2.2}% 
 \contentsline {subsection}{\numberline {2.3}Simulationen}{5}{subsection.2.3}% 
 \contentsline {section}{\numberline {3}Gruppenantennen}{6}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Querstrahler}{6}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.1}Querstrahler}{7}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Simulation}{7}{subsubsection.3.1.1}% 
