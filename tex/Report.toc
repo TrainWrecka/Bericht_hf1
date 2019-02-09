@@ -1,37 +1,22 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
 \babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
+\babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
 \contentsline {section}{\numberline {2}Hertzscher Dipol}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Theorie}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{2}{subsection.2.2}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.3}Simulation}{4}{subsection.2.3}
-\contentsline {section}{\numberline {3}Linearantennen}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Theorie}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Simulation}{8}{subsection.3.2}
-\contentsline {section}{\numberline {4}Kleeblattantenne}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Theorie}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Simulation}{14}{subsection.4.2}
-\contentsline {section}{References}{15}{section*.13}
-=======
-\contentsline {subsection}{\numberline {2.3}Linearantenne}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Simulation}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Simulationen}{12}{subsection.2.5}
-=======
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}% 
-\contentsline {section}{\numberline {2}Hertzscher Dipol}{2}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Entstehung eines Hertzschen Dipol}{2}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{3}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Simulationen}{5}{subsection.2.3}% 
-\contentsline {section}{\numberline {3}Gruppenantennen}{6}{section.3}% 
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {3.1}Querstrahler}{7}{subsection.3.1}% 
-\contentsline {subsubsection}{\numberline {3.1.1}Simulation}{7}{subsubsection.3.1.1}% 
-=======
-\contentsline {subsection}{\numberline {3.1}Querstrahler}{6}{subsection.3.1}% 
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+\contentsline {subsection}{\numberline {2.2}Richtdiagramm}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Simulation}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}Linearantennen}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Theorie}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Simulation}{9}{subsection.3.2}
+\contentsline {section}{\numberline {4}Gruppenantennen}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Querstrahler}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Simulation}{16}{subsection.4.2}
+\contentsline {section}{\numberline {5}Kleeblattantenne}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Theorie}{19}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Simulation}{20}{subsection.5.2}
+\contentsline {section}{\numberline {6}Fazit}{21}{section.6}
+\contentsline {section}{Literatur}{22}{section*.25}
+\contentsline {section}{\numberline {7}Appendix}{23}{section.7}

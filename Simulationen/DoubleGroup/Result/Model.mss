@@ -1,7 +1,7 @@
 Solver type
-Transient solver
+TLM solver
 Mesh type
-Hexahedral
+Hexahedral TLM
 IsIgnoreLossyMetals
 0
 IsIgnoreLossyDielectrics

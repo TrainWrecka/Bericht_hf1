@@ -2,12 +2,12 @@
 <CSTAuxiliaryGeometry creator="modeler" version="20160211">
   <Objects>
     <Object name="Ports\port1">
-      <Cone dimension="10 10 10" direction="0 0 0.2000000029802" material="$PortMaterial$" position="0 -300 0" short="1" text="1"/>
-      <LineSet material="$WireMaterial$" points="0 -300 -0.1000000014901 0 -300 0.1000000014901" stripped="1"/>
+      <Cone dimension="10 10 10" direction="0 0 -0.0001998613297474" material="$PortMaterial$" position="0 0 0" short="1" text="1"/>
+      <LineSet material="$WireMaterial$" points="0 0 9.993066487368e-05 0 0 -9.993066487368e-05" stripped="1"/>
     </Object>
     <Object name="Ports\port2">
-      <Cone dimension="10 10 10" direction="0 0 0.2000000029802" material="$PortMaterial$" position="0 300 0" short="2" text="2"/>
-      <LineSet material="$WireMaterial$" points="0 300 -0.1000000014901 0 300 0.1000000014901" stripped="1"/>
+      <Cone dimension="10 10 10" direction="0 0 -0.0001998613297474" material="$PortMaterial$" position="0 0.5995839834213 0" short="2" text="2"/>
+      <LineSet material="$WireMaterial$" points="0 0.5995839834213 9.993066487368e-05 0 0.5995839834213 -9.993066487368e-05" stripped="1"/>
     </Object>
   </Objects>
   <Materials/>

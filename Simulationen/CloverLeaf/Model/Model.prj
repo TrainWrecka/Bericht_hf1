@@ -3,17 +3,17 @@
 [Author]
 ThomasNotebook
 [Mesh Cells]
-
+4,501,200
 [Mesh Type]
-Tetrahedral
+Hexahedral
 [Last Problem Type]
 High Frequency
 [Last Solver Type]
-HF Frequency Domain
+HF Time Domain
 [Last Solver Type Abb]
-f
+t
 [Results]
-Frequency Domain: S-Parameter
+Time Domain: S-Parameter
 [Modeler Unique ID]
-5:cloverleaf.cst?2f0281ef13028d8b040cdcc3cea422ac?26478:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0?port=3>mode=1>zre=0>zim=0?port=4>mode=1>zre=0>zim=0:::offset?r?r1?lambda?c?fg
+5:cloverleaf.cst?55838e30efdfb2a8826511ae6e239c9f?38688:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0?port=3>mode=1>zre=0>zim=0?port=4>mode=1>zre=0>zim=0:::c?fg?lambda?offset?r?r1
 [Comment]

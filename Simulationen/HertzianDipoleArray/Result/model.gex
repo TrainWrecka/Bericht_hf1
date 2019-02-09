@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile creator="MatrixCalc" version="20151207">
+  <Components>
+    <Shape name="Components\Dipole1:Dipole1" id="1" visible="1" material="PEC" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="1 2 3 19 20 21"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+    <Shape name="Components\Dipole1:Dipole1_1" id="2" visible="1" material="PEC" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="4 5 6 22 23 24"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+    <Shape name="Components\Dipole1:Vacuum1" id="3" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="7 8 9"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+    <Shape name="Components\Dipole1:Vacuum1_1" id="4" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="10 11 12"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+    <Shape name="Components\component1:Vacuum" id="5" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="13 14 15 16 17 18"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list=""/>
+    </Shape>
+  </Components>
+  <SimulationDomain min="-0.1000000014901 -0.1000000014901 -0.1000000014901" max="0.1000000014901 0.2000000029802 0.1000000014901"/>
+  <Materials>
+    <Material name="air_0" priority="1">
+      <Drawstyle color="1 1 1" linestrength="1" transparency="0"/>
+    </Material>
+    <Material name="PEC" priority="1">
+      <Drawstyle color="1 1 1" linestrength="1" transparency="0"/>
+    </Material>
+    <Material name="Vacuum" priority="1">
+      <Drawstyle color="1 1 1" linestrength="1" transparency="0"/>
+    </Material>
+  </Materials>
+  <GeometryFile filename="3d.slm" type="slim" subdomain_id=""/>
+  <MeshType type="HEX"/>
+  <Groups/>
+  <HexMesh>
+    <Dimensions nx="27" ny="44" nz="35"/>
+    <MeshPlanesX values="-0.1 -0.09012114986744 -0.08024229973488 -0.07036344960232 -0.06048459946976 -0.0506057493372 -0.04072689920464 -0.03084804907208 -0.02096919893952 -0.01109034880696 -0.002996099352583 -0.001997399568389 -0.0009986997841945 0 0.0009986997841943 0.001997399568389 0.002996099352583 0.01109034880696 0.02096919893952 0.03084804907208 0.04072689920464 0.0506057493372 0.06048459946976 0.07036344960232 0.08024229973488 0.09012114986744 0.1"/>
+    <MeshPlanesY values="-0.1 -0.09012114986744 -0.08024229973488 -0.07036344960232 -0.06048459946976 -0.0506057493372 -0.04072689920464 -0.03084804907208 -0.02096919893952 -0.01109034880696 -0.002996099352583 -0.001997399568389 -0.0009986997841945 0 0.0009939243007676 0.001987848601535 0.002981772902303 0.0102898615751 0.01935124105007 0.02841262052503 0.037474 0.04653537947497 0.05559675894993 0.0646581384249 0.0719662270977 0.07296015139846 0.07395407569923 0.074948 0.07594473732764 0.07694147465528 0.07793821198291 0.0856800483915 0.09520671102554 0.1047333736596 0.1142600362936 0.1237866989277 0.1333133615617 0.1428400241957 0.1523666868298 0.1618933494638 0.1714200120979 0.1809466747319 0.190473337366 0.2"/>
+    <MeshPlanesZ values="-0.1 -0.09058044028876 -0.08116088057753 -0.07174132086629 -0.06232176115506 -0.05290220144382 -0.04348264173259 -0.03406308202135 -0.02464352231012 -0.01522396259888 -0.006735739153762 -0.005739626102508 -0.004743513051254 -0.0037474 -0.002829287 -0.001911174 -0.000993061 -7.4948e-05 0.000880639 0.001836226 0.002791813 0.0037474 0.004743513051254 0.005739626102508 0.006735739153762 0.01522396259888 0.02464352231012 0.03406308202135 0.04348264173259 0.05290220144382 0.06232176115506 0.07174132086629 0.08116088057753 0.09058044028877 0.1"/>
+  </HexMesh>
+</MetaGeometryFile>

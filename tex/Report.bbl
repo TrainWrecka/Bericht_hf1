@@ -43,6 +43,21 @@
       \field{title}{Antennen und Strahlungsfelder}
       \field{year}{2011}
     \endentry
+    \entry{web2}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.abiweb.de/physik-elektromagnetismus/elektromagnetische-wellen/hertzscher-dipol.html}
+      \field{title}{Hertzscher Dipol}
+    \endentry
+    \entry{website}{misc}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://www.antenna-theory.com/antennas/cloverleaf.php}
+      \field{title}{Cloverleaf Antennas}
+      \field{year}{2016}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

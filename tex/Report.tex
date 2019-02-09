@@ -11,7 +11,7 @@
 \begin{document}
 
 %%---TITLEPAGE---------------------------------------------------------------------------
-\selectlanguage{english}                %ngerman or english
+\selectlanguage{ngerman}                %ngerman or english
 \maketitle
 
 \vspace*{-1cm}						    %compensates the space after the date line.
@@ -44,7 +44,7 @@ Version                    &    1.0 %Normally not used!
 
 %%---TABLE OF CONTENTS-------------------------------------------------------------------
 \pagenumbering{Roman}		
-\selectlanguage{english}				%ngerman or english
+\selectlanguage{ngerman}				%ngerman or english
 \tableofcontents
 \clearpage
 
@@ -53,7 +53,9 @@ Version                    &    1.0 %Normally not used!
 \include{sections/Einleitung}
 \include{sections/Dipole}
 \include{sections/Linearantenne}
+\include{sections/Gruppenantennen}
 \include{sections/Kleeblattantenne}
+\include{sections/Fazit}
 
 
 %%---BIBLIOGRAPHY------------------------------------------------------------------------
@@ -63,7 +65,7 @@ Version                    &    1.0 %Normally not used!
 }
 
 %%---APPENDIX----------------------------------------------------------------------------
-%\include{sections/appendix}
+\include{sections/Appendix}
 
 %%---NOTES for DEBUG---------------------------------------------------------------------
 \ifdraft{%Do this only if mode=draft

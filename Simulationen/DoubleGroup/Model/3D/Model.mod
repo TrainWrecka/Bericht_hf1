@@ -1151,15 +1151,16 @@ With Cylinder
      .Name "Antenna1" 
      .Component "Dipole1" 
      .Material "PEC" 
-     .OuterRadius "0.2" 
+     .OuterRadius "r" 
      .InnerRadius "0" 
      .Axis "z" 
-     .Zrange "10", "-10" 
+     .Zrange "-l/2", "l/2" 
      .Xcenter "0" 
-     .Ycenter "-300" 
+     .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With
+End With 
+
 
 '@ define cylinder: Dipole1:Vacuum1
 
@@ -1169,15 +1170,16 @@ With Cylinder
      .Name "Vacuum1" 
      .Component "Dipole1" 
      .Material "Vacuum" 
-     .OuterRadius "0.2" 
+     .OuterRadius "r" 
      .InnerRadius "0" 
      .Axis "z" 
-     .Zrange "0.1", "-0.1" 
+     .Zrange "-l/2/100", "l/2/100" 
      .Xcenter "0" 
-     .Ycenter "-300" 
+     .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With
+End With 
+
 
 '@ boolean insert shapes: Dipole1:Antenna1, Dipole1:Vacuum1
 
@@ -1197,15 +1199,16 @@ With Cylinder
      .Name "Antenna2" 
      .Component "Dipole2" 
      .Material "PEC" 
-     .OuterRadius "0.2" 
+     .OuterRadius "r" 
      .InnerRadius "0" 
      .Axis "z" 
-     .Zrange "10", "-10" 
+     .Zrange "-l/2", "l/2" 
      .Xcenter "0" 
-     .Ycenter "300" 
+     .Ycenter "a" 
      .Segments "0" 
      .Create 
-End With
+End With 
+
 
 '@ define cylinder: Dipole2:Vacuum2
 
@@ -1215,15 +1218,16 @@ With Cylinder
      .Name "Vacuum2" 
      .Component "Dipole2" 
      .Material "Vacuum" 
-     .OuterRadius "0.2" 
+     .OuterRadius "r" 
      .InnerRadius "0" 
      .Axis "z" 
-     .Zrange "0.1", "-0.1" 
+     .Zrange "-l/2/100", "l/2/100" 
      .Xcenter "0" 
-     .Ycenter "300" 
+     .Ycenter "a" 
      .Segments "0" 
      .Create 
-End With
+End With 
+
 
 '@ boolean insert shapes: Dipole2:Antenna2, Dipole2:Vacuum2
 
@@ -1243,8 +1247,8 @@ With DiscretePort
      .VoltagePortImpedance "0.0" 
      .Voltage "1.0" 
      .Current "1.0" 
-     .SetP1 "False", "0", "-300", "-0.1" 
-     .SetP2 "False", "0", "-300", "0.1" 
+     .SetP1 "False", "0", "0", "l/2/100" 
+     .SetP2 "False", "0", "0", "-l/2/100" 
      .InvertDirection "False" 
      .LocalCoordinates "False" 
      .Monitor "True" 
@@ -1253,6 +1257,7 @@ With DiscretePort
      .Position "end1" 
      .Create 
 End With
+
 
 '@ define discrete port: 2
 
@@ -1267,8 +1272,8 @@ With DiscretePort
      .VoltagePortImpedance "0.0" 
      .Voltage "1.0" 
      .Current "1.0" 
-     .SetP1 "False", "0.0", "300", "-0.1" 
-     .SetP2 "False", "0.0", "300", "0.1" 
+     .SetP1 "False", "0.0", "a", "l/2/100" 
+     .SetP2 "False", "0.0", "a", "-l/2/100" 
      .InvertDirection "False" 
      .LocalCoordinates "False" 
      .Monitor "True" 
@@ -1277,6 +1282,7 @@ With DiscretePort
      .Position "end1" 
      .Create 
 End With
+
 
 '@ define solver excitation modes
 
@@ -1314,4 +1320,548 @@ With Solver
      .SuperimposePLWExcitation "False"
      .UseSensitivityAnalysis "False"
 End With
+
+'@ define solver excitation modes
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Solver 
+     .ResetExcitationModes 
+     .SParameterPortExcitation "False" 
+     .SimultaneousExcitation "True" 
+     .SetSimultaneousExcitAutoLabel "True" 
+     .SetSimultaneousExcitationLabel "1[1.0,0.0]+2[1.0,0.0],[1]" 
+     .SetSimultaneousExcitationOffset "Phaseshift" 
+     .PhaseRefFrequency "1" 
+     .ExcitationSelectionShowAdditionalSettings "False" 
+     .ExcitationPortMode "1", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "2", "1", "1.0", "0.0", "default", "True" 
+End With 
+
+'@ define boundaries
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Boundary
+     .Xmin "open"
+     .Xmax "open"
+     .Ymin "open"
+     .Ymax "open"
+     .Zmin "open"
+     .Zmax "open"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+End With
+
+
+'@ new component: component1
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Component.New "component1" 
+
+
+'@ define brick: component1:Test
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Brick
+     .Reset 
+     .Name "Test" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .Xrange "-0.1", "0.1" 
+     .Yrange "-0.1", "0.7" 
+     .Zrange "-0.1", "0.1" 
+     .Create
+End With
+
+
+'@ set mesh properties (Hexahedral TLM)
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Mesh 
+     .MeshType "HexahedralTLM" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "15" 
+     .Set "StepsPerWaveFar", "15" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "20" 
+     .Set "StepsPerBoxFar", "20" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "1" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "20" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "FaceRefinementOn", "1" 
+     .Set "FaceRefinementPolicy", "2" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "5" 
+     .Set "EllipseRefinementOn", "1" 
+     .Set "EllipseRefinementPolicy", "2" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "20" 
+     .Set "FaceRefinementBufferLines", "2" 
+     .Set "EdgeRefinementOn", "1" 
+     .Set "EdgeRefinementPolicy", "1" 
+     .Set "EdgeRefinementRatio", "2" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "2" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "1" 
+     .Set "Equilibrate", "2" 
+     .Set "IgnoreThinPanelMaterial", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "0"
+     .Set "SnapToEllipseCenters", "0"
+     .Set "SnapCellCenters", "1"
+     .Set "SnapProbeCellCenters", "0"
+End With 
+With MeshSettings
+     .SetMeshType "HexTLM"
+     .Set "LimitCellSizeType", "Maxcellsizefarfrommodel"
+     .Set "LimitCellSizeAbsolute", "0"
+     .Set "UseCellSizeSmoothingRatio", "0"
+     .Set "CellSizeSmoothingRatio", "4"
+     .Set "LimitCellConnects", "0"
+     .Set "PBAMetalAndThin", "1"
+     .Set "PBADielectrics", "0"
+     .Set "PBATimeStepReduction", "2"
+End With
+With Discretizer
+     .PointAccEnhancement "0"
+End With
+
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral TLM"
+     .SteadyStateLimit "-40"
+     .StimulationPort "Selected"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .StoreTDResultsInCache  "False"
+     .SuperimposePLWExcitation "False"
+     .SParaSymmetry "False"
+End With
+
+
+'@ set mesh properties (Hexahedral TLM)
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Mesh 
+     .MeshType "HexahedralTLM" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "25" 
+     .Set "StepsPerWaveFar", "25" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "20" 
+     .Set "StepsPerBoxFar", "20" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "1" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "20" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "FaceRefinementOn", "1" 
+     .Set "FaceRefinementPolicy", "2" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "5" 
+     .Set "EllipseRefinementOn", "1" 
+     .Set "EllipseRefinementPolicy", "2" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "20" 
+     .Set "FaceRefinementBufferLines", "2" 
+     .Set "EdgeRefinementOn", "1" 
+     .Set "EdgeRefinementPolicy", "1" 
+     .Set "EdgeRefinementRatio", "2" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "2" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "1" 
+     .Set "Equilibrate", "2" 
+     .Set "IgnoreThinPanelMaterial", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "0"
+     .Set "SnapToEllipseCenters", "0"
+     .Set "SnapCellCenters", "1"
+     .Set "SnapProbeCellCenters", "0"
+End With 
+With MeshSettings
+     .SetMeshType "HexTLM"
+     .Set "LimitCellSizeType", "Maxcellsizefarfrommodel"
+     .Set "LimitCellSizeAbsolute", "0"
+     .Set "UseCellSizeSmoothingRatio", "0"
+     .Set "CellSizeSmoothingRatio", "4"
+     .Set "LimitCellConnects", "0"
+     .Set "PBAMetalAndThin", "1"
+     .Set "PBADielectrics", "0"
+     .Set "PBATimeStepReduction", "2"
+End With
+With Discretizer
+     .PointAccEnhancement "0"
+End With
+
+
+'@ set mesh properties (Hexahedral)
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Mesh 
+     .MeshType "PBA" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "20" 
+     .Set "StepsPerWaveFar", "20" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "25" 
+     .Set "StepsPerBoxFar", "6" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "0" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "30" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "FaceRefinementOn", "0" 
+     .Set "FaceRefinementPolicy", "2" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "2" 
+     .Set "EllipseRefinementOn", "0" 
+     .Set "EllipseRefinementPolicy", "2" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "2" 
+     .Set "FaceRefinementBufferLines", "3" 
+     .Set "EdgeRefinementOn", "1" 
+     .Set "EdgeRefinementPolicy", "1" 
+     .Set "EdgeRefinementRatio", "10" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "3" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "0" 
+     .Set "Equilibrate", "1.5" 
+     .Set "IgnoreThinPanelMaterial", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "1"
+     .Set "SnapToEllipseCenters", "1"
+End With 
+With Discretizer 
+     .ConnectivityCheck "False"
+     .UsePecEdgeModel "True" 
+     .GapDetection "False" 
+     .FPBAGapTolerance "1e-3" 
+     .PointAccEnhancement "0" 
+     .UseTST2 "False"
+	  .PBAVersion "20180615" 
+End With 
+
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "Selected"
+     .StimulationMode "All"
+     .SteadyStateLimit "-40"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+
+'@ set mesh properties (Hexahedral TLM)
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Mesh 
+     .MeshType "HexahedralTLM" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "60" 
+     .Set "StepsPerWaveFar", "60" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "60" 
+     .Set "StepsPerBoxFar", "60" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "1" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "40" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "FaceRefinementOn", "1" 
+     .Set "FaceRefinementPolicy", "2" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "5" 
+     .Set "EllipseRefinementOn", "1" 
+     .Set "EllipseRefinementPolicy", "2" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "20" 
+     .Set "FaceRefinementBufferLines", "2" 
+     .Set "EdgeRefinementOn", "1" 
+     .Set "EdgeRefinementPolicy", "1" 
+     .Set "EdgeRefinementRatio", "2" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "2" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "1" 
+     .Set "Equilibrate", "2" 
+     .Set "IgnoreThinPanelMaterial", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "0"
+     .Set "SnapToEllipseCenters", "0"
+     .Set "SnapCellCenters", "1"
+     .Set "SnapProbeCellCenters", "0"
+End With 
+With MeshSettings
+     .SetMeshType "HexTLM"
+     .Set "LimitCellSizeType", "Maxcellsizefarfrommodel"
+     .Set "LimitCellSizeAbsolute", "0"
+     .Set "UseCellSizeSmoothingRatio", "0"
+     .Set "CellSizeSmoothingRatio", "4"
+     .Set "LimitCellConnects", "0"
+     .Set "PBAMetalAndThin", "1"
+     .Set "PBADielectrics", "0"
+     .Set "PBATimeStepReduction", "2"
+End With
+With Discretizer
+     .PointAccEnhancement "0"
+End With
+
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral TLM"
+     .SteadyStateLimit "-40"
+     .StimulationPort "Selected"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .StoreTDResultsInCache  "False"
+     .SuperimposePLWExcitation "False"
+     .SParaSymmetry "False"
+End With
+
+
+'@ set mesh properties (Hexahedral TLM)
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Mesh 
+     .MeshType "HexahedralTLM" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "40" 
+     .Set "StepsPerWaveFar", "40" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "40" 
+     .Set "StepsPerBoxFar", "40" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "1" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "40" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "FaceRefinementOn", "1" 
+     .Set "FaceRefinementPolicy", "2" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "5" 
+     .Set "EllipseRefinementOn", "1" 
+     .Set "EllipseRefinementPolicy", "2" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "20" 
+     .Set "FaceRefinementBufferLines", "2" 
+     .Set "EdgeRefinementOn", "1" 
+     .Set "EdgeRefinementPolicy", "1" 
+     .Set "EdgeRefinementRatio", "2" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "2" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "1" 
+     .Set "Equilibrate", "2" 
+     .Set "IgnoreThinPanelMaterial", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "HexTLM" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "0"
+     .Set "SnapToEllipseCenters", "0"
+     .Set "SnapCellCenters", "1"
+     .Set "SnapProbeCellCenters", "0"
+End With 
+With MeshSettings
+     .SetMeshType "HexTLM"
+     .Set "LimitCellSizeType", "Maxcellsizefarfrommodel"
+     .Set "LimitCellSizeAbsolute", "0"
+     .Set "UseCellSizeSmoothingRatio", "0"
+     .Set "CellSizeSmoothingRatio", "4"
+     .Set "LimitCellConnects", "0"
+     .Set "PBAMetalAndThin", "1"
+     .Set "PBADielectrics", "0"
+     .Set "PBATimeStepReduction", "2"
+End With
+With Discretizer
+     .PointAccEnhancement "0"
+End With
+
 

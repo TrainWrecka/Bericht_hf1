@@ -1,0 +1,155 @@
+////////////////////////////////////////////
+// Background and object media data file: //
+////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+// >>InfoNote: BACKGROUND_TYPE input codes:       //
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       //
+// >>-1 --> Internal void (a NULL background)     //
+// >> 0 --> Regular Unbounded                     //
+// >> 1 --> Image Plane Unbounded                 //
+// >> 2 --> Planar Stratified                     //
+// >> 3 --> Image Planar Stratified               //
+//                                                //
+// >>InfoNote: MEDIA_TYPE input codes:            //
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^            //
+// >> 0 --> Homog Lossless Isotropic              //
+// >> 1 --> Homog Lossy Isotropic                 //
+// >> 2 --> Uniaxial Anisotropic Media            //
+//                                                //
+// >>InfoNote: PLANEWAVE_TYPE input codes:        //
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+// Note: MUST follow BACKGROUND_TYPE input codes: //
+//                                                //
+// >> 0 --> Regular Unbounded Plane Wave          //
+// >> 1 --> Image Plane Unbounded Plane Wave      //
+// >> 2 --> Planar Stratified Plane Wave          //
+////////////////////////////////////////////////////
+// #BACKGROUNDS:
+// ^^^^^^^^^^^^^
+   2
+
+// Total# Incident Plane Waves from ALL backgrounds:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   0
+
+// BackgroundID, TypeCode:
+// ^^^^^^^^^^^^^^^^^^^^^^
+   1           0
+
+// #Media layers in this background:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1
+
+// >>MediaNo , TypeCode
+0  0
+
+// >>Media name descriptor:
+air_0
+
+// #Plane wave excitations in this background:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    0
+
+
+// BackgroundID , TypeCode: #mediaLayers:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   2    0 
+
+// #Media layers in this background:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1
+
+// >>MediaNo , TypeCode
+0  0
+
+
+// >>Media name descriptor:
+Vacuum
+
+// #Plane wave excitations in this background:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+		   0
+
+////////////////////////////////////////////////
+// >>InfoNote: EDGE_TYPE (WIRE) Input Codes:  //
+// >>0 --> PEC wire                           //
+// >>1 --> LossyConductor wire                //
+////////////////////////////////////////////////
+
+// #WIRES:
+// ^^^^^^^
+0
+
+// Edge-WireID, TypeCode, BackgroundID:
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// Orig #SURFACE Types:
+// ^^^^^^^^^^^^^^^^^^^^
+   21
+
+///////////////////////////////////////////
+// >>InfoNote: SURFACE_TYPE Input Codes: //
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ //
+// >>0 --> Material Interface (MI)       //
+// >>1 --> Open PEC                      //
+// >>2 --> Open PEC_MI                   //
+// >>3 --> Open Z-OHM                    //
+// >>4 --> Open Z-OHM_MI                 //
+// >>5 --> Open LossyCond                //
+// >>6 --> Open LossyCond_MI             //
+// >>7 --> Closed PEC                    //
+// >>8 --> Closed Z-OHM                  //
+// >>9 --> Closed LossyCond              //
+// >>10--> WGPORT                        //
+// >>11--> OPEN_PEC_MI1                  //
+// >>12--> OPEN_ZOHM_MI1                 //
+// >>13--> OPEN_LOSSYCOND_MI1            //
+// >>14--> Aperture                      //
+///////////////////////////////////////////
+
+
+// OrigSurfaceID, TypeCode:
+// ^^^^^^^^^^^^^^^^^^^^^^^^
+   1 7 
+PEC
+   2 7 
+PEC
+   3 7 
+PEC
+   4 7 
+PEC
+   5 7 
+PEC
+   6 7 
+PEC
+   7 7 
+PEC
+   8 7 
+PEC
+   9 0 
+Default
+   10 7 
+PEC
+   11 7 
+PEC
+   12 7 
+PEC
+   13 7 
+PEC
+   14 7 
+PEC
+   15 7 
+PEC
+   16 7 
+PEC
+   17 7 
+PEC
+   18 7 
+PEC
+   19 7 
+PEC
+   20 7 
+PEC
+   21 7 
+PEC
+

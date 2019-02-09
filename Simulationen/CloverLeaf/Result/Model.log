@@ -1,17 +1,110 @@
-In order to get an optimal performance, hyperthreading is ignored for parallel
-computations.
-
---------------------------------------------------------------------------------
 *** Error ***
 
-Model could not be prepared for meshing. Boolean unite operation could not be
-performed for some shapes:
-"Fill (extended)"
-Meshing could not be started.
+Could not connect to CST DC Main Controller!
 
 --------------------------------------------------------------------------------
-*** Error ***
+*** Warning ***
 
-Could not read mesh.
+The diagonal of the calculation domain has a very small value. This may lead to
+errors while calculating the system matrix. In this case, magnify the
+dimensions of the structure and use the next smaller unit.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+After rescaling the structure, use "Objects->Heal All Shapes" in order to
+repair any scaling errors.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 01:07 AM Saturday, 09. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Solver run aborted.
+
+--------------------------------------------------------------------------------
+Frequency domain results unnormalized.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      0                             0            0            
+  Solver run total    155552                        5354364      4601800      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             1
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	4501200
+  Excitation duration:              	0.00000000e+000 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	0 
+  Simulated number of time steps:   	0 
+  Maximum number of time steps:     	0 
+  Time step width:
+     without subcycles:             	0.00000000e+000 ns
+     used:                          	0.00000000e+000 ns
+
+  Matrix calculation time:          	0 	s
+  Solver setup time:                	0 	s
+  Solver loop time:                 	0 	s
+  Solver post processing time:      	0 	s
+                                    	------------
+  Total solver time:                	0 	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	171    	s  ( = 0 h, 2 m, 51 s )
+                                    	------------
+  Total simulation time:            	171    	s  ( = 0 h, 2 m, 51 s )
+
+--------------------------------------------------------------------------------
+Solver finished at: 01:10 AM Saturday, 09. February 2019
+
+
 
 --------------------------------------------------------------------------------

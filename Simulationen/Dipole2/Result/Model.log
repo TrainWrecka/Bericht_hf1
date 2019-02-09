@@ -1,0 +1,422 @@
+*** Warning ***
+
+The diagonal of the calculation domain has a very small value. This may lead to
+errors while calculating the system matrix. In this case, magnify the
+dimensions of the structure and use the next smaller unit.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+After rescaling the structure, use "Objects->Heal All Shapes" in order to
+repair any scaling errors.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Only straight metal edges on the boundaries are considered for the automatic
+decoupling plane.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 07:58 PM Friday, 08. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge port is connected to metal material:
+	1
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 1
+      Number of calculation domains used: 1
+
+   PBA fill limit: 99.00% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Inhomogeneous material at open boundary detected. (The structure must be 
+identical in the open boundary plane and the next two mesh steps.)
+Location(s): xmin xmax ymin ymax zmin zmax
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The current settings will probably lead to a very long simulation time.
+
+You may improve the simulation speed by:
+
+1. checking the frequency range and units settings
+2. reducing the simulation duration
+3. checking the mesh to avoid very small mesh steps
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 9.99307e-05 m
+  Xmax: open, 4 Layer, depth 9.99307e-05 m
+
+  Ymin: open, 4 Layer, depth 9.99307e-05 m
+  Ymax: open, 4 Layer, depth 9.99307e-05 m
+
+  Zmin: open, 4 Layer, depth 0.00111104 m
+  Zmax: open, 4 Layer, depth 0.00111104 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	16229
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20524                         3302584      3302584      
+  Matrices calc.      29828                         3287588      3265584      
+  Solver run total    85956                         3322056      3252104      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	2368
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	0.000295898 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	103 
+  Maximum number of time steps:     	6961857 
+  Time step width:
+     without subcycles:             	2.04229891e-005 ns
+     used:                          	2.04229891e-005 ns
+
+  CAD preparation time:          	0      	s
+  Matrix calculation time:          	5 	s
+  Solver setup time:                	3 	s
+  Solver loop time:                 	0 	s
+  Solver post processing time:      	0 	s
+                                    	------------
+  Total solver time:                	8 	s
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The calculation seems to be unstable! Transient solver is restarted with a 
+scaled timestep by 0.95.
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge port is connected to metal material:
+	1
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Inhomogeneous material at open boundary detected. (The structure must be 
+identical in the open boundary plane and the next two mesh steps.)
+Location(s): xmin xmax ymin ymax zmin zmax
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The current settings will probably lead to a very long simulation time.
+
+You may improve the simulation speed by:
+
+1. checking the frequency range and units settings
+2. reducing the simulation duration
+3. checking the mesh to avoid very small mesh steps
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 9.99307e-05 m
+  Xmax: open, 4 Layer, depth 9.99307e-05 m
+
+  Ymin: open, 4 Layer, depth 9.99307e-05 m
+  Ymax: open, 4 Layer, depth 9.99307e-05 m
+
+  Zmin: open, 4 Layer, depth 0.00111104 m
+  Zmax: open, 4 Layer, depth 0.00111104 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	16229
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20524                         3302584      3302584      
+  Matrices calc.      29828                         3287588      3265584      
+  Solver run total    88324                         3252364      3252364      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	2368
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	0.000474873 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	174 
+  Maximum number of time steps:     	7328271 
+  Time step width:
+     without subcycles:             	1.94018397e-005 ns
+     used:                          	1.94018397e-005 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	1 	s
+  Solver loop time:                 	0 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	2 	s
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The calculation seems to be unstable! Transient solver is restarted with a 
+scaled timestep by 0.85.
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge port is connected to metal material:
+	1
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Inhomogeneous material at open boundary detected. (The structure must be 
+identical in the open boundary plane and the next two mesh steps.)
+Location(s): xmin xmax ymin ymax zmin zmax
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The current settings will probably lead to a very long simulation time.
+
+You may improve the simulation speed by:
+
+1. checking the frequency range and units settings
+2. reducing the simulation duration
+3. checking the mesh to avoid very small mesh steps
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 9.99307e-05 m
+  Xmax: open, 4 Layer, depth 9.99307e-05 m
+
+  Ymin: open, 4 Layer, depth 9.99307e-05 m
+  Ymax: open, 4 Layer, depth 9.99307e-05 m
+
+  Zmin: open, 4 Layer, depth 0.00111104 m
+  Zmax: open, 4 Layer, depth 0.00111104 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	16229
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20524                         3302584      3302584      
+  Matrices calc.      29828                         3287588      3265584      
+  Solver run total    102204                        3253684      3186716      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	2368
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	168 	s
+  Number of calculated pulse widths:	1.00043 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	409696 
+  Maximum number of time steps:     	8190421 
+  Time step width:
+     without subcycles:             	1.73595408e-005 ns
+     used:                          	1.73595408e-005 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	1 	s
+  Solver loop time:                 	168 	s
+  Solver post processing time:      	5 	s
+                                    	------------
+  Total solver time:                	174 	s  ( = 0 h, 2 m, 54 s )
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	186    	s  ( = 0 h, 3 m, 6 s )
+                                    	------------
+  Total simulation time:            	186    	s  ( = 0 h, 3 m, 6 s )
+
+--------------------------------------------------------------------------------
+Solver finished at: 08:01 PM Friday, 08. February 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------

@@ -23,11 +23,8 @@ With Units
     .Conductance "Siemens"
     .Capacitance "F"
 End With
-
 '----------------------------------------------------------------------------
-
 Plot.DrawBox True
-
 With Background
      .Type "Normal"
      .Epsilon "1.0"
@@ -39,7 +36,6 @@ With Background
      .ZminSpace "0.0"
      .ZmaxSpace "0.0"
 End With
-
 With Boundary
      .Xmin "expanded open"
      .Xmax "expanded open"
@@ -51,56 +47,44 @@ With Boundary
      .Ysymmetry "none"
      .Zsymmetry "none"
 End With
-
 ' switch on FD-TET setting for accurate farfields
-
 FDSolver.ExtrudeOpenBC "True"
-
 Mesh.FPBAAvoidNonRegUnite "True"
 Mesh.ConsiderSpaceForLowerMeshLimit "False"
 Mesh.MinimumStepNumber "5"
 Mesh.RatioLimit "20"
 Mesh.AutomeshRefineAtPecLines "True", "10"
-
 With MeshSettings
      .SetMeshType "Hex"
      .Set "RatioLimitGeometry", "20"
      .Set "EdgeRefinementOn", "1"
      .Set "EdgeRefinementRatio", "10"
 End With
-
 With MeshSettings
      .SetMeshType "Tet"
      .Set "VolMeshGradation", "1.5"
      .Set "SrfMeshGradation", "1.5"
 End With
-
 With MeshSettings
      .SetMeshType "HexTLM"
      .Set "RatioLimitGeometry", "20"
 End With
-
 PostProcess1D.ActivateOperation "vswr", "true"
 PostProcess1D.ActivateOperation "yz-matrices", "true"
-
 With MeshSettings
      .SetMeshType "Srf"
      .Set "Version", 1
 End With
 IESolver.SetCFIEAlpha "1.000000"
-
 With FarfieldPlot
 	.ClearCuts ' lateral=phi, polar=theta
 	.AddCut "lateral", "0", "1"
 	.AddCut "lateral", "90", "1"
 	.AddCut "polar", "90", "1"
 End With
-
 '----------------------------------------------------------------------------
-
 'set the frequency range
 Solver.FrequencyRange "910", "920"
-
 Dim sDefineAt As String
 sDefineAt = "915"
 Dim sDefineAtName As String
@@ -111,15 +95,12 @@ Dim aFreq() As String
 aFreq = Split(sDefineAt, ";")
 Dim aNames() As String
 aNames = Split(sDefineAtName, ";")
-
 Dim nIndex As Integer
 For nIndex = LBound(aFreq) To UBound(aFreq)
-
 Dim zz_val As String
 zz_val = aFreq (nIndex)
 Dim zz_name As String
 zz_name = sDefineAtToken & aNames (nIndex)
-
 ' Define E-Field Monitors
 With Monitor
     .Reset
@@ -130,7 +111,6 @@ With Monitor
     .MonitorValue  zz_val
     .Create
 End With
-
 ' Define H-Field Monitors
 With Monitor
     .Reset
@@ -141,7 +121,6 @@ With Monitor
     .MonitorValue  zz_val
     .Create
 End With
-
 ' Define Farfield Monitors
 With Monitor
     .Reset
@@ -152,24 +131,17 @@ With Monitor
     .ExportFarfieldSource "False"
     .Create
 End With
-
 Next
-
 '----------------------------------------------------------------------------
-
 With MeshSettings
      .SetMeshType "Srf"
      .Set "Version", 1%
 End With
-
 With Mesh
      .MeshType "Surface"
 End With
-
 'set the solver type
 ChangeSolverType("HF IntegralEq")
-
-
 
 '@ define curve arc: curve1:arc1
 
@@ -191,12 +163,10 @@ With Arc
      .Create
 End With
 
-
 '@ new component: component1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Component.New "component1" 
-
+Component.New "component1"
 
 '@ define curve line: curve2:line1
 
@@ -212,24 +182,20 @@ With Line
      .Create
 End With
 
-
 '@ delete curve item: curve2:line1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurveItem "curve2", "line1" 
-
+Curve.DeleteCurveItem "curve2", "line1"
 
 '@ delete curve: curve2
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurve "curve2" 
-
+Curve.DeleteCurve "curve2"
 
 '@ delete curve: curve1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurve "curve1" 
-
+Curve.DeleteCurve "curve1"
 
 '@ define curve polygon: curve1:polygon1
 
@@ -245,8 +211,7 @@ With Polygon
      .LineTo "0.073", "0.014" 
      .LineTo "0.063", "0" 
      .Create 
-End With 
-
+End With
 
 '@ define tracefromcurve: component1:solid1
 
@@ -264,8 +229,7 @@ With TraceFromCurve
      .DeleteCurve "True" 
      .GapType "2" 
      .Create 
-End With 
-
+End With
 
 '@ define curve arc: curve1:arc1
 
@@ -286,7 +250,6 @@ With Arc
      .Segments "0" 
      .Create
 End With
-
 
 '@ define material: Alumina (96%) (lossy)
 
@@ -328,8 +291,7 @@ With Material
 .Wireframe "False"
 .Transparency "0"
 .Create
-End With 
-
+End With
 
 '@ define tracefromcurve: component1:solid2
 
@@ -347,14 +309,12 @@ With TraceFromCurve
      .DeleteCurve "True" 
      .GapType "2" 
      .Create 
-End With 
-
+End With
 
 '@ activate local coordinates
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 WCS.ActivateWCS "local"
-
 
 '@ define curve arc: curve1:arc1
 
@@ -376,7 +336,6 @@ With Arc
      .Create
 End With
 
-
 '@ define curve 3dpolygon: curve1:3dspline1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
@@ -390,8 +349,7 @@ With Polygon3D
      .Point "1", "1", "1" 
      .Point "1", "2", "0" 
      .Create 
-End With 
-
+End With
 
 '@ set wcs properties
 
@@ -402,12 +360,10 @@ With WCS
      .SetUVector "1", "0", "0"
 End With
 
-
 '@ move wcs
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-WCS.MoveWCS "global", "0.0", "0.0", "0.0" 
-
+WCS.MoveWCS "global", "0.0", "0.0", "0.0"
 
 '@ align wcs with global plane
 
@@ -418,30 +374,25 @@ With WCS
      .ActivateWCS "local" 
 End With
 
-
 '@ align wcs with global coordinates
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-WCS.AlignWCSWithGlobalCoordinates 
-
+WCS.AlignWCSWithGlobalCoordinates
 
 '@ delete shape: component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Delete "component1:solid1" 
-
+Solid.Delete "component1:solid1"
 
 '@ delete shape: component1:solid2
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Delete "component1:solid2" 
-
+Solid.Delete "component1:solid2"
 
 '@ delete component: component1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Component.Delete "component1" 
-
+Component.Delete "component1"
 
 '@ define curvewire: curve1:wire1
 
@@ -461,30 +412,25 @@ With Wire
      .Add
 End With
 
-
 '@ delete curve: curve1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurve "curve1" 
-
+Curve.DeleteCurve "curve1"
 
 '@ delete material: Alumina (96%) (lossy)
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 Material.Delete "Alumina (96%) (lossy)"
 
-
 '@ delete wire folder: curve1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Wire.DeleteFolder "curve1" 
-
+Wire.DeleteFolder "curve1"
 
 '@ activate global coordinates
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 WCS.ActivateWCS "global"
-
 
 '@ define curve 3dpolygon: curve1:line1
 
@@ -497,8 +443,7 @@ With Polygon3D
      .Point "0", "0", "0" 
      .Point "r", "0", "0" 
      .Create 
-End With 
-
+End With
 
 '@ define curve 3dpolygon: curve1:line2
 
@@ -511,8 +456,7 @@ With Polygon3D
      .Point "0", "0", "0" 
      .Point "0", "offset", "offset" 
      .Create 
-End With 
-
+End With
 
 '@ define curve 3dpolygon: curve1:3dspline1
 
@@ -526,14 +470,12 @@ With Polygon3D
      .Point "r", "0", "0" 
      .Point "0", "offset", "offset" 
      .Create 
-End With 
-
+End With
 
 '@ delete curve item: curve1:3dspline1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurveItem "curve1", "3dspline1" 
-
+Curve.DeleteCurveItem "curve1", "3dspline1"
 
 '@ define curve 3dpolygon: curve1:3dspline1
 
@@ -548,14 +490,12 @@ With Polygon3D
      .Point "offset", "r/2", "r/2" 
      .Point "0", "offset", "offset" 
      .Create 
-End With 
-
+End With
 
 '@ new component: component1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Component.New "component1" 
-
+Component.New "component1"
 
 '@ define cylinder: component1:solid1
 
@@ -573,8 +513,7 @@ With Cylinder
      .Ycenter "0" 
      .Segments "0" 
      .Create 
-End With 
-
+End With
 
 '@ define units
 
@@ -590,8 +529,7 @@ With Units
      .Conductance "Siemens" 
      .Capacitance "F" 
      .Inductance "H" 
-End With 
-
+End With
 
 '@ transform: rotate component1
 
@@ -607,8 +545,7 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
-End With 
-
+End With
 
 '@ define curve 3dpolygon: curve1:3dspline2
 
@@ -625,39 +562,32 @@ With Polygon3D
      .Point "sqr(2-sqr(2))/2*r", "5.2*r/8", "5.2*r/8" 
      .Point "0", "offset", "offset" 
      .Create 
-End With 
-
+End With
 
 '@ delete shape: component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Delete "component1:solid1" 
-
+Solid.Delete "component1:solid1"
 
 '@ delete component: component1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Component.Delete "component1" 
-
+Component.Delete "component1"
 
 '@ rename curve item: curve1:3dspline1 to: curve1:curve1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.RenameCurveItem "curve1", "3dspline1", "curve1" 
-
-
+Curve.RenameCurveItem "curve1", "3dspline1", "curve1"
 
 '@ new curve: curve2
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.NewCurve "curve2" 
-
+Curve.NewCurve "curve2"
 
 '@ delete curve item: curve1:3dspline2
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Curve.DeleteCurveItem "curve1", "3dspline2" 
-
+Curve.DeleteCurveItem "curve1", "3dspline2"
 
 '@ define curvewire: curve1:wire1
 
@@ -677,12 +607,10 @@ With Wire
      .Add
 End With
 
-
 '@ new component: component1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Component.New "component1" 
-
+Component.New "component1"
 
 '@ Convert wire to solid: component1:wire1
 
@@ -696,6 +624,23 @@ With Wire
      .ConvertToSolidShape
 End With
 
+'@ transform: rotate component1
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "0", "0", "90" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Rotate" 
+End With
 
 '@ transform: rotate component1
 
@@ -713,27 +658,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Rotate" 
-End With 
-
-
-'@ transform: rotate component1
-
-'[VERSION]2018.6|27.0.2|20180615[/VERSION]
-With Transform 
-     .Reset 
-     .Name "component1" 
-     .Origin "Free" 
-     .Center "0", "0", "0" 
-     .Angle "0", "0", "90" 
-     .MultipleObjects "True" 
-     .GroupObjects "False" 
-     .Repetitions "1" 
-     .MultipleSelection "False" 
-     .Destination "" 
-     .Material "" 
-     .Transform "Shape", "Rotate" 
-End With 
-
+End With
 
 '@ transform: rotate component1
 
@@ -751,8 +676,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Rotate" 
-End With 
-
+End With
 
 '@ define sphere: component1:solid1
 
@@ -771,58 +695,55 @@ With Sphere
      .Create 
 End With
 
-
 '@ boolean insert shapes: component1:wire1, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1", "component1:solid1" 
+Solid.Insert "component1:wire1", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_1, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_1", "component1:solid1" 
+Solid.Insert "component1:wire1_1", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_2, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_2", "component1:solid1" 
+Solid.Insert "component1:wire1_2", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_1_1, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_1_1", "component1:solid1" 
+Solid.Insert "component1:wire1_1_1", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_3, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_3", "component1:solid1" 
+Solid.Insert "component1:wire1_3", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_1_2, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_1_2", "component1:solid1" 
+Solid.Insert "component1:wire1_1_2", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_2_1, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_2_1", "component1:solid1" 
+Solid.Insert "component1:wire1_2_1", "component1:solid1"
 
 '@ boolean insert shapes: component1:wire1_1_1_1, component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Insert "component1:wire1_1_1_1", "component1:solid1" 
+Solid.Insert "component1:wire1_1_1_1", "component1:solid1"
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1", "10", "9" 
-
+Pick.PickEdgeFromId "component1:wire1_1", "10", "9"
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1", "11", "10" 
-
+Pick.PickEdgeFromId "component1:wire1_1", "11", "10"
 
 '@ define discrete face port: 1
 
@@ -846,20 +767,17 @@ With DiscreteFacePort
      .UseProjection "False" 
      .ReverseProjection "False" 
      .Create 
-End With 
-
-
-'@ pick edge
-
-'[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1", "10", "9" 
-
+End With
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1", "11", "10" 
+Pick.PickEdgeFromId "component1:wire1", "10", "9"
 
+'@ pick edge
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Pick.PickEdgeFromId "component1:wire1", "11", "10"
 
 '@ define discrete face port: 2
 
@@ -883,20 +801,17 @@ With DiscreteFacePort
      .UseProjection "False" 
      .ReverseProjection "False" 
      .Create 
-End With 
-
-
-'@ pick edge
-
-'[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1_1_1", "10", "9" 
-
+End With
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1_1", "10", "9" 
+Pick.PickEdgeFromId "component1:wire1_1_1_1", "10", "9"
 
+'@ pick edge
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Pick.PickEdgeFromId "component1:wire1_1_1", "10", "9"
 
 '@ define discrete face port: 3
 
@@ -920,20 +835,17 @@ With DiscreteFacePort
      .UseProjection "False" 
      .ReverseProjection "False" 
      .Create 
-End With 
-
-
-'@ pick edge
-
-'[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromIdOn "port$port3", "3", "2" 
-
+End With
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1_1", "11", "10" 
+Pick.PickEdgeFromIdOn "port$port3", "3", "2"
 
+'@ pick edge
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Pick.PickEdgeFromId "component1:wire1_1_1", "11", "10"
 
 '@ define discrete face port: 4
 
@@ -957,20 +869,17 @@ With DiscreteFacePort
      .UseProjection "False" 
      .ReverseProjection "False" 
      .Create 
-End With 
-
+End With
 
 '@ delete shape: component1:solid1
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Solid.Delete "component1:solid1" 
-
+Solid.Delete "component1:solid1"
 
 '@ delete port: port3
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Port.Delete "3" 
-
+Port.Delete "3"
 
 '@ define sphere: component1:solid1
 
@@ -989,18 +898,15 @@ With Sphere
      .Create 
 End With
 
+'@ pick edge
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Pick.PickEdgeFromId "component1:wire1_1_1_1", "11", "10"
 
 '@ pick edge
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1_1_1", "11", "10" 
-
-
-'@ pick edge
-
-'[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Pick.PickEdgeFromId "component1:wire1_1_1_1", "10", "9" 
-
+Pick.PickEdgeFromId "component1:wire1_1_1_1", "10", "9"
 
 '@ define discrete face port: 3
 
@@ -1024,14 +930,12 @@ With DiscreteFacePort
      .UseProjection "False" 
      .ReverseProjection "False" 
      .Create 
-End With 
-
+End With
 
 '@ define frequency domain solver parameters
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 Mesh.SetCreator "High Frequency" 
-
 With FDSolver
      .Reset 
      .SetMethod "Surface", "General purpose" 
@@ -1108,7 +1012,6 @@ With FDSolver
      .HardwareAcceleration "False"
      .MaximumNumberOfGPUs "1"
 End With
-
 With IESolver
      .Reset 
      .UseFastFrequencySweep "False" 
@@ -1119,7 +1022,6 @@ With IESolver
      .PreconditionerType "Auto" 
      .ExtendThinWireModelByWireNubs "False" 
 End With
-
 With IESolver
      .SetFMMFFCalcStopLevel "0" 
      .SetFMMFFCalcNumInterpPoints "6" 
@@ -1143,30 +1045,25 @@ With IESolver
      .SetMemSettingCMA "Auto" 
 End With
 
-
 '@ delete monitor: h-field (f=915)
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Monitor.Delete "h-field (f=915)" 
-
+Monitor.Delete "h-field (f=915)"
 
 '@ delete monitor: e-field (f=915)
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-Monitor.Delete "e-field (f=915)" 
-
+Monitor.Delete "e-field (f=915)"
 
 '@ change solver type
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-ChangeSolverType "HF Time Domain" 
-
+ChangeSolverType "HF Time Domain"
 
 '@ define time domain solver parameters
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 Mesh.SetCreator "High Frequency" 
-
 With Solver 
      .Method "Hexahedral"
      .CalculationType "TD-S"
@@ -1184,7 +1081,6 @@ With Solver
      .UseSensitivityAnalysis "False"
 End With
 
-
 '@ define units
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
@@ -1199,20 +1095,17 @@ With Units
      .Conductance "Siemens" 
      .Capacitance "F" 
      .Inductance "H" 
-End With 
-
+End With
 
 '@ change solver type
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
-ChangeSolverType "HF Frequency Domain" 
-
+ChangeSolverType "HF Frequency Domain"
 
 '@ define frequency domain solver parameters
 
 '[VERSION]2018.6|27.0.2|20180615[/VERSION]
 Mesh.SetCreator "High Frequency" 
-
 With FDSolver
      .Reset 
      .SetMethod "Tetrahedral", "General purpose" 
@@ -1278,7 +1171,7 @@ With FDSolver
      .SetResultDataSamplingMode "Automatic" 
      .SweepWeightEvanescent "1.0" 
      .AccuracyROM "1e-4" 
-     .AddInactiveSampleInterval "920", "920", "1", "Automatic", "True" 
+     .AddInactiveSampleInterval "920", "920", "1", "Single", "True" 
      .MPIParallelization "False"
      .UseDistributedComputing "False"
      .NetworkComputingStrategy "RunRemote"
@@ -1287,7 +1180,6 @@ With FDSolver
      .MaxCPUs "96"
      .MaximumNumberOfCPUDevices "2"
 End With
-
 With IESolver
      .Reset 
      .UseFastFrequencySweep "True" 
@@ -1298,7 +1190,6 @@ With IESolver
      .PreconditionerType "Auto" 
      .ExtendThinWireModelByWireNubs "False" 
 End With
-
 With IESolver
      .SetFMMFFCalcStopLevel "0" 
      .SetFMMFFCalcNumInterpPoints "6" 
@@ -1321,5 +1212,540 @@ With IESolver
      .FrequencySamplesCMA "0" 
      .SetMemSettingCMA "Auto" 
 End With
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Time Domain"
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "All"
+     .StimulationMode "All"
+     .SteadyStateLimit "-20"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Time Domain"
+
+'@ define solver excitation modes
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Solver 
+     .ResetExcitationModes 
+     .SParameterPortExcitation "True" 
+     .SimultaneousExcitation "False" 
+     .SetSimultaneousExcitAutoLabel "True" 
+     .SetSimultaneousExcitationLabel "1[1.0,0.0]+2[1.0,0.0]+3[1.0,0.0]+4[1.0,0.0]" 
+     .SetSimultaneousExcitationOffset "Timeshift" 
+     .PhaseRefFrequency "915" 
+     .ExcitationSelectionShowAdditionalSettings "False" 
+     .ExcitationPortMode "1", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "2", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "3", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "4", "1", "1.0", "0.0", "default", "True" 
+End With
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "Selected"
+     .StimulationMode "All"
+     .SteadyStateLimit "-10"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+'@ define boundaries
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Boundary
+     .Xmin "open"
+     .Xmax "open"
+     .Ymin "open"
+     .Ymax "open"
+     .Zmin "open"
+     .Zmax "open"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+End With
+
+'@ farfield plot options
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With FarfieldPlot 
+     .Plottype "Polar" 
+     .Vary "angle1" 
+     .Theta "90" 
+     .Phi "90" 
+     .Step "1" 
+     .Step2 "1" 
+     .SetLockSteps "True" 
+     .SetPlotRangeOnly "False" 
+     .SetThetaStart "0" 
+     .SetThetaEnd "180" 
+     .SetPhiStart "0" 
+     .SetPhiEnd "360" 
+     .SetTheta360 "False" 
+     .SymmetricRange "False" 
+     .SetTimeDomainFF "False" 
+     .SetFrequency "-1" 
+     .SetTime "0" 
+     .SetColorByValue "True" 
+     .DrawStepLines "False" 
+     .DrawIsoLongitudeLatitudeLines "False" 
+     .ShowStructure "False" 
+     .ShowStructureProfile "False" 
+     .SetStructureTransparent "False" 
+     .SetFarfieldTransparent "False" 
+     .SetSpecials "enablepolarextralines" 
+     .SetPlotMode "Directivity" 
+     .Distance "1" 
+     .UseFarfieldApproximation "True" 
+     .SetScaleLinear "False" 
+     .SetLogRange "40" 
+     .SetLogNorm "0" 
+     .DBUnit "0" 
+     .EnableFixPlotMaximum "False" 
+     .SetFixPlotMaximumValue "1" 
+     .SetInverseAxialRatio "False" 
+     .SetAxesType "user" 
+     .SetAntennaType "unknown" 
+     .Phistart "1.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .Thetastart "0.000000e+00", "0.000000e+00", "1.000000e+00" 
+     .PolarizationVector "0.000000e+00", "1.000000e+00", "0.000000e+00" 
+     .SetCoordinateSystemType "spherical" 
+     .SetAutomaticCoordinateSystem "True" 
+     .SetPolarizationType "Linear" 
+     .SlantAngle 0.000000e+00 
+     .Origin "bbox" 
+     .Userorigin "0.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .SetUserDecouplingPlane "False" 
+     .UseDecouplingPlane "False" 
+     .DecouplingPlaneAxis "X" 
+     .DecouplingPlanePosition "0.000000e+00" 
+     .LossyGround "False" 
+     .GroundEpsilon "1" 
+     .GroundKappa "0" 
+     .EnablePhaseCenterCalculation "False" 
+     .SetPhaseCenterAngularLimit "3.000000e+01" 
+     .SetPhaseCenterComponent "boresight" 
+     .SetPhaseCenterPlane "both" 
+     .ShowPhaseCenter "True" 
+     .ClearCuts 
+     .AddCut "lateral", "0", "1"  
+     .AddCut "lateral", "90", "1"  
+     .AddCut "polar", "90", "1"  
+     .StoreSettings
+End With
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Frequency Domain"
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "Fast reduced order model" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "1" 
+     .ResetExcitationList 
+     .AutoNormImpedance "False" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "False" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-4" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Auto" 
+     .MeshAdaptionHex "False" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "True" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcStatBField "False" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .StoreSolutionCoefficients "True" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "1001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddInactiveSampleInterval "920", "920", "1", "Single", "True" 
+     .SetUseFastResonantForSweepTet "True" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "96"
+     .MaximumNumberOfCPUDevices "2"
+End With
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+End With
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "1.000000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+End With
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Time Domain"
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "Selected"
+     .StimulationMode "All"
+     .SteadyStateLimit "-10"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+'@ farfield plot options
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With FarfieldPlot 
+     .Plottype "Polar" 
+     .Vary "angle1" 
+     .Theta "90" 
+     .Phi "90" 
+     .Step "1" 
+     .Step2 "1" 
+     .SetLockSteps "True" 
+     .SetPlotRangeOnly "False" 
+     .SetThetaStart "0" 
+     .SetThetaEnd "180" 
+     .SetPhiStart "0" 
+     .SetPhiEnd "360" 
+     .SetTheta360 "False" 
+     .SymmetricRange "False" 
+     .SetTimeDomainFF "False" 
+     .SetFrequency "-1" 
+     .SetTime "0" 
+     .SetColorByValue "True" 
+     .DrawStepLines "False" 
+     .DrawIsoLongitudeLatitudeLines "False" 
+     .ShowStructure "False" 
+     .ShowStructureProfile "False" 
+     .SetStructureTransparent "False" 
+     .SetFarfieldTransparent "False" 
+     .SetSpecials "enablepolarextralines" 
+     .SetPlotMode "Directivity" 
+     .Distance "1" 
+     .UseFarfieldApproximation "True" 
+     .SetScaleLinear "False" 
+     .SetLogRange "40" 
+     .SetLogNorm "0" 
+     .DBUnit "0" 
+     .EnableFixPlotMaximum "False" 
+     .SetFixPlotMaximumValue "1" 
+     .SetInverseAxialRatio "False" 
+     .SetAxesType "user" 
+     .SetAntennaType "unknown" 
+     .Phistart "1.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .Thetastart "0.000000e+00", "0.000000e+00", "1.000000e+00" 
+     .PolarizationVector "0.000000e+00", "1.000000e+00", "0.000000e+00" 
+     .SetCoordinateSystemType "spherical" 
+     .SetAutomaticCoordinateSystem "True" 
+     .SetPolarizationType "Linear" 
+     .SlantAngle 0.000000e+00 
+     .Origin "bbox" 
+     .Userorigin "0.000000e+00", "0.000000e+00", "0.000000e+00" 
+     .SetUserDecouplingPlane "False" 
+     .UseDecouplingPlane "False" 
+     .DecouplingPlaneAxis "X" 
+     .DecouplingPlanePosition "0.000000e+00" 
+     .LossyGround "False" 
+     .GroundEpsilon "1" 
+     .GroundKappa "0" 
+     .EnablePhaseCenterCalculation "False" 
+     .SetPhaseCenterAngularLimit "3.000000e+01" 
+     .SetPhaseCenterComponent "boresight" 
+     .SetPhaseCenterPlane "both" 
+     .ShowPhaseCenter "True" 
+     .ClearCuts 
+     .AddCut "lateral", "0", "1"  
+     .AddCut "lateral", "90", "1"  
+     .AddCut "polar", "90", "1"  
+     .StoreSettings
+End With
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Time Domain"
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "Selected"
+     .StimulationMode "All"
+     .SteadyStateLimit "-20"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+'@ define boundaries
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Boundary
+     .Xmin "expanded open"
+     .Xmax "expanded open"
+     .Ymin "expanded open"
+     .Ymax "expanded open"
+     .Zmin "expanded open"
+     .Zmax "expanded open"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+End With
+
+'@ define time domain solver acceleration
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With TlmSolver 
+     .UseParallelization "True"
+     .MaximumNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "8"
+     .RemoteCalculation "False"
+     .RemotePostprocessing "False"
+     .UseDistributedComputing "True"
+     .MaxNumberOfDistributedComputingPorts "2"
+     .DistributeMatrixCalculation "True"
+     .HardwareAcceleration "True"
+     .MaximumNumberOfGPUs "8"
+End With
+UseDistributedComputingForParameters "True"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "True"
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With Solver 
+     .Method "Hexahedral TLM"
+     .SteadyStateLimit "-20"
+     .StimulationPort "Selected"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .StoreTDResultsInCache  "False"
+     .SuperimposePLWExcitation "False"
+     .SParaSymmetry "False"
+End With
+
+'@ define time domain solver acceleration
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With TlmSolver 
+     .UseParallelization "False"
+     .MaximumNumberOfThreads "70"
+     .MaximumNumberOfCPUDevices "2"
+     .RemoteCalculation "False"
+     .RemotePostprocessing "False"
+     .UseDistributedComputing "True"
+     .MaxNumberOfDistributedComputingPorts "2"
+     .DistributeMatrixCalculation "True"
+     .HardwareAcceleration "False"
+     .MaximumNumberOfGPUs "4"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "True"
+
+'@ change solver type
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+ChangeSolverType "HF Time Domain" 
+
+
+'@ define solver excitation modes
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Solver 
+     .ResetExcitationModes 
+     .SParameterPortExcitation "True" 
+     .SimultaneousExcitation "False" 
+     .SetSimultaneousExcitAutoLabel "True" 
+     .SetSimultaneousExcitationLabel "1[1.0,0.0]+2[1.0,0.0]+3[1.0,0.0]+4[1.0,0.0]" 
+     .SetSimultaneousExcitationOffset "Timeshift" 
+     .PhaseRefFrequency "915" 
+     .ExcitationSelectionShowAdditionalSettings "False" 
+     .ExcitationPortMode "1", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "2", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "3", "1", "1.0", "0.0", "default", "True" 
+     .ExcitationPortMode "4", "1", "1.0", "0.0", "default", "True" 
+End With 
+
+
+'@ define time domain solver parameters
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "Selected"
+     .StimulationMode "All"
+     .SteadyStateLimit "-30"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+
+
+'@ define time domain solver acceleration
+
+'[VERSION]2018.6|27.0.2|20180615[/VERSION]
+With Solver 
+     .UseParallelization "False"
+     .MaximumNumberOfThreads "70"
+     .MaximumNumberOfCPUDevices "2"
+     .RemoteCalculation "False"
+     .UseDistributedComputing "False"
+     .MaxNumberOfDistributedComputingPorts "2"
+     .DistributeMatrixCalculation "True"
+     .MPIParallelization "False"
+     .HardwareAcceleration "False"
+     .MaximumNumberOfGPUs "4"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "True"
 
 

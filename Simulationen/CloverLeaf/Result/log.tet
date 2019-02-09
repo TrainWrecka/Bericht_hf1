@@ -1,212 +1,161 @@
 === BEGIN SESSION ==========================================================
-[17:31:09] Build: 64bit; Number: 20180615; ID: 2018.6 Release from 2018-06-15 (change 610495); Date: 2018-06-15
-[17:31:09] ACIS version: 27.0.2
-[17:31:09] SPAresabs = 9.9999999999999995e-07
-[17:31:09] SPAresnor = 1.0000000000000000e-10
-[17:31:09] Reading entity list
-[17:31:09] Choosing Advanced Boolean Loop...
-[17:31:09] Volume Attributes enabled
-[17:31:09] Attaching Volume Attributes
-[17:31:09] Sorted out 87 special bodies.
-[17:31:09] Processing 9 entities.
-[17:31:09] Queue Size: 1
-[17:31:09] Adding "component1:solid1" to "component1:wire1" (Pair #1 out of 4)
-[17:31:09] Adding "component1:wire1_1" to "component1:wire1_1_1" (Pair #2 out of 4)
-[17:31:09] Adding "component1:wire1_1_1_1" to "component1:wire1_1_2" (Pair #3 out of 4)
-[17:31:09] Adding "component1:wire1_2" to "component1:wire1_2_1" (Pair #4 out of 4)
-[17:31:09] Processing 5 entities.
-[17:31:09] Queue Size: 1
-[17:31:09] Adding Compound Body to Compound Body (Pair #1 out of 2)
-[17:31:09] Adding Compound Body to Compound Body (Pair #2 out of 2)
-[17:31:10] Processing 3 entities.
-[17:31:10] Queue Size: 1
-[17:31:10] Adding Compound Body to Compound Body (Pair #1 out of 1)
-[17:31:10] Processing 2 entities.
-[17:31:10] Queue Size: 1
-[17:31:10] Adding Compound Body to "component1:wire1_3" (Pair #1 out of 1)
-[17:31:11] Exiting Boolean Unite Module.
-[17:31:11] Added Compound Body (ID: 46, 40, 28, 34, 10, 8, 16, 22, 52) to model
-[17:31:11] Added "background material" (ID: 1) to model
-[17:31:11] Added "background material (extended)" (ID: 58) to model
-[17:31:11] Added "background material (extended)" (ID: 65) to model
-[17:31:11] Added "background material (extended)" (ID: 72) to model
-[17:31:11] Added "background material (extended)" (ID: 79) to model
-[17:31:11] Added "background material (extended)" (ID: 86) to model
-[17:31:11] Added "background material (extended)" (ID: 93) to model
-[17:31:11] Added "background material (extended)" (ID: 100) to model
-[17:31:11] Added "background material (extended)" (ID: 107) to model
-[17:31:11] Added "background material (extended)" (ID: 114) to model
-[17:31:11] Added "background material (extended)" (ID: 121) to model
-[17:31:11] Added "background material (extended)" (ID: 128) to model
-[17:31:11] Added "background material (extended)" (ID: 135) to model
-[17:31:11] Added "background material (extended)" (ID: 142) to model
-[17:31:11] Added "background material (extended)" (ID: 149) to model
-[17:31:11] Added "background material (extended)" (ID: 156) to model
-[17:31:11] Added "background material (extended)" (ID: 163) to model
-[17:31:11] Added "background material (extended)" (ID: 170) to model
-[17:31:11] Added "background material (extended)" (ID: 177) to model
-[17:31:11] Added "background material (extended)" (ID: 184) to model
-[17:31:11] Added "background material (extended)" (ID: 191) to model
-[17:31:11] Added "background material (extended)" (ID: 198) to model
-[17:31:11] Added "background material (extended)" (ID: 205) to model
-[17:31:11] Added "background material (extended)" (ID: 212) to model
-[17:31:11] Added "background material (extended)" (ID: 219) to model
-[17:31:11] Added "background material (extended)" (ID: 226) to model
-[17:31:11] Added "background material (extended)" (ID: 233) to model
-[17:31:11] Added "background material (extended)" (ID: 240) to model
-[17:31:11] Added "background material (extended)" (ID: 247) to model
-[17:31:11] Added "background material (extended)" (ID: 254) to model
-[17:31:11] Added "background material (extended)" (ID: 261) to model
-[17:31:11] Added "background material (extended)" (ID: 268) to model
-[17:31:11] Added "background material (extended)" (ID: 275) to model
-[17:31:11] Added "background material (extended)" (ID: 282) to model
-[17:31:11] Added "background material (extended)" (ID: 289) to model
-[17:31:11] Added "background material (extended)" (ID: 296) to model
-[17:31:11] Added "background material (extended)" (ID: 303) to model
-[17:31:11] Added "background material (extended)" (ID: 310) to model
-[17:31:11] Added "background material (extended)" (ID: 317) to model
-[17:31:11] Added "background material (extended)" (ID: 324) to model
-[17:31:11] Added "background material (extended)" (ID: 331) to model
-[17:31:11] Added "background material (extended)" (ID: 338) to model
-[17:31:11] Added "background material (extended)" (ID: 345) to model
-[17:31:11] Added "background material (extended)" (ID: 352) to model
-[17:31:11] Added "background material (extended)" (ID: 359) to model
-[17:31:11] Added "background material (extended)" (ID: 366) to model
-[17:31:11] Added "background material (extended)" (ID: 373) to model
-[17:31:11] Added "background material (extended)" (ID: 380) to model
-[17:31:11] Added "background material (extended)" (ID: 387) to model
-[17:31:11] Added "background material (extended)" (ID: 394) to model
-[17:31:11] Added "background material (extended)" (ID: 401) to model
-[17:31:11] Added "background material (extended)" (ID: 408) to model
-[17:31:11] Added "background material (extended)" (ID: 415) to model
-[17:31:11] Added "background material (extended)" (ID: 422) to model
-[17:31:11] Added "background material (extended)" (ID: 429) to model
-[17:31:11] Added "background material (extended)" (ID: 436) to model
-[17:31:12] Added "background material (extended)" (ID: 443) to model
-[17:31:12] Added "background material (extended)" (ID: 450) to model
-[17:31:12] Added "background material (extended)" (ID: 457) to model
-[17:31:12] Added "background material (extended)" (ID: 464) to model
-[17:31:12] Added "background material (extended)" (ID: 471) to model
-[17:31:12] Added "background material (extended)" (ID: 478) to model
-[17:31:12] Added "background material (extended)" (ID: 485) to model
-[17:31:12] Added "background material (extended)" (ID: 492) to model
-[17:31:12] Added "background material (extended)" (ID: 499) to model
-[17:31:12] Added "background material (extended)" (ID: 506) to model
-[17:31:12] Added "background material (extended)" (ID: 513) to model
-[17:31:12] Added "background material (extended)" (ID: 520) to model
-[17:31:12] Added "background material (extended)" (ID: 527) to model
-[17:31:12] Added "background material (extended)" (ID: 534) to model
-[17:31:12] Added "background material (extended)" (ID: 541) to model
-[17:31:12] Added "background material (extended)" (ID: 548) to model
-[17:31:12] Added "background material (extended)" (ID: 555) to model
-[17:31:12] Added "background material (extended)" (ID: 562) to model
-[17:31:12] Added "background material (extended)" (ID: 569) to model
-[17:31:12] Added "background material (extended)" (ID: 576) to model
-[17:31:12] Added "background material (extended)" (ID: 583) to model
-[17:31:12] Added "background material (extended)" (ID: 590) to model
-[17:31:12] Added "background material (extended)" (ID: 597) to model
-[17:31:12] Added face port 1 (ID: 2352) to model
-[17:31:12] Added face port 2 (ID: 2361) to model
-[17:31:12] Added face port 3 (ID: 2370) to model
-[17:31:12] Added face port 4 (ID: 2379) to model
-[17:31:12] Added "Fill (extended)" (ID: 620) to model
-[17:31:12] Boolean Failed for "Fill (extended)", see journal #91
-[17:31:12] Feedback Incident added
-[17:31:12] Gathering information...
-[17:31:12] Boolean Failed: span info missing for ef_int construction
-[17:31:12] 0 Feedback Entities inserted: #0
-[17:31:12] 0 Feedback Entities inserted: #0
-[17:31:12] One Feedback Entity inserted: #1
-[17:31:12] Added "Fill (extended)" (ID: 624) to model
-[17:31:12] Boolean Failed for "Fill (extended)", see journal #92
-[17:31:12] Feedback Incident added
-[17:31:12] Gathering information...
-[17:31:12] Boolean Failed: span info missing for ef_int construction
-[17:31:12] 0 Feedback Entities inserted: #1
-[17:31:12] 0 Feedback Entities inserted: #1
-[17:31:12] One Feedback Entity inserted: #2
-[17:31:13] Added "Fill (extended)" (ID: 628) to model
-[17:31:13] Boolean Failed for "Fill (extended)", see journal #93
-[17:31:13] Feedback Incident added
-[17:31:13] Gathering information...
-[17:31:13] Boolean Failed: span info missing for ef_int construction
-[17:31:13] 0 Feedback Entities inserted: #2
-[17:31:13] 0 Feedback Entities inserted: #2
-[17:31:13] One Feedback Entity inserted: #3
-[17:31:13] Added "Fill (extended)" (ID: 632) to model
-[17:31:13] Boolean Failed for "Fill (extended)", see journal #94
-[17:31:13] Feedback Incident added
-[17:31:13] Gathering information...
-[17:31:13] Boolean Failed: span info missing for ef_int construction
-[17:31:13] 0 Feedback Entities inserted: #3
-[17:31:13] 0 Feedback Entities inserted: #3
-[17:31:13] One Feedback Entity inserted: #4
-[17:31:13] Feedback Incident removed.
-[17:31:13] Feedback Incident removed.
-[17:31:13] Feedback Incident removed.
-[17:31:13] Feedback Incident removed.
-[17:31:13] CST PublicException: Model could not be prepared for meshing. Boolean unite operation could not be performed for some shapes:
-"Fill (extended)"
-Meshing could not be started.
-[17:31:13] 
+[00:07:49] Build: 64bit; Number: 20180615; ID: 2018.6 Release from 2018-06-15 (change 610495); Date: 2018-06-15
+[00:07:49] ACIS version: 27.0.2
+[00:07:49] SPAresabs = 9.9999999999999995e-07
+[00:07:49] SPAresnor = 1.0000000000000000e-10
+[00:07:49] Reading entity list
+[00:07:50] Choosing Advanced Boolean Loop...
+[00:07:50] Volume Attributes enabled
+[00:07:50] Attaching Volume Attributes
+[00:07:50] Sorted out 5 special bodies.
+[00:07:50] Processing 9 entities.
+[00:07:50] Queue Size: 1
+[00:07:50] Adding "component1:solid1" to "component1:wire1" (Pair #1 out of 4)
+[00:07:50] Adding "component1:wire1_1" to "component1:wire1_1_1" (Pair #2 out of 4)
+[00:07:50] Adding "component1:wire1_1_1_1" to "component1:wire1_1_2" (Pair #3 out of 4)
+[00:07:50] Adding "component1:wire1_2" to "component1:wire1_2_1" (Pair #4 out of 4)
+[00:07:50] Processing 5 entities.
+[00:07:50] Queue Size: 1
+[00:07:50] Adding Compound Body to Compound Body (Pair #1 out of 2)
+[00:07:50] Adding Compound Body to Compound Body (Pair #2 out of 2)
+[00:07:50] Processing 3 entities.
+[00:07:50] Queue Size: 1
+[00:07:50] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[00:07:51] Processing 2 entities.
+[00:07:51] Queue Size: 1
+[00:07:51] Adding Compound Body to "component1:wire1_3" (Pair #1 out of 1)
+[00:07:51] Exiting Boolean Unite Module.
+[00:07:51] Added Compound Body (ID: 46, 40, 28, 34, 10, 8, 16, 22, 52) to model
+[00:07:51] Added "background material" (ID: 1) to model
+[00:07:51] Added face port 1 (ID: 230) to model
+[00:07:51] Added face port 2 (ID: 239) to model
+[00:07:51] Added face port 3 (ID: 248) to model
+[00:07:51] Added face port 4 (ID: 257) to model
+[00:07:51] - Attribute database stats:
+ Vertex UIDs = 68(first = 1, last = 68)
+, Edge UIDs = 84(first = 69, last = 152)
+, Face UIDs = 35(first = 153, last = 187)
+, Cell UIDs = 10(first = 188, last = 197)
+
+[00:07:51] Using new attribute mapping scheme
+[00:07:51] WARNING: Equivalent EIDs 16, 40, 52 resolved to 16
+[00:07:51] WARNING: Equivalent EIDs 22, 34, 46 resolved to 22
+[00:07:51] Skipping wire containment calculation.
+[00:07:51] - Reading information
+[00:07:51] - Storing model cells
+[00:07:51] - OK
+[00:07:51] Creating ModelDatabase
+[00:07:51] Problem class: High Frequency
+[00:07:51] - Mesh sizes: global mesh size near to model = 6.5172271304347829e-02
+              min requested = 1.6207726572571026e-03
+              max requested = 1.0862045217391304e-01
+[00:07:51] - OK
+[00:07:51] -- Building object info
+[00:07:51] -- OK
+[00:07:51] Temporary directory: "C:\Users\ThomasNotebook\Documents\School\Semester5\hf1\Homework\Bericht_hf1\Simulationen\CloverLeaf\Temp\1-temp.tet"
+[00:07:51] [CADSurf] Section started.
+[00:07:51] [CADSurf] MeshGems Version: MeshGems-Core 2.4-1
+[00:07:51] [CADSurf] === Begin: PreCAD-related parameters ===
+[00:07:51] [CADSurf] == CADSurf Parameters == 
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "use_precad",  "yes")
+[00:07:51] [CADSurf] Bounding box diagonal = 3.1873571598707190e-01
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "remove_nano_edges",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_topology",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "process_3d_topology",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_2d_topology",  "0")
+[00:07:51] [CADSurf] Default periodic tolerance (1e-5*diag) = 3.1873571598707193e-06
+[00:07:51] [CADSurf] Minimum periodic tolerance = 1.0000000000000001e-05
+[00:07:51] [CADSurf] Setting it to max( 1.0000000000000001e-05, 3.1873571598707193e-06 )
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "periodic_tolerance",  "1.0000000000000001e-05")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "remove_duplicate_cad_faces",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_uv_edges",  "0")
+[00:07:51] [CADSurf] === End: PreCAD-related parameters ===
+[00:07:51] [CADSurf] ==
+[00:07:51] [CADSurf] == CADSurf Parameters == 
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[00:07:51] [CADSurf] 	 Max user size    = 1.0862045217391304e-01
+[00:07:51] [CADSurf] 	 Global size near = 6.5172271304347829e-02
+[00:07:51] [CADSurf] 	 Global size far  = 1.0862045217391304e-01
+[00:07:51] [CADSurf] 	 Upper size bound = 1.0862045217391304e-01
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "0.10862045217391304")
+[00:07:51] [CADSurf] 	Calculating min. mesh size for CADSurf...
+[00:07:51] [CADSurf] 	Diagonal of model + background box: 3.1873571598707190e-01
+[00:07:51] [CADSurf] 	Min. mesh size by diagonal (1e-3 x diagonal): 3.1873571598707188e-04
+[00:07:51] [CADSurf] 	Diagonal of model: 3.1418438513117769e-01
+[00:07:51] [CADSurf] 	Min. mesh size of model: 1.6207726572571026e-03
+[00:07:51] [CADSurf] 	Max. cell defined by user (near to model): 6.5172271304347829e-02
+[00:07:51] [CADSurf] 	Min. cell defined by user: 0.0000000000000000e+00
+[00:07:51] [CADSurf] 	Min. cell used for calculation: 6.5172271304347830e-04
+[00:07:51] [CADSurf] Geometric refinement uses "min_size" setting.
+[00:07:51] [CADSurf] CADSurf "min_size" is set to min. mesh size by BG diagonal: 3.1873571598707188e-04
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "0.00031873571598707188")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "local")
+[00:07:51] [CADSurf] Setting Triangle as default element type
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "2")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "0")
+[00:07:51] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[00:07:51] [CADSurf] ==
+[00:08:03] [CADSurf] Status: OK
+[00:08:03] [CADSurf] Number of intersecting edges: 0, total edge count: 1244
+[00:08:03] [CADSurf] Number of intersecting faces: 0
+[00:08:03] [CADSurf] - Mesh stats: N=17596, E=1244, T=35308, Q=0
+[00:08:03] [CADSurf] Section finished. Time (s): 12.071
+[00:08:04] Checking for duplicate edges.
+[00:08:04] Done.
+[00:08:04] Checking for duplicate faces.
+[00:08:04] Done.
+[00:08:04] Writing 3d file
+[00:08:04] Surface Mesh Output: DetectTouchingClosedPECs
+[00:08:04] =====================
+[00:08:04] Touching PECs: 4 5
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 6
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 7
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 8
+[00:08:04] Touching PECs: 4 4
+[00:08:04] =====================
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Touching PECs: 4 4
+[00:08:04] Done
+[00:08:05] Done
+[00:08:05] Writing BC file
+[00:08:05] Done
+[00:08:05] Writing ObjectId file
+[00:08:05] Done
+[00:08:05] Writing surface mesh to slim mesh file
+[00:08:05] Writing gex file for srf mesh
+[00:08:05] Running model geometry simplification... 
+[00:08:05] Model geometry simplification: 0 seconds
+[00:08:05] Using generalized UID topology and model geometry output
+[00:08:05] Writing topot.tet...
+[00:08:05] Done (topot.tet)
+[00:08:05] Writing moegeom.tet ...
+[00:08:05] Done (moegeom.tet) 
+[00:08:05] Mesh curving:
+[00:08:05]     available cores:   4
+[00:08:05]     number of threads: 4 (NumberOfParallelThreads setting)
+[00:08:05] 
 #### Feedback Report Begins ####
-----------
-Display Group: Model
-Problem: Issue
-Item: Item 1
-Item Label: Mesh:Build:Model3d:BooleanUniteFail
-Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
-Description: The model components could not be added together.
-Cure: Check the model for near-coincidence faces near the highlighted face.
-Integer Data: 
-the id of the cell: 0
-Real Data: 
-Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 1"
-----------
-
-----------
-Display Group: Model
-Problem: Issue
-Item: Item 2
-Item Label: Mesh:Build:Model3d:BooleanUniteFail
-Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
-Description: The model components could not be added together.
-Cure: Check the model for near-coincidence faces near the highlighted face.
-Integer Data: 
-the id of the cell: 1
-Real Data: 
-Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 2"
-----------
-
-----------
-Display Group: Model
-Problem: Issue
-Item: Item 3
-Item Label: Mesh:Build:Model3d:BooleanUniteFail
-Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
-Description: The model components could not be added together.
-Cure: Check the model for near-coincidence faces near the highlighted face.
-Integer Data: 
-the id of the cell: 2
-Real Data: 
-Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 3"
-----------
-
-----------
-Display Group: Model
-Problem: Issue
-Item: Item 4
-Item Label: Mesh:Build:Model3d:BooleanUniteFail
-Descriptor Label: Mesh:Build:Model3d:BooleanUniteFail
-Description: The model components could not be added together.
-Cure: Check the model for near-coincidence faces near the highlighted face.
-Integer Data: 
-the id of the cell: 3
-Real Data: 
-Graphical Feedback is available in "Mesh Control\Feedback\Model\Issue\Item 4"
-----------
-
 #### Feedback Report Ends ####
 
-[17:31:13] Done
+[00:08:05] Done
 === END SESSION ============================================================

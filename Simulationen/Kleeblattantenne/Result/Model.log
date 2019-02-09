@@ -1,0 +1,66 @@
+In order to get an optimal performance, hyperthreading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The frequency domain solver with hexahedral mesh does not support lossy metal
+and other surface impedance materials. They will be treated as PEC. Please
+consider using the tetrahedral mesh.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The monitor e-field (f=0.75) is outside simulation frequency range and will be
+ignored.
+
+--------------------------------------------------------------------------------
+In order to get an optimal performance, hyperthreading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The frequency domain solver with hexahedral mesh does not support lossy metal
+and other surface impedance materials. They will be treated as PEC. Please
+consider using the tetrahedral mesh.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The monitor e-field (f=0.75) is outside simulation frequency range and will be
+ignored.
+
+--------------------------------------------------------------------------------
+In order to get an optimal performance, hyperthreading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The frequency domain solver with hexahedral mesh does not support lossy metal
+and other surface impedance materials. They will be treated as PEC. Please
+consider using the tetrahedral mesh.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The monitor e-field (f=0.75) is outside simulation frequency range and will be
+ignored.
+
+--------------------------------------------------------------------------------

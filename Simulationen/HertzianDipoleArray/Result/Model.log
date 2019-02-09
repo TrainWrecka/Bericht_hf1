@@ -1,0 +1,519 @@
+*** Warning ***
+
+The diagonal of the calculation domain has a very small value. This may lead to
+errors while calculating the system matrix. In this case, magnify the
+dimensions of the structure and use the next smaller unit.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+After rescaling the structure, use "Objects->Heal All Shapes" in order to
+repair any scaling errors.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 08:35 PM Friday, 08. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+The following discrete edge ports are connected to metal material:
+	1, 2
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 1
+      Number of calculation domains used: 1
+
+   PBA fill limit: 99.00% (inverse)
+
+
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 0.0395154 m
+  Xmax: open, 4 Layer, depth 0.0395154 m
+
+  Ymin: open, 4 Layer, depth 0.0395154 m
+  Ymax: open, 4 Layer, depth 0.0381067 m
+
+  Zmin: open, 4 Layer, depth 0.0376782 m
+  Zmax: open, 4 Layer, depth 0.0376782 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	238567
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20568                         4030824      4030824      
+  Matrices calc.      88652                         4016816      3955912      
+  Solver run total    40448                         4104532      3953056      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	38012
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	6 	s
+  Number of calculated pulse widths:	1.01234 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	3840 
+  Maximum number of time steps:     	75864 
+  Time step width:
+     without subcycles:             	1.87416522e-003 ns
+     used:                          	1.87416522e-003 ns
+
+  CAD preparation time:          	0      	s
+  Matrix calculation time:          	12 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	6 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	21 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ TD-Solver detected a unitary device (two-port reciprocity).
+ S-parameters of the second run will be calculated from
+ the results of the first run.
+======================================================================
+
+--------------------------------------------------------------------------------
+Any monitor or probe results are not considered by two-port reciprocity.
+
+--------------------------------------------------------------------------------
+Structure contains lossy materials or boundaries. Two-port reciprocity may 
+produce inaccurate results.
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	21     	s
+                                    	------------
+  Total simulation time:            	21     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 08:35 PM Friday, 08. February 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The diagonal of the calculation domain has a very small value. This may lead to
+errors while calculating the system matrix. In this case, magnify the
+dimensions of the structure and use the next smaller unit.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+After rescaling the structure, use "Objects->Heal All Shapes" in order to
+repair any scaling errors.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 08:36 PM Friday, 08. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 0.0395154 m
+  Xmax: open, 4 Layer, depth 0.0395154 m
+
+  Ymin: open, 4 Layer, depth 0.0395154 m
+  Ymax: open, 4 Layer, depth 0.0381067 m
+
+  Zmin: open, 4 Layer, depth 0.0376782 m
+  Zmax: open, 4 Layer, depth 0.0376782 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	238567
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20568                         4030824      4030824      
+  Matrices calc.      88652                         4016816      3955912      
+  Solver run total    40600                         3602444      3569924      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	38012
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	6 	s
+  Number of calculated pulse widths:	1.01234 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	3840 
+  Maximum number of time steps:     	75864 
+  Time step width:
+     without subcycles:             	1.87416522e-003 ns
+     used:                          	1.87416522e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	6 	s
+  Solver post processing time:      	0 	s
+                                    	------------
+  Total solver time:                	8 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ TD-Solver detected a unitary device (two-port reciprocity).
+ S-parameters of the second run will be calculated from
+ the results of the first run.
+======================================================================
+
+--------------------------------------------------------------------------------
+Any monitor or probe results are not considered by two-port reciprocity.
+
+--------------------------------------------------------------------------------
+Structure contains lossy materials or boundaries. Two-port reciprocity may 
+produce inaccurate results.
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	9      	s
+                                    	------------
+  Total simulation time:            	9      	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 08:36 PM Friday, 08. February 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The diagonal of the calculation domain has a very small value. This may lead to
+errors while calculating the system matrix. In this case, magnify the
+dimensions of the structure and use the next smaller unit.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+After rescaling the structure, use "Objects->Heal All Shapes" in order to
+repair any scaling errors.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+This software is licensed for educational purposes only.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 08:37 PM Friday, 08. February 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2018.6 Release from 2018-06-15 (change 610495)
+
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at discrete port 1 
+
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: m
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open, 4 Layer, depth 0.0395154 m
+  Xmax: open, 4 Layer, depth 0.0395154 m
+
+  Ymin: open, 4 Layer, depth 0.0395154 m
+  Ymax: open, 4 Layer, depth 0.0381067 m
+
+  Zmin: open, 4 Layer, depth 0.0376782 m
+  Zmax: open, 4 Layer, depth 0.0376782 m
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0.5
+  Fmax:         1.5
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Port: 1
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  Discrete element, reference impedance = 50 Ohm
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	238567
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  CAD preparation     20568                         4030824      4030824      
+  Matrices calc.      88652                         4016816      3955912      
+  Solver run total    40952                         3687312      3669776      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-N89I2CN 
+
+     Number of CPU threads:             4
+     Hardware info:                  	Hardware Accelerator Device not activated
+
+  Number of mesh cells:             	38012
+  Excitation duration:              	7.10909750e+000 ns 
+  Calculation time for excitation:  	5 	s
+  Number of calculated pulse widths:	1.01234 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	3840 
+  Maximum number of time steps:     	75864 
+  Time step width:
+     without subcycles:             	1.87416522e-003 ns
+     used:                          	1.87416522e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	5 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	8 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ TD-Solver detected a unitary device (two-port reciprocity).
+ S-parameters of the second run will be calculated from
+ the results of the first run.
+======================================================================
+
+--------------------------------------------------------------------------------
+Any monitor or probe results are not considered by two-port reciprocity.
+
+--------------------------------------------------------------------------------
+Structure contains lossy materials or boundaries. Two-port reciprocity may 
+produce inaccurate results.
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	0      	s
+  Total solver time (all cycles):   	8      	s
+                                    	------------
+  Total simulation time:            	8      	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 08:37 PM Friday, 08. February 2019
+
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------

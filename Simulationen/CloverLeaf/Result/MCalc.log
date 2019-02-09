@@ -1,0 +1,81 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Feb 09 (Sat): 01:07:35
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+=====================================
+Mesher selection: results exist: FPBA
+=====================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Feb 09 (Sat): 01:07:35
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+=========================================================================================================================
+matrixcalc: Thread pinning failed with error: error in initialization of cpu core iterator, invalid socket id provided, 1
+=========================================================================================================================
+
+========================================================================
+Processing CAD model (for field results)
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2018.6 (build 20180615)
+PBA version 20180615
+2019 Feb 09 (Sat): 01:07:35
+========================================================================
+
+===========================================
+Finished CAD processing (for field results)
+===========================================
+
+===============================
+Matrix computation (PBA)
+Version 2018.6 (build 20180615)
+PBA version 20180615
+2019 Feb 09 (Sat): 01:07:35
+===============================
+
+---------------------------------------------
+Used point accuracy enhancement value: 0.00%.
+---------------------------------------------
+
+Shapes are ordered to support shape wise matrix storage
+==================================================================================================
+== CST Matrix Calculation Priority Log                                                          ==
+==================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+ 
+==================================================================================================
+ 
+------------------------------------------------------------------------------
+PBA fill limit is applied in inverse mode.
+PBA fill limit is applied on faces filled with at least 85.00% metal material.
+--------------------------------------------------------------
+detailed accuracy settings:
+--------------------------------------------------------------
+augmented fill limit:       true
+augmented fill limit value: 85.00
+automatic fill limit:       true
+early fill limit:           true
+inverse fill limit:         true
+model complexity:           0.00
+legacy 2015:                false
+fixed point accuracy:       false
+minimum point accuracy:     0
+mesh step inheritance:      false
+accuracy mode:              
+------------------------------------------------------------------------------
+
+=================================
+Finished matrix computation (PBA)
+=================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Feb 09 (Sat): 01:10:19
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Feb 09 (Sat): 01:10:19
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

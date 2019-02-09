@@ -3,8 +3,8 @@
 [PCB_BODIES: False]
 [PCB_IMPORT: False]
 [DISABLE_FAST_LOAD: False]
-[BBOX:-75.148114499999991 75.148114499999991 -375.14811449999996 375.14811449999996 -84.948114499999988 84.948114499999988]
-[BBOX_STRUCTURE:-0.20000000000000001 0.20000000000000001 -300.19999999999999 300.19999999999999 -10 10]
+[BBOX:-0.10000000000000001 0.10000000000000001 -0.099999999999999978 0.69999999999999996 -0.10000000000000001 0.10000000000000001]
+[BBOX_STRUCTURE:-0.10000000000000001 0.10000000000000001 -0.099999999999999978 0.69999999999999996 -0.10000000000000001 0.10000000000000001]
 [UNITS]
      .Geometry "mm" 
      .Frequency "GHz" 
@@ -30,16 +30,16 @@ Solver.FrequencyRange "0.5", "1.5"
      .ApplyInAllDirections "False" 
 [ENDBACKGROUND]
 [BOUNDARY]
-     .Xmin "expanded open"
-     .Xmax "expanded open"
-     .Ymin "expanded open"
-     .Ymax "expanded open"
-     .Zmin "expanded open"
-     .Zmax "expanded open"
+     .Xmin "open"
+     .Xmax "open"
+     .Ymin "open"
+     .Ymax "open"
+     .Zmin "open"
+     .Zmax "open"
      .Xsymmetry "none"
      .Ysymmetry "none"
      .Zsymmetry "none"
-     .ApplyInAllDirections "False"
+     .ApplyInAllDirections "True"
      .ThermalBoundary "Xmin", "isothermal"
      .ThermalBoundary "Xmax", "isothermal"
      .ThermalBoundary "Ymin", "isothermal"
@@ -275,8 +275,8 @@ Solver.FrequencyRange "0.5", "1.5"
      .VoltagePortImpedance "0.0" 
      .Voltage "1.0" 
      .Current "1.0" 
-     .SetP1 "False", "0", "-300", "-0.10000000000000001" 
-     .SetP2 "False", "0", "-300", "0.10000000000000001" 
+     .SetP1 "False", "0", "0", "9.9930666666666506e-05" 
+     .SetP2 "False", "0", "0", "-9.9930666666666506e-05" 
      .InvertDirection "False" 
      .LocalCoordinates "False" 
      .Monitor "True" 
@@ -292,8 +292,8 @@ Solver.FrequencyRange "0.5", "1.5"
      .VoltagePortImpedance "0.0" 
      .Voltage "1.0" 
      .Current "1.0" 
-     .SetP1 "False", "0", "300", "-0.10000000000000001" 
-     .SetP2 "False", "0", "300", "0.10000000000000001" 
+     .SetP1 "False", "0", "0.59958400000000001", "9.9930666666666506e-05" 
+     .SetP2 "False", "0", "0.59958400000000001", "-9.9930666666666506e-05" 
      .InvertDirection "False" 
      .LocalCoordinates "False" 
      .Monitor "True" 

@@ -1,6 +1,6 @@
 \section{Linearantennen}
 
-Eine Linearantenne ist ein Typ Antenne, welche eine Länge um die Grösse $\lambda_0/2$ besitzt. Diese werden umgänglich für Mittel- und Langwellen Anwendungen gebraucht wegen ihrer Einfachheit. 
+Eine Linearantenne ist ein Typ Antenne, welche eine Länge um $\lambda_0/2$ besitzt. Diese werden umgänglich für Mittel- und Langwellen Anwendungen gebraucht wegen ihrer Einfachheit. 
 
 \subsection{Theorie}\label{sec:LinTheo}
 
@@ -25,7 +25,7 @@ erfüllt. Somit kann für die Berechnung der Felder die Integration über eine H
     \label{fig:DiMonopol}
 \end{figure}
 
-Die lineare Antenne kann auf zwei Arten gespiesen werden. Entweder wird die Antenne als Monopol betrieben und am Fusspunkt gegen Erde erregt, oder sie wird in der Mitte als Monopol symmetrisch erregt (dargestellt in Abbildung \ref{fig:DiMonopol}). Bei der Dipol Ausführung ist jedoch ein Spalt in der Mitte notwendig, welcher vernachlässigbar klein sein soll. Die beiden Anordnungen unterscheiden sich nicht im Strahlungsdiagramm da die Erdoberfläche die Symmetrieebene des elektrischen Feldes darstellt. Der Monopol, welcher halb so lang wie der Dipol gewählt wird, gibt bei einem identischen Speisestrom gerade die halbe Strahlungsleistung ab, was zu einem doppelten Gewinn führt.\\
+Die lineare Antenne kann auf zwei Arten gespiesen werden. Entweder wird die Antenne als Monopol betrieben und am Fusspunkt gegen Erde erregt oder sie wird in der Mitte als Monopol symmetrisch erregt (dargestellt in Abbildung \ref{fig:DiMonopol}). Bei der Dipol Ausführung ist jedoch ein Spalt in der Mitte notwendig, welcher vernachlässigbar klein sein soll. Die beiden Anordnungen unterscheiden sich nicht im Strahlungsdiagramm da die Erdoberfläche die Symmetrieebene des elektrischen Feldes darstellt. Der Monopol, welcher halb so lang wie der Dipol gewählt wird, gibt bei einem identischen Speisestrom gerade die halbe Strahlungsleistung ab, was zu einem doppelten Gewinn führt.\\
 
 Für die Simulationen interessieren uns die Richtdiagramme der Linearantennen. Dazu wurde der Halbwellendipol, der Ganzwellendipol und der Doppelwellendipol betrachtet. Die Herleitung der Richtcharakteristik wurde weggelassen, da uns hauptsächlich die Simulationsresultate interessieren. Die bereits berechneten Werte wurden aus dem Buch von K. Kark entnommen \cite{book}.\\
 
@@ -50,7 +50,7 @@ C(\vartheta) = \frac{\sin^2 \left(\pi \cos \vartheta \right)}{\sin \vartheta}.
 \begin{figure}[!ht]
 	\centering
     \includegraphics[width=\textwidth/4*3]{Wellendipol.png}
-    \caption{Ein Plot der jeweiligen Richtcharakteristiken verschiedener Linearantennen.}
+    \caption{Ein Plot der jeweiligen Richtcharakteristiken verschiedener Linearantennen (berechnet im MATLAB Code, welcher im Appendix ersichtlich ist).}
     \label{fig:Wellendipol}
 \end{figure}
 
@@ -110,7 +110,7 @@ Abbildung \ref{fig:Ganzwellendipol1} zeigt die Direktivität des Ganzwellendipol
     \label{fig:Doppelwellendipol1}
 \end{figure}
 
-Wie in Abbildung \ref{fig:Doppelwellendipol1} zu sehen ist, verhält sich das Richtdiagramm wie im Abschnitt \ref{sec:LinTheo} beschrieben wurde. Es entstehen vier Keulen, wobei der Winkel bei der Simulation \SI{59}{\degree} beträgt anstelle der berechneten \SI{57.3}{\degree}. Dies ist auch wiederum eine vernachlässigbar kleine Abweichung.\\
+Wie in Abbildung \ref{fig:Doppelwellendipol1} zu sehen ist, verhält sich das Richtdiagramm wie im Abschnitt \ref{sec:LinTheo} beschrieben wurde. Es entstehen vier Keulen, wobei der Winkel der Keule bei der Simulation \SI{59}{\degree} beträgt anstelle der berechneten \SI{57.3}{\degree}. Dies ist auch wiederum eine vernachlässigbar kleine Abweichung.\\
 
 Als Abschluss der linearen Antenne wurden in Abbildungen \ref{fig:Halbwellendipol13} bis \ref{fig:Doppelwellendipol13} die höheren Ordnungen für $n$ simuliert. 
 
@@ -150,7 +150,7 @@ Die Resultate decken sich alle mit der Theorie des Fachbuches. Die Anzahl Seiten
 
 \newpage
 
-Natürlich kann auch im Vergleich zu Abbildung \ref{fig:Wellendipol} das Resultat in Kartesichen Koordinaten dargestellt werden. Dies resultiert in Abbildung \ref{fig:Halbwellendipol13Cart}. Somit stellt dieser Plot dasselbe Resultat wie Abbildung \ref{fig:Halbwellendipol13} dar, wobei bei den kartesischen Koordinaten das Herauslesen der Halbwertsbreite etwas einfacher ist. Bei den Kugelkoordinaten fällt es hingegen leichter, sich die Abstrahlunsrichtungen vorzustellen.
+Natürlich kann auch im Vergleich zu Abbildung \ref{fig:Wellendipol} das Resultat in kartesischen Koordinaten dargestellt werden. Dies resultiert in Abbildung \ref{fig:Halbwellendipol13Cart}. Somit stellt dieser Plot dasselbe Resultat wie Abbildung \ref{fig:Halbwellendipol13} dar, wobei bei den kartesischen Koordinaten das Herauslesen der Halb-wertsbreite etwas einfacher ist. Bei den Kugelkoordinaten fällt es hingegen leichter, sich die Abstrahlungsrichtungen vorzustellen.
 
 \begin{figure}[!ht]
 	\centering
@@ -159,4 +159,4 @@ Natürlich kann auch im Vergleich zu Abbildung \ref{fig:Wellendipol} das Resulta
     \label{fig:3D}
 \end{figure}
 
-Dabei zeigt Abbildung \ref{fig:3D} die dreidimensionale Direktivität. Es ist ausserdem zu sehen, wie die Antenne geschnitten wurde, um das Richtdiagramm darzustellen (im Vertikalschnitt). Wichtig zu wissen ist, dass verschiedene Antennen in andere Richtungen abstrahlen und daher der Schnittwinkel angepasst werden muss (vergleichsweise Hetzscher Dipol entlang der verschiedenen Achsen in Abschnitt \ref{sec:HerDip}).
+Dabei zeigt Abbildung \ref{fig:3D} die dreidimensionale Direktivität. Es ist ausserdem zu sehen, wie die Antenne geschnitten wurde, um das Richtdiagramm darzustellen (im Vertikalschnitt). Wichtig zu wissen ist, dass verschiedene Antennen in andere Richtungen abstrahlen und daher der Schnittwinkel angepasst werden muss (vergleichsweise Hertzscher Dipol entlang der verschiedenen Achsen in Abschnitt \ref{sec:HerDip}).

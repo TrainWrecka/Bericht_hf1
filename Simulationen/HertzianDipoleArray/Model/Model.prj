@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+ThomasNotebook
+[Mesh Cells]
+38,012
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:hertziandipolearray.cst?33a6399821f83d12807db34e3a447c55?43247:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::a?c?d?f?l?lambda
+[Comment]

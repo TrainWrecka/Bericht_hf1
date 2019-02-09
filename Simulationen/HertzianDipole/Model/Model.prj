@@ -3,7 +3,7 @@
 [Author]
 ThomasNotebook
 [Mesh Cells]
-11,690,904
+2,368
 [Mesh Type]
 Hexahedral
 [Last Problem Type]
@@ -15,5 +15,5 @@ t
 [Results]
 Time Domain: S-Parameter
 [Modeler Unique ID]
-5:hertziandipole.cst?236f4b40da805a769926e27317adf035?7931:numberofparameters=5:port=1>mode=1>zre=0>zim=0:::d?l?lambda?c?f
+5:hertziandipole.cst?8eb23d94bfcce49eb1e126b116d97fad?33822:numberofparameters=5:port=1>mode=1>zre=0>zim=0:::c?d?f?l?lambda
 [Comment]

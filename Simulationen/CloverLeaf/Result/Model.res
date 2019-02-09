@@ -1,13 +1,29 @@
 MWS Result File Version 20150206
-size=i:6
+size=i:7
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
 visibility=s:hidden
 creation=s:internal
-lifetime=s:solverstart
-result=s:0
-files=s:MeshErrorsGraphicalFeedback.axg
+lifetime=s:rebuild
+result=s:1
+files=s:World.fid
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:survivemeshadapt
+result=s:1
+files=s:model.gex
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:survivemeshadapt
+result=s:1
+files=s:PP.fmm
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -39,7 +55,7 @@ title=s:Excitation: default
 
 type=s:XYSIGNAL2
 subtype=s:user
-problemclass=s:High Frequency:0:2
+problemclass=s:High Frequency:0:0
 visibility=s:visible
 creation=s:internal
 lifetime=s:persistent
@@ -48,14 +64,4 @@ treepath=s:Excitation Signals\default
 files=s:signal_default.sig
 xlabel=s:Time / ns
 title=s:Excitation: default
-
-type=s:MESH_FEEDBACK
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:0
-treepath=s:Mesh\Information\Tetrahedral Mesher
-files=s:MeshErrorsGraphicalFeedback.rex
-ylabel=s:Mesh Feedback
 

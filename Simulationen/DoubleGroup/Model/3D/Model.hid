@@ -184,102 +184,20 @@ Solid.Delete "Dipole1:Antenna1"
 [end]undo_item
 [start]undo_item
 [start]block_index
-70
+84
 [end]block_index
 [start]command
 [end]command
 [start]content
-Solid.Delete "Dipole1:Antenna1"
+
+Solid.Delete "component1:Test"
+
 [end]content
 [start]recover_picks
 1
 [end]recover_picks
 [start]delete_solids
 1
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-71
-[end]block_index
-[start]command
-[end]command
-[start]content
-Solid.Delete "Dipole1:Vacuum1"
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-1
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-74
-[end]block_index
-[start]command
-[end]command
-[start]content
-Solid.Delete "Dipole2:Antenna2"
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-1
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-75
-[end]block_index
-[start]command
-[end]command
-[start]content
-Solid.Delete "Dipole2:Vacuum2"
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-1
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-77
-[end]block_index
-[start]command
-'@ define discrete port: 1
- (undo)
-[end]command
-[start]content
-Port.Delete "1"
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-0
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
-78
-[end]block_index
-[start]command
-'@ define discrete port: 2
- (undo)
-[end]command
-[start]content
-Port.Delete "2"
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-0
 [end]delete_solids
 [end]undo_item
 [end]history_fast_undo

@@ -7,13 +7,10 @@
 13
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -42,13 +39,10 @@ WCS.ActivateWCS "global"
 27
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -62,9 +56,7 @@ WCS.ActivateWCS "local"
 36
 [end]block_index
 [start]command
-
 '@ transform: rotate component1
-
 [end]command
 [start]content
 With Transform 
@@ -79,7 +71,6 @@ With Transform
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
 End With 
-
 [end]content
 [start]recover_picks
 1
@@ -95,9 +86,7 @@ End With
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:wire1_1"
-
 [end]content
 [start]recover_picks
 1
@@ -113,10 +102,8 @@ Solid.Delete "component1:wire1_1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:wire1_1_1"
 Solid.Delete "component1:wire1_2"
-
 [end]content
 [start]recover_picks
 1
@@ -132,12 +119,10 @@ Solid.Delete "component1:wire1_2"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:wire1_1_1_1"
 Solid.Delete "component1:wire1_1_2"
 Solid.Delete "component1:wire1_2_1"
 Solid.Delete "component1:wire1_3"
-
 [end]content
 [start]recover_picks
 1
@@ -153,9 +138,7 @@ Solid.Delete "component1:wire1_3"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -259,13 +242,11 @@ Solid.Delete "component1:solid1"
 66
 [end]block_index
 [start]command
-
 '@ define discrete face port: 3
  (undo)
 [end]command
 [start]content
 Port.Delete "3"
-
 [end]content
 [start]recover_picks
 1
@@ -311,9 +292,7 @@ Port.Delete "3"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -357,13 +336,11 @@ Solid.Delete "component1:solid1"
 75
 [end]block_index
 [start]command
-
 '@ define discrete face port: 3
  (undo)
 [end]command
 [start]content
 Port.Delete "3"
-
 [end]content
 [start]recover_picks
 1

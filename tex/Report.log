@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  8 FEB 2019 17:11
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  8 FEB 2019 17:09
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  8 FEB 2019 15:31
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  8 FEB 2019 15:35
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.28)  9 FEB 2019 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1969,7 +1957,9 @@ Package biblatex Info: ... file 'english.lbx' found.
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ) (./Report.aux
 (./sections/abstract.aux) (./sections/Einleitung.aux) (./sections/Dipole.aux)
-(./sections/Linearantenne.aux) (./sections/Kleeblattantenne.aux))
+(./sections/Linearantenne.aux) (./sections/Gruppenantennen.aux)
+(./sections/Kleeblattantenne.aux) (./sections/Fazit.aux)
+(./sections/appendix.aux))
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1988,14 +1978,12 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
-
-(c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+ (c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 11.
-
-(c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+ (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -2153,19 +2141,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 11.
 (c:/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<<<<<<< HEAD
-<fhnwlogo.pdf, id=55, 183.81773pt x 28.4543pt>
-=======
-<<<<<<< HEAD
-<fhnwlogo.pdf, id=62, 183.81773pt x 28.4543pt>
-=======
-<<<<<<< HEAD
-<fhnwlogo.pdf, id=35, 183.81773pt x 28.4543pt>
-=======
-<fhnwlogo.pdf, id=58, 183.81773pt x 28.4543pt>
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+<fhnwlogo.pdf, id=75, 183.81773pt x 28.4543pt>
 File: fhnwlogo.pdf Graphic file (type pdf)
 <use fhnwlogo.pdf>
 Package pdftex.def Info: fhnwlogo.pdf  used on input line 16.
@@ -2207,69 +2183,73 @@ l.53 \include{sections/Einleitung}
 \openout2 = `sections/Dipole.aux'.
 
  (./sections/Dipole.tex
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-<<<<<<< HEAD
-=======
-<./graphics/entstehung.png, id=105, 474.27188pt x 166.12062pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+<./graphics/entstehung.png, id=130, 474.27188pt x 166.12062pt>
 File: ./graphics/entstehung.png Graphic file (type png)
 <use ./graphics/entstehung.png>
 Package pdftex.def Info: ./graphics/entstehung.png  used on input line 29.
 (pdftex.def)             Requested size: 341.43306pt x 119.5966pt.
-<./graphics/hertzscher_dipol.png, id=107, 303.1325pt x 284.06125pt>
+<./graphics/hertzscher_dipol.png, id=134, 303.1325pt x 284.06125pt>
 File: ./graphics/hertzscher_dipol.png Graphic file (type png)
 <use ./graphics/hertzscher_dipol.png>
 Package pdftex.def Info: ./graphics/hertzscher_dipol.png  used on input line 37
 .
 (pdftex.def)             Requested size: 182.09485pt x 170.64177pt.
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
 [2
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+ <./graphics/entstehung.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
+[3 <./graphics/hertzscher_dipol.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
-Overfull \hbox (4.29018pt too wide) in paragraph at lines 51--52
-[]\T1/lmr/m/n/10.95 Zur Ver-i-fika-tion wurde zuerst ein MATLAB-Code er-stellt,
- welcher die Po-larko-or-di-naten darstellen|
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 59.
-(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [3]
-<./graphics/HertzscherDipol.png, id=158, 511.9125pt x 582.67688pt>
+<./graphics/Dipol.png, id=170, 606.76688pt x 294.34969pt>
+File: ./graphics/Dipol.png Graphic file (type png)
+<use ./graphics/Dipol.png>
+Package pdftex.def Info: ./graphics/Dipol.png  used on input line 85.
+(pdftex.def)             Requested size: 455.24408pt x 220.84705pt.
+[4 <./graphics/Dipol.png>]
+<./graphics/HertzscherDipol.png, id=180, 511.9125pt x 582.67688pt>
 File: ./graphics/HertzscherDipol.png Graphic file (type png)
 <use ./graphics/HertzscherDipol.png>
-Package pdftex.def Info: ./graphics/HertzscherDipol.png  used on input line 100
-.
+Package pdftex.def Info: ./graphics/HertzscherDipol.png  used on input line 93.
+
 (pdftex.def)             Requested size: 455.24408pt x 518.17181pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 107.
+[5 <./graphics/HertzscherDipol.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 100.
+
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (3.25584pt too wide) in paragraph at lines 107--108
-\T1/lmr/m/n/10.95 beschreiben die Bre-ite der Haup-tkeule, wobei der Winkel unt
-er welchem die Hälfte der Strahlungs-|
- []
-
-) [4] [5 <./graphics/HertzscherDipol.png (PNG copy)>]
+<./graphics/Hertzian.png, id=191, 560.8453pt x 346.29375pt>
+File: ./graphics/Hertzian.png Graphic file (type png)
+<use ./graphics/Hertzian.png>
+Package pdftex.def Info: ./graphics/Hertzian.png  used on input line 108.
+(pdftex.def)             Requested size: 455.24408pt x 281.0882pt.
+) [6 <./graphics/Hertzian.png>]
 \openout2 = `sections/Linearantenne.aux'.
 
-
-(./sections/Linearantenne.tex
-<./graphics/DiMonopol.png, id=186, 542.025pt x 262.73157pt>
+ (./sections/Linearantenne.tex
+<./graphics/DiMonopol.png, id=200, 542.025pt x 262.73157pt>
 File: ./graphics/DiMonopol.png Graphic file (type png)
 <use ./graphics/DiMonopol.png>
 Package pdftex.def Info: ./graphics/DiMonopol.png  used on input line 23.
@@ -2284,11 +2264,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-[6
+[7
 
 
  <./graphics/DiMonopol.png>]
-<./graphics/Wellendipol.png, id=198, 421.575pt x 316.18124pt>
+<./graphics/Wellendipol.png, id=211, 421.575pt x 316.18124pt>
 File: ./graphics/Wellendipol.png Graphic file (type png)
 <use ./graphics/Wellendipol.png>
 Package pdftex.def Info: ./graphics/Wellendipol.png  used on input line 52.
@@ -2298,21 +2278,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[7 <./graphics/Wellendipol.png (PNG copy)>] [8]
-<./graphics/Halbwellendipol1.png, id=226, 540.51938pt x 346.29375pt>
+[8 <./graphics/Wellendipol.png (PNG copy)>] [9]
+<./graphics/Halbwellendipol1.png, id=238, 540.51938pt x 346.29375pt>
 File: ./graphics/Halbwellendipol1.png Graphic file (type png)
 <use ./graphics/Halbwellendipol1.png>
 Package pdftex.def Info: ./graphics/Halbwellendipol1.png  used on input line 90
 .
 (pdftex.def)             Requested size: 455.24408pt x 291.6668pt.
-<./graphics/Ganzwellendipol1.png, id=228, 540.51938pt x 346.29375pt>
+<./graphics/Ganzwellendipol1.png, id=240, 540.51938pt x 346.29375pt>
 File: ./graphics/Ganzwellendipol1.png Graphic file (type png)
 <use ./graphics/Ganzwellendipol1.png>
 Package pdftex.def Info: ./graphics/Ganzwellendipol1.png  used on input line 99
 .
 (pdftex.def)             Requested size: 455.24408pt x 291.6668pt.
- [9 <./graphics/Halbwellendipol1.png> <./graphics/Ganzwellendipol1.png>]
-<./graphics/Doppelwellendipol1.png, id=238, 540.51938pt x 346.29375pt>
+ [10 <./graphics/Halbwellendipol1.png> <./graphics/Ganzwellendipol1.png>]
+<./graphics/Doppelwellendipol1.png, id=250, 540.51938pt x 346.29375pt>
 File: ./graphics/Doppelwellendipol1.png Graphic file (type png)
 <use ./graphics/Doppelwellendipol1.png>
 Package pdftex.def Info: ./graphics/Doppelwellendipol1.png  used on input line 
@@ -2323,8 +2303,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[10 <./graphics/Doppelwellendipol1.png>]
-<./graphics/Halbwellendipol13.jpg, id=251, 720.6925pt x 461.725pt>
+[11 <./graphics/Doppelwellendipol1.png>]
+<./graphics/Halbwellendipol13.jpg, id=264, 720.6925pt x 461.725pt>
 File: ./graphics/Halbwellendipol13.jpg Graphic file (type jpg)
 <use ./graphics/Halbwellendipol13.jpg>
 Package pdftex.def Info: ./graphics/Halbwellendipol13.jpg  used on input line 1
@@ -2336,133 +2316,153 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 122.
-<./graphics/Ganzwellendipol13.jpg, id=252, 720.6925pt x 461.725pt>
+<./graphics/Ganzwellendipol13.jpg, id=265, 720.6925pt x 461.725pt>
 File: ./graphics/Ganzwellendipol13.jpg Graphic file (type jpg)
 <use ./graphics/Ganzwellendipol13.jpg>
 Package pdftex.def Info: ./graphics/Ganzwellendipol13.jpg  used on input line 1
 28.
 (pdftex.def)             Requested size: 455.24408pt x 291.65623pt.
- [11 <./graphics/Halbwellendipol13.jpg> <./graphics/Ganzwellendipol13.jpg>]
-<./graphics/Doppelwellendipol13.jpg, id=259, 720.6925pt x 461.725pt>
+ [12 <./graphics/Halbwellendipol13.jpg> <./graphics/Ganzwellendipol13.jpg>]
+<./graphics/Doppelwellendipol13.jpg, id=271, 720.6925pt x 461.725pt>
 File: ./graphics/Doppelwellendipol13.jpg Graphic file (type jpg)
 <use ./graphics/Doppelwellendipol13.jpg>
 Package pdftex.def Info: ./graphics/Doppelwellendipol13.jpg  used on input line
  137.
 (pdftex.def)             Requested size: 409.71959pt x 262.49554pt.
-<./graphics/Halbwellendipol13Cart.jpg, id=260, 720.6925pt x 461.725pt>
+<./graphics/Halbwellendipol13Cart.jpg, id=272, 720.6925pt x 461.725pt>
 File: ./graphics/Halbwellendipol13Cart.jpg Graphic file (type jpg)
 <use ./graphics/Halbwellendipol13Cart.jpg>
 Package pdftex.def Info: ./graphics/Halbwellendipol13Cart.jpg  used on input li
 ne 146.
 (pdftex.def)             Requested size: 409.71959pt x 262.49554pt.
- [12 <./graphics/Doppelwellendipol13.jpg> <./graphics/Halbwellendipol13Cart.jpg
+ [13 <./graphics/Doppelwellendipol13.jpg> <./graphics/Halbwellendipol13Cart.jpg
 >]
-<./graphics/3D.png, id=269, 543.53062pt x 349.305pt>
+<./graphics/3D.png, id=281, 543.53062pt x 349.305pt>
 File: ./graphics/3D.png Graphic file (type png)
 <use ./graphics/3D.png>
-Package pdftex.def Info: ./graphics/3D.png  used on input line 158.
+Package pdftex.def Info: ./graphics/3D.png  used on input line 157.
 (pdftex.def)             Requested size: 455.24408pt x 292.5774pt.
-) [13 <./graphics/3D.png>]
-\openout2 = `sections/Kleeblattantenne.aux'.
+) [14 <./graphics/3D.png>]
+\openout2 = `sections/Gruppenantennen.aux'.
 
 
-(./sections/Kleeblattantenne.tex) [14
+(./sections/Gruppenantennen.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
-
-<<<<<<< HEAD
-] [15
-=======
- (sections/Gruppenantennen.tex
-Overfull \hbox (9.87761pt too wide) in paragraph at lines 2--3
-\T1/lmr/m/n/10.95 vorhan-den ist. Mit der Richtwirkung lässt sich der Störab-st
-and verbessern, da mögliche Störquellen|
  []
 
-<./graphics/gruppenantennen.png, id=199, 608.77437pt x 284.56313pt>
+<./graphics/gruppenantennen.png, id=291, 608.77437pt x 284.56313pt>
 File: ./graphics/gruppenantennen.png Graphic file (type png)
 <use ./graphics/gruppenantennen.png>
 Package pdftex.def Info: ./graphics/gruppenantennen.png  used on input line 17.
 
 (pdftex.def)             Requested size: 341.43306pt x 159.60176pt.
-[6
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[15
 
 
- <./graphics/gruppenantennen.png>]
-<./graphics/dipolzeile.png, id=208, 502.87875pt x 141.02687pt>
+ <./graphics/gruppenantennen.PNG>]
+<./graphics/dipolzeile.png, id=300, 502.87875pt x 141.02687pt>
 File: ./graphics/dipolzeile.png Graphic file (type png)
 <use ./graphics/dipolzeile.png>
 Package pdftex.def Info: ./graphics/dipolzeile.png  used on input line 36.
 (pdftex.def)             Requested size: 341.43306pt x 95.75067pt.
-<<<<<<< HEAD
-<./graphics/querstrahler.png, id=210, 257.46187pt x 164.11313pt>
+<./graphics/querstrahler.png, id=302, 257.46187pt x 164.11313pt>
 File: ./graphics/querstrahler.png Graphic file (type png)
 <use ./graphics/querstrahler.png>
 Package pdftex.def Info: ./graphics/querstrahler.png  used on input line 46.
 (pdftex.def)             Requested size: 227.62204pt x 145.09612pt.
- [7 <./graphics/dipolzeile.png> <./graphics/querstrahler.png>]) [8]
-=======
-) [6
+ [16 <./graphics/dipolzeile.PNG> <./graphics/querstrahler.PNG>]
+<./graphics/2Lambda.png, id=313, 226.59656pt x 256.70906pt>
+File: ./graphics/2Lambda.png Graphic file (type png)
+<use ./graphics/2Lambda.png>
+Package pdftex.def Info: ./graphics/2Lambda.png  used on input line 70.
+(pdftex.def)             Requested size: 182.09485pt x 206.29193pt.
+ [17 <./graphics/2Lambda.png>]
+<./graphics/Array.png, id=325, 567.62062pt x 346.29375pt>
+File: ./graphics/Array.png Graphic file (type png)
+<use ./graphics/Array.png>
+Package pdftex.def Info: ./graphics/Array.png  used on input line 80.
+(pdftex.def)             Requested size: 455.24408pt x 277.74342pt.
+) [18 <./graphics/Array.png>]
+\openout2 = `sections/Kleeblattantenne.aux'.
+
+ (./sections/Kleeblattantenne.tex
+<./graphics/Planar.jpg, id=334, 271.0125pt x 216.81pt>
+File: ./graphics/Planar.jpg Graphic file (type jpg)
+<use ./graphics/Planar.jpg>
+Package pdftex.def Info: ./graphics/Planar.jpg  used on input line 6.
+(pdftex.def)             Requested size: 227.62204pt x 182.1026pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+<./graphics/berechnung.jpg, id=338, 554.07pt x 492.33937pt>
+File: ./graphics/berechnung.jpg Graphic file (type jpg)
+<use ./graphics/berechnung.jpg>
+Package pdftex.def Info: ./graphics/berechnung.jpg  used on input line 18.
+(pdftex.def)             Requested size: 227.62204pt x 202.2586pt.
+<./graphics/Kleeblatt.png, id=339, 309.40594pt x 276.28218pt>
+File: ./graphics/Kleeblatt.png Graphic file (type png)
+<use ./graphics/Kleeblatt.png>
+Package pdftex.def Info: ./graphics/Kleeblatt.png  used on input line 26.
+(pdftex.def)             Requested size: 455.24408pt x 406.54305pt.
+[19
 
 
- <./graphics/gruppenantennen.png>] [7 <./graphics/dipolzeile.png>]
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+ <./graphics/Planar.jpg> <./graphics/berechnung.jpg>]) [20 <./graphics/Kleeblat
+t.png>]
+\openout2 = `sections/Fazit.aux'.
+
+ (./sections/Fazit.tex) [21
+
+
+] [22
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
- (./Report.aux
-(./sections/abstract.aux) (./sections/Einleitung.aux) (./sections/Dipole.aux)
-(./sections/Linearantenne.aux) (./sections/Kleeblattantenne.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+\openout2 = `sections/Appendix.aux'.
+
+ (./sections/Appendix.tex
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 11.
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [23
+
+]) [24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+
+(./Report.aux (./sections/abstract.aux) (./sections/Einleitung.aux)
+(./sections/Dipole.aux) (./sections/Linearantenne.aux)
+(./sections/Gruppenantennen.aux) (./sections/Kleeblattantenne.aux)
+(./sections/Fazit.aux) (./sections/appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: A1DA7F03E69D4103B5D5AB29049F019E;689.
-=======
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: 5342D4CD534F9E3B27A9BC486E9E2BEA;517.
-=======
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: 006D1BAD522BB1F884EDEBEC8E9A8BBF;419.
-=======
-(rerunfilecheck)             Checksum: 135EAFB53B2F6B6AB838F39B3310E9CC;441.
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+(rerunfilecheck)             Checksum: E00DD258D3CC56EF79C53064C19FFB3E;960.
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 60309 strings out of 492648
- 1400530 string characters out of 6133338
- 2093518 words of memory out of 5000000
- 63139 multiletter control sequences out of 15000+600000
+ 60509 strings out of 492648
+ 1404254 string characters out of 6133338
+ 2123678 words of memory out of 5000000
+ 63238 multiletter control sequences out of 15000+600000
  625658 words of font info for 82 fonts, out of 8000000 for 9000
-=======
-<<<<<<< HEAD
- 61413 strings out of 492946
- 1417436 string characters out of 3135527
- 2108511 words of memory out of 3000000
- 64285 multiletter control sequences out of 15000+200000
-=======
-<<<<<<< HEAD
- 60069 strings out of 492648
- 1395793 string characters out of 6133338
- 2087991 words of memory out of 5000000
- 62925 multiletter control sequences out of 15000+600000
- 621395 words of font info for 81 fonts, out of 8000000 for 9000
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
  1143 hyphenation exceptions out of 8191
- 66i,10n,98p,10521b,3251s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2018/texmf-dist/fonts/enc/
-dvips/lm/lm-ts1.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:
-/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2018/texmf-di
+ 66i,10n,98p,10521b,2364s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2018/texm
+f-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips
+/lm/lm-rm.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/
+texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2018/texmf-di
 st/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips
 /lm/lm-mathit.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
 <c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2018/t
@@ -2471,66 +2471,16 @@ pe1/public/lm/lmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10
 .pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/20
 18/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2018/texmf-dist/fonts
 /type1/public/lm/lmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr
-<<<<<<< HEAD
-8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/public/lm/lmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
-/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/
-texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (17 pages, 4533036 bytes).
+7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/public/lm/lmro10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/
+lmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/t
+exlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Report.pdf (26 pages, 5039146 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2018/texmf-dist/
-fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
-/lm/lmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (14 pages, 4484952 bytes).
-PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 93 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 61399 strings out of 492946
- 1417165 string characters out of 3135527
- 2108451 words of memory out of 3000000
- 64279 multiletter control sequences out of 15000+200000
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
- 603578 words of font info for 68 fonts, out of 3000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 66i,9n,98p,1133b,3281s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/base/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
-}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
-c/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
-courier/ucrr8a.pfb>
-Output written on Report.pdf (10 pages, 598288 bytes).
-PDF statistics:
-<<<<<<< HEAD
- 301 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 277 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 00876dbd65177d3188c6b5e9e7f54a89dbcb171f
->>>>>>> 14d10b9325491970987379e73e0e1949972e3c3b
->>>>>>> ad92fa2a0d8283b8fb2188a4accd1f41ac15e7d1
+ 550 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
